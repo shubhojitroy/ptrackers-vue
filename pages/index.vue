@@ -1,86 +1,54 @@
 <template>
-  <section class="section">
-    <div class="container box">
-      <h1 class="title">WAM Global Limited (ACN 624 572 925)</h1>
-      <div class="content">
-        <p>
-          This offer for securities in WAM Global Limited is being made to applicants whose registered address is in Australia or New Zealand.
-        </p>
-        <p>
-          To access this website, please verify your country of primary residence.
-        </p>
-        <div class="columns">
-          <div class="column is-two-thirds-tablet is-half-desktop">
-            <form novalidate @submit.prevent="submitForm">
-              <b-field label="Country of Primary Residence" :type="countryType" :message="countryMessage">
-                <b-autocomplete v-model="country" field="name" placeholder="Select a Country" :data="filteredCountries" open-on-focus keep-first
-                  icon="earth" @select="option => selected = option" @blur="$v.country.$touch()">
-                  <template slot="empty">No results found</template>
-                </b-autocomplete>
-              </b-field>
-              <br>
-              <div class="control">
-              <button type="submit" class="button is-primary">
-                Continue
-              </button>
-              </div>
-            </form>
-          </div>
+    <section>
+        <div class="block">
+            <button class="button" @click="activeTab = 1">Set Music</button>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="block">
+            <b-switch v-model="showBooks"> Show Books item </b-switch>
+        </div>
+        <b-tabs v-model="activeTab">
+            <b-tab-item label="Pictures">
+                Lorem ipsum dolor sit amet.
+            </b-tab-item>
+
+            <b-tab-item label="Music">
+                Lorem <br>
+                ipsum <br>
+                dolor <br>
+                sit <br>
+                amet.
+            </b-tab-item>
+
+            <b-tab-item :visible="showBooks" label="Books">
+                What light is light, if Silvia be not seen? <br>
+                What joy is joy, if Silvia be not by— <br>
+                Unless it be to think that she is by <br>
+                And feed upon the shadow of perfection? <br>
+                Except I be by Silvia in the night, <br>
+                There is no music in the nightingale.
+            </b-tab-item>
+
+            <b-tab-item label="Videos" disabled>
+                Nunc nec velit nec libero vestibulum eleifend.
+                Curabitur pulvinar congue luctus.
+                Nullam hendrerit iaculis augue vitae ornare.
+                Maecenas vehicula pulvinar tellus, id sodales felis lobortis eget.
+            </b-tab-item>
+        </b-tabs>
+    </section>
 </template>
 
 <script>
-
-import { countries } from "~/assets/js/countries.js"
-import { required } from 'vuelidate/lib/validators'
-
-export default {
-  components: {
-  },
-  data () {
-    return {
-      name: "",
-      country: "",
-      selected: null,
-      countries: countries.items
+    export default {
+        data() {
+            return {
+                activeTab: 0,
+                showBooks: false
+            }
+        }
     }
-  },
-  validations: {
-    country: {
-      required
-    }
-  },
-  computed: {
-    filteredCountries() {
-      return this.countries.filter((option) => {
-        return option.name
-          .toString()
-          .toLowerCase()
-          .indexOf(this.country.toLowerCase()) >= 0
-        })
-    },
-    countryType() {
-      return this.$v.country.$error ? "is-danger" : ""
-    },
-    countryMessage() {
-     return this.$v.country.$error ? "Country is required" : ""
-    }
-  },
-  methods: {
-    submitForm () {
-      this.$v.$touch();
-      if (!this.$v.$error) {
-        const validCountry = this.selected.code === 'AUS' || this.selected.code === 'NZL' ? '/confirm-domicile' : '/eligibility-notice';
-        this.$router.push(validCountry);
-      }
-    }
-  }
-}
 </script>
 
-<style>
+<style scoped>
 
 </style>
