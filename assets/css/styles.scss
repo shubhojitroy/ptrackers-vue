@@ -1,0 +1,36 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+$brand-color-1: #4A67AB;
+
+$primary: $brand-color-1;
+
+$family-primary: calibiri, $family-sans-serif;
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+
+
+html {
+  background-color: #f4f4f4;
+}
+.page-enter-active, .page-leave-active {
+  transition: all .25s ease-in-out;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+  transform-origin: 50% 50%;
+}
+
+.box {
+  box-shadow: none;
+}
+.content li {
+  margin-left: 1rem;
+  padding-left: .75rem;
+}
+.control a.button {
+  width: 100px;
+}
+
