@@ -6,11 +6,16 @@
           Application Amount
         </h1>
         <hr>
-        <b-field label="Priority Invitation (Units)">
+        <p>
+          As an eligible Priority Applicant, you are invited to subscribe for an amount of PTrackERS equal to the number of PM Capital Global Opportunity Funds Limited Ordinary Shares held at the Recird Date, subject to a minimum of 1,500 securities.<br><br>
+          If you are in doubt as to how to deal with this online Application, please contact your accountant, solicitor, stockbroker or other personal adviser without delay. The Prospectus contains information relevant to a decision to invest in Units and you should read the entire Prospectus carefully before applying. Defined terms in the Prospectus have the same meaning in this online Application.
+        </p>        
+        <hr>
+        <b-field label="Priority Invitation (Number of PTrackERS):">
           <b-input v-model="message" placeholder="Units"></b-input>
         </b-field>
 
-        <b-field label="Number applied for (Units):">
+        <b-field label="Number applied for (PTrackERS):">
           <b-input v-model="message" placeholder="Units"></b-input>
         </b-field>
 
@@ -18,11 +23,11 @@
           <b-input v-model="message" placeholder="Units"></b-input>
         </b-field>
 
-        <b-field label="Application Monies based on Units applied for:">
+        <b-field label="Application Monies based on PTrackERS applied for:">
           <b-input v-model="message" placeholder="Units"></b-input>
         </b-field>
         <hr>
-        <b-field label="Email"
+        <!-- <b-field label="Email"
             type="is-danger"
             message="This email is invalid">
             <b-input type="email"
@@ -48,6 +53,22 @@
                 <option value="1">Option 1</option>
                 <option value="2">Option 2</option>
             </b-select>
+        </b-field> -->
+        <p>
+          Please enter your contact details in case we need to contact you about this online Application.
+        </p>
+        <div class="space"></div>
+        <b-field label="Contact Number: Please include area code e.g. '04XXXXXXXX' or '02XXXXXXXX'">
+          <b-input v-model="message" placeholder="Units"></b-input>
+        </b-field>
+
+        <b-field label="Email"
+            type="is-danger"
+            message="This email is invalid">
+            <b-input type="email"
+                value="john@"
+                maxlength="30">
+            </b-input>
         </b-field>
       </section>
     </div>
