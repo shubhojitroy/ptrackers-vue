@@ -1,11 +1,5 @@
 <template>
     <section>
-        <!--<div class="block">
-            <button class="button" @click="activeTab = 1">Set Music</button>
-        </div>
-        <div class="block">
-            <b-switch v-model="showBooks"> Show Books item </b-switch>
-        </div>-->
         <br><br>
         <div class="container">
           <b-tabs type="is-boxed" v-model="activeTab">
@@ -49,7 +43,7 @@
         },
         data() {
             return {
-                activeTab: 0,                
+                activeTab: 0,
             }
         }
     }

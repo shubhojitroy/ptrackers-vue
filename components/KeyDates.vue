@@ -19,40 +19,13 @@
                     {{ props.row.date }}
                 </b-table-column>
 
-                <!-- <b-table-column field="last_name" label="Last Name">
-                    {{ props.row.last_name }}
-                </b-table-column>
 
-                <b-table-column field="date" label="Date" centered>
-                    <span class="tag is-success">
-                        {{ new Date(props.row.date).toLocaleDateString() }}
-                    </span>
-                </b-table-column>
-
-                <b-table-column label="Gender">
-                    <b-icon pack="fas"
-                        :icon="props.row.gender === 'Male' ? 'mars' : 'venus'">
-                    </b-icon>
-                    {{ props.row.gender }}
-                </b-table-column> -->
             </template>
 
-            <!-- <template slot="empty">
-                <section class="section">
-                    <div class="content has-text-grey has-text-centered">
-                        <p>
-                            <b-icon
-                                icon="emoticon-sad"
-                                size="is-large">
-                            </b-icon>
-                        </p>
-                        <p>Nothing here.</p>
-                    </div>
-                </section>
-            </template> -->
+
         </b-table>
         <div class="space"></div>
-        
+
         <div>
             <section>
                 <b-table
@@ -77,7 +50,7 @@
                 </b-table>
             </section>
         </div>
-    
+
         <div class="space"></div>
         <p>
             <em>
@@ -88,7 +61,7 @@
 </template>
 
 <script>
-export default{    
+export default{
     data() {
             const offerEvents = [
                 { description: 'Lodgement of the PDS with ASIC', date: 'Monday 2 July 2018' },
@@ -105,14 +78,14 @@ export default{
             ]
             const ptrackerEvents = [
                 { description: 'Intended payment of first Distribution', date: 'March 2019' },
-                { description: 'Redemption Election Period', date: '1 April 2025 to 9 June 2025' },  
-                { description: 'Last Date to elect to redeem', date: '9 June 2025' },    
-                { description: 'Maturity Date', date: '30 June 2025 (or such earlier date where 30 June 2025 is not a Business Day)' }          
-            ]           
+                { description: 'Redemption Election Period', date: '1 April 2025 to 9 June 2025' },
+                { description: 'Last Date to elect to redeem', date: '9 June 2025' },
+                { description: 'Maturity Date', date: '30 June 2025 (or such earlier date where 30 June 2025 is not a Business Day)' }
+            ]
 
             return {
-                offerEvents,   
-                ptrackerEvents,             
+                offerEvents,
+                ptrackerEvents,
                 isEmpty: false,
                 isBordered: false,
                 isStriped: false,
