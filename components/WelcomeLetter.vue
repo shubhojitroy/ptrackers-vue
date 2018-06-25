@@ -1,106 +1,118 @@
 <template>
   <div>
     <div class="container">
-      <h1 class="title is-size-2 is-size-3-mobile">
-        WELCOME TO INVESTORS
-      </h1>
-      <h4>
-        Dear Investors
-      </h4>
-      <p>
-        On behalf of the Boards of PM Capital Global Opportunities Fund Limited (<strong><em>PGF</em></strong> or <strong><em>Parent Company</em></strong>) and PM Capital GO 2025 Limited (<strong><em>Company</em></strong>) (jointly the <strong><em>Issuers</em></strong>), I am pleased to offer you the opportunity to participate in a non-renounceable offer of redeemable, unsecured exchanging securities, named Portfolio Tracking Exchangeable Redeemable Securities (Converting Security) (<strong><em>PTrackERS</em></strong>) (<strong><em>Offer</em></strong>).
-      </p>
-      <h4>
-        Background and purpose to the Offer
-      </h4>
-      <p>
-        The Company is a newly incorporated and wholly owned subsidiary of PGF. PGF is a listed investment company (LIC) that is managed by PM Capital Limited (PM Capital or Investment Manager). PGF invests in a concentrated portfolio of global securities diversified across global equity markets (including Australia) with the objective of providing long-term capital growth over a 7-year plus investment period.<br><br>
-        PGF, which has enjoyed strong performance since its initial public offering, has its investment strategy based on that of PM Capital’s unlisted managed funds and mandates. These unlisted funds have a significantly longer operating history and track-record than that of PGF, and have achieved the following industry leading long-term performance:<br><br>
-      </p>
-      <ul>
-        <li>
-          as at 30 June 20171, the Colonial First State FirstChoice (CFS FC) PM Capital Wholesale Global Companies Fund ranked #1 in its Morningstar Australian Open-Ended Equity World Large Blend peer group of 176, 160, 144 and 143 over 3, 5, 7 and 8-year period respectively; and
-        </li>
-        <li>
-          as at 31 December 20172, CFS FC-PM Capital Wholesale Global Companies Fund ranked #1 in its Morningstar Australian Open-Ended Equity World Large Blend peer group over 7 and 8 years out of 147 and 136 peers, respectively.
-        </li>
-      </ul>
-      <h4>
-        PGF has observed that:
-      </h4>
-      <ul>
-        <li>
-          even strongly performing LICs, including PGF, can trade away from their underlying net tangible asset value, creating uncertainty for investors as to whether they can obtain the underlying value of their securities;
-        </li>
-        <li>
-          growth in an LIC’s capital in pursuit of greater internal efficiencies, stock trading liquidity and market awareness is often associated with economic dilution of net tangible asset per share for existing holders and also adds complexity for investors wishing to track the underlying performance of the Investment Manager; and
-        </li>
-        <li>
-          while some LIC investors focus purely on long term capital growth, others also seek certainty of distribution policy.
-        </li>
-      </ul>
-      <p>
-        To address these issues, the Offer is being made as a new form of LIC securities know as a <strong><em>PTrackERS</em></strong>.
-      </p>
-      <h4>
-        <em>PTrackERS</em>
-      </h4>
-      <ul>
-        <li>
-          similarly to traditional LIC securities, have attributable net tangible assets determined by the investment performance of the Portfolio purchased with the Offer proceeds;
-        </li>
-        <li>
-          provides holders with a known time at which they can gain access to the net tangible asset performance underlying each <strong><em>PTrackERS</em></strong> through an option to redeem in June 2025;
-        </li>
-        <li>
-          if not redeemed, be exchanged for fully-paid Ordinary Shares of PGF by way of an automatic exchange of <strong><em>PTrackERS</em></strong> for Ordinary Shares in a manner which is <u>non-dilutionary to NTA Before Tax Plus Franking Credits for both PGF shareholders and <strong><em>PTrackERS</em></strong> holders</u>; and
-        </li>
-        <li>
-          have an attractive target yield of approximately 4% per annum.
-        </li>
-      </ul>
-      <p>
-        By growing the size of issued capital, the Company and PGF consider that it will provide a positive stimulus to the marketability of PGF's securities generally, add to the liquidity of all securities on issue, increase scale, decrease per Share operating costs upon Exchange, and add to the researcher following of PGF. For more information on the nature of the LIC security, please see Section [6].
-      </p>
-      <h4>
-        Overview of the Offer
-      </h4>
-      <p>
-        Each <strong><em>PTrackERS</em></strong> will have an Issue Price of $[1.50]. On the maturity date of 30 June 2025 (or the last Business Day before where the Banks and the ASX are both open for trading in New South Wales) (<strong><em>Maturity Date</em></strong>), the <strong><em>PTrackERS</em></strong> will mandatorily be exchanged for fully-paid Ordinary Shares of PGF by way of an automatic exchange of <strong><em>PTrackERS</em></strong> for Ordinary Shares at an Exchange price which will be set by reference to the formula set out in Section [6], unless a redemption election at the option of the Securityholder has been exercised. The number of Shares that each <strong><em>PTrackERS</em></strong> will be exchanged for will be determined by reference to the net tangible assets attributable to each <strong><em>PTrackERS</em></strong> and the Shares such that Exchange is non-dilutionary to Net Tangible Assets Before Tax plus Franking for both <strong><em>PTrackERS</em></strong> holders and Shareholders.<br><br>
-        <strong><em>PTrackERS</em></strong> are fully paid, unsecured exchanging securities. They are intended to pay Distributions at a yield of approximately 4% per annum of NTA After Tax Liabilities But Before Tax Assets, plus franking (where franking is available). For more information on the payment of Distributions, please see Section [3.1.2].<br><br>
-        The Offer is not underwritten. However, the Issuers (through their Lead Managers) may seek to place any shortfall not taken up within three months.
-      </p>
-      <h4>
-        Entitlement Offer
-      </h4>
-      <p>
-        As part of the Offer, Eligible Shareholders of PGF will be entitled to subscribe for 1 <strong><em>PTrackERS</em></strong> for every 1 Share held as at [date] (<strong><em>Record Date</em></strong>) (<strong><em>Entitlement Offer</em></strong>). Details of the Entitlement Offer are set out in Section [2.2]. No assurance is given that any Shareholder Applicant will receive an allocation of <strong><em>PTrackERS</em></strong>.
-      </p>
-      <h4>
-        Conclusion
-      </h4>
-      <p>
-        The Company expects to be readily able to meet all financial commitments under the <strong><em>PTrackERS</em></strong> (i.e. to pay Distributions and to redeem the <strong><em>PTrackERS</em></strong> as and when required under the Trust Deed). It is the intention of the Company that the <strong><em>PTrackERS</em></strong> will be quoted on the ASX, with the ASX code: <strong>P25PA</strong>.<br><br>
-        The Offer, including the Entitlement Offer, is scheduled to close on [date]. The key dates of the Offer are summarised on page [X]. The Offer may close early, so you are encouraged to submit your Application as soon as possible after the Opening Date.<br><br>
-        On behalf of the Directors, I encourage you to read this Prospectus carefully. The terms of the <strong><em>PTrackERS</em></strong> are more complex than a simple debt instrument or ordinary equity instrument. In particular, you should consider the risk factors set out in Section [7] before deciding whether to apply for <strong><em>PTrackERS</em></strong>.<br><br> 
-        If, after reading this Prospectus, you have any questions about the Offer or how to apply, please call PM Capital on +612 8243 0888 within Australia or 0800 222 143 within New Zealand, or consult your stockbroker, solicitor, accountant or other independent and qualified professional adviser.<br><br> 
-        On behalf of the Board and management team of the Company and PGF, I invite you to consider this investment opportunity.
-      </p>
-      <div class="space"></div>
-      <div class="space"></div>
-      <p>
-        Yours sincerely,
-      </p>
-      <p>
-        Andrew McGill
-      </p>
-      <p>
-        Chairman, <strong>PM Capital Global Opportunities Fund Limited</strong>
-      </p>
-      <p>
-        Chairman, <strong>PM Capital GO 2025 Limited</strong>
-      </p>
-    </div>
+      <section class="canvas">
+        <h1 class="title is-size-2 is-size-3-mobile">
+          Welcome letter – From the Issuer
+        </h1>
+        <h4>
+          Dear Investors
+        </h4>
+        <p>
+          Thank you for considering an investment in GO 25. We are pleased to offer this innovative way to invest in global equities.
+        </p>
+        <p>
+          We believe that GO 25 is unique in the Australian market, combining the skills of an exceptional global equities investment manager with an innovative offer structure that (uniquely for the listed investment company (LIC) sector) is designed to be in the interests of investors.
+        </p>
+        <p>
+          'GO 25' stands for 'Global Opportunities', reflecting its focus on global securities, and the year 2025, which is when its securities, called <span style="font-weight:500; font-style:oblique;">PTrackERS</span>, will mature.
+        </p>
+        <p>
+          GO 25's assets will be managed by PM Capital, a highly experienced and awarded global equities manager, using the same investment philosophy and process as utilised by the PM Capital Global Opportunities Fund (ASX:PGF). PGF has enjoyed strong performance since its initial public offering by investing in a concentrated portfolio of global securities diversified across global equity markets (including Australia) with the objective of providing long term capital growth over a 7-year plus investment period.
+        </p>
+        <p>
+          PM Capital offers an established philosophy and process and a highly experienced global equities investment team. Its founder, Chief Investment Officer and Portfolio Manager, Paul Moore, has been investing in global equities for 30 years and has delivered industry leading long term returns for investors<sup>1</sup>.
+        </p>
+        <p>
+          PGF’s performance has been strong since its initial public offering, using the same strategy based on that of PM Capital’s unlisted managed funds and mandates. These unlisted funds have a significantly longer operating history and track-record than that of PGF, and have achieved the following industry-leading long term performance<sup>1</sup>:
+        </p>
+        <ul>
+          <li>
+            As at 30 June 2017: 1<sup>st</sup> in its peer group over 3, 5, 7 and 8-year period.<sup>2</sup>
+          </li>
+          <li>
+            as at 31 December 2017: 1<sup>st</sup> in its peer group over 5,6,7,8 and 9 years.<sup>3</sup>
+          </li>
+        </ul>
+        <p>
+          GO 25 is meant principally to deliver capital growth. However, as well as capital gains, GO 25’s securities are targeting a distributions   at a yield of approximately 4%per annum plus franking as available.
+        </p>
+        <p>
+          GO 25 offers the experience and track record of PM Capital. It is also a next generation LIC, offering a unique way to give security holders more options.
+        </p>
+        <p>
+          Since listing in 2013, PGF has observed:
+        </p>
+        <ul>
+          <li>
+            even strongly performing LICs, including PGF, can trade away from their underlying net tangible asset value, creating uncertainty for investors as to whether they can obtain the underlying value of their securities;
+          </li>
+          <li>
+            growth in an LIC’s capital is often associated with economic dilution of net tangible asset per share for existing holders and also adds complexity for investors wishing to track the underlying performance of the Investment Manager; and
+          </li>
+          <li>
+            while some LIC investors focus purely on long term capital growth, others also seek certainty of distribution policy.
+          </li>
+        </ul>
+        <p>
+          GO 25, through its <span style="font-weight:500; font-style:oblique;">PTrackERS</span> securities, looks to solve the above concerns.
+        </p>
+        <p>
+          PTrackERS, short for Portfolio Tracking Exchangeable Redeemable Security (Converting Security), are fully paid, unsecured exchanging securities. <span style="font-weight:500; font-style:oblique;">PTrackERS</span> are:
+        </p>
+        <ul>
+          <li>
+            similarly to traditional LIC securities, have attributable net tangible assets determined by the investment performance of the portfolio purchased with the Offer proceeds;
+          </li>
+          <li>
+            give holders the right to elect to redeem on 30 June 2025 at a value determined by reference to the net tangible value of the underlying investment portfolio;
+          </li>
+          <li>
+            if not redeemed, be exchanged for fully-paid ordinary shares of PGF by way of an automatic exchange of <strong><em>PTrackERS</em></strong> in a manner which is <u>non-dilutionary to NTA before tax plus franking credits for both PGF shareholders and <strong><em>PTrackERS</em></strong> holders</u>; and
+          </li>
+          <li>
+            have a target distribution yield1 of between 3% and 4% per annum paid semi-annually.
+          </li>
+        </ul>
+        <p>
+          Each security will have an issue price of $1.40. The Offer is expected to close on 10 August 2018. Nevertheless, it may closer early, so you are encouraged to submit your Application as soon as possible.
+        </p>
+        <p>
+         With PM Capital’s experience and demonstrated performance, I believe GO 25 offers an attractive opportunity to investors. I hope you will consider GO 25 as part of your global investments.
+        </p>
+        <p>
+          If you have any questions about GO 25 please contact your financial adviser, or alternately PM Capital’s GO 25 team on +612 8243 0888.
+        </p>
+        <div class="space"></div>
+        <p>
+          Yours sincerely,
+        </p>
+        <p>
+          <strong>PM Capital Global Opportunities Fund Limited</strong>
+        </p>
+        <p>
+          <strong>PM Capital GO 2025 Limited</strong>
+        </p>
+        <div class="space"></div>
+        <div class="space"></div>
+        <p>
+          Andrew McGill
+        </p>
+        <p>
+          Chairman
+        </p>
+        <div class="space"></div>
+        <hr>
+        <p class="footnote">
+          <sup>1</sup>Past performance is not a reliable guide to future performance.<br>
+            <sup>2</sup>As at 30 June 2017, the Colonial First State FirstChoice (CFS FC) PM Capital Wholesale Global Companies Fund ranked #1 in its Morningstar Australian Open-Ended Equity World Large Blend peer group of 176, 160, 144 and 143 peer fund products respectively.<br>
+            <sup>3</sup>As at 31 December 2017, CFS FC-PM Capital Wholesale Global Companies Fund ranked #1 in its Morningstar Australian Open-Ended Equity World Large Blend peer group out of 154, 144, 146, 135 and 144 peer fund products respectively.<br>
+            <sup>4</sup>See the Prospectus for further details of the Target Distribution. The Target Distribution is expected to be lower in the initial 2 years
+
+        </p>
+
+        </section>
+      </div>
   </div>
 </template>
 
@@ -109,6 +121,15 @@ export default {};
 </script>
 
 <style scoped>
+.canvas {
+  z-index: 50;
+  padding: 1rem;
+  background: #fff 50%;
+  background-size: cover;
+  border-radius: 1px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: all 0.5s ease;
+}
 h4 {
   font-size: 1.33rem;
   margin: 0.75em 0;
@@ -122,9 +143,16 @@ li {
   padding: 0.5rem 1rem;
   margin: 0 1.25em;
 }
+p {
+  line-height: 1.75rem;
+}
 .space {
   display: block;
   width: 100%;
   height: 1.5em;
+}
+.footnote {
+  font-size: 0.75rem;
+  line-height: 1.2em;
 }
 </style>
