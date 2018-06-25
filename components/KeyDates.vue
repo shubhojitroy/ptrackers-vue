@@ -1,26 +1,29 @@
 <template>
     <section>
-         <b-table
-            :data="isEmpty ? [] : offerEvents"
-            :bordered="isBordered"
-            :striped="isStriped"
-            :narrowed="isNarrowed"
-            :hoverable="isHoverable"
-            :loading="isLoading"
-            :focusable="isFocusable"
-            :mobile-cards="hasMobileCards">
+        <h1 class="title is-size-2 is-size-3-mobile">
+          Important Dates
+        </h1>
+        <b-table
+          :data="isEmpty ? [] : offerEvents"
+          :bordered="isBordered"
+          :striped="isStriped"
+          :narrowed="isNarrowed"
+          :hoverable="isHoverable"
+          :loading="isLoading"
+          :focusable="isFocusable"
+          :mobile-cards="hasMobileCards">
 
-            <template slot-scope="props">
-                <b-table-column field="description" label="Key Dates for the Offer" width="50%">
-                    {{ props.row.description }}
-                </b-table-column>
+          <template slot-scope="props">
+              <b-table-column field="description" label="Key Dates for the Offer" width="50%">
+                  <strong>{{ props.row.description }}</strong>
+              </b-table-column>
 
-                <b-table-column field="date" label="Dates">
-                    {{ props.row.date }}
-                </b-table-column>
+              <b-table-column field="date" label="Dates">
+                  {{ props.row.date }}
+              </b-table-column>
 
 
-            </template>
+          </template>
 
 
         </b-table>
@@ -40,7 +43,7 @@
 
                     <template slot-scope="props">
                         <b-table-column field="description" label="Key Dates for the PTrackERS" width="70%">
-                            {{ props.row.description }}
+                            <strong>{{ props.row.description }}</strong>
                         </b-table-column>
 
                         <b-table-column field="dates" label="Dates" width="30%">

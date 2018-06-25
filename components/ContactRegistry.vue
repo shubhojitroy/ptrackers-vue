@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="container">
+      <section class="canvas">
       <h1 class="title is-size-2 is-size-3-mobile">
         Share Registry and Application enquiries
       </h1>
@@ -53,6 +54,7 @@
         Level 27, 420 George Street,<br>
         Sydney, NSW, 2000<br>
       </p>
+      </section>
     </div>
   </div>
 </template>
