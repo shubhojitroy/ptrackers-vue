@@ -53,6 +53,7 @@
 
 <style lang="scss">
   $brand-color-1: #4A67AB;
+  $navigation-bottom-border: #76c4e3;
   $brand-color-1-highlight: saturate($brand-color-1, 20%);
 
   $header-height: 4.5rem;
@@ -72,7 +73,7 @@
     nav.navbar {
       transition: all 0.2s ease-in;
       height: 3.25rem;
-      border-bottom: $brand-color-1 2px solid
+      border-bottom: $navigation-bottom-border 2px solid;
     }
     .navbar-item img {
       transition: all 0.2s ease-in;
