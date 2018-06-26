@@ -51,14 +51,17 @@
                     Otherwise, click the 'EXIT' button below. 
                 </h4>
             </b-message> 
-            <div class="alert-bound">            
-                <button type="submit" class="button is-primary">
-                    exit
-                </button>        
-                <div class="space"></div>        
-                <button type="submit" class="button is-primary">
-                    I Confirm
-                </button>
+            <div class="field is-grouped">
+                <div class="control">            
+                    <nuxt-link to="/" class="button is-primary is-outlined">
+                        exit
+                    </nuxt-link> 
+                </div>
+                <div class="control">                        
+                    <nuxt-link to="/priority-access" class="button is-primary">
+                        I Confirm
+                    </nuxt-link>
+                </div>
             </div>
         </div>
       </section>

@@ -144,14 +144,17 @@
           </p>
 
           <div class="space"></div>
-          <div class="alert-bound">
-            <button type="submit" class="button is-primary">
-              Previous
-            </button>
-            <div class="space"></div>
-            <button type="submit" class="button is-primary">
-              Submit
-            </button>
+          <div class="field is-grouped">
+            <div class="control">            
+                <nuxt-link to="/" class="button is-primary is-outlined">
+                    exit
+                </nuxt-link> 
+            </div>
+            <div class="control">                        
+                <nuxt-link to="/confirmation-payment" class="button is-primary">
+                    submit
+                </nuxt-link>
+            </div>
           </div>
 
         </form>

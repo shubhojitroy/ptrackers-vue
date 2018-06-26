@@ -53,7 +53,7 @@ module.exports = {
   ** Router middleware
   */
   router: {
-    // base: '/wamglobal/',
+    base: '/ptrackers/',
     scrollBehavior (to, from, savedPosition) {
       if (savedPosition) {
         return savedPosition

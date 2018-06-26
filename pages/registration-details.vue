@@ -41,14 +41,17 @@
             If you have any questions about the Offer, you should consult your stockbroker, solicitor, accountant or other professional adviser. You can also contact the share registry, Boardroom Pty Limited, on 1300 737 760 (within Australia) or +61 2 9290 9600 (outside Australia) at any time from 8.30am to 5.30pm (Sydney time) Monday to Friday, during the period of the Offer.
         </p>
         <div class="space"></div>
-        <div class="alert-bound">
-          <button type="submit" class="button is-primary">
-            Previous
-          </button>
-          <span class="space"></span>
-          <button type="submit" class="button is-primary">
-            Next
-          </button>
+        <div class="field is-grouped">
+          <div class="control">            
+              <nuxt-link to="/priority-access" class="button is-primary is-outlined">
+                  previous
+              </nuxt-link> 
+          </div>
+          <div class="control">                        
+              <nuxt-link to="/application-amount" class="button is-primary">
+                  next
+              </nuxt-link>
+          </div>
         </div>
         
        </section>

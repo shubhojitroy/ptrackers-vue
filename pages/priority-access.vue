@@ -23,17 +23,17 @@
               If you are uncertain as to whether an investment in the Company is suitable for you, please contact your stockbroker, financial adviser, accountant, lawyer or other professional adviser.
             <p>
             <span class="space"></span>
-            <div class="alert-bound">
-            <!-- <div class="control"> -->
-              <button type="submit" class="button is-primary">
-                exit
-              </button>
-            <!-- </div> -->
-            <div class="space"></div>
-            <!-- <div class="control"> -->
-              <button type="submit" class="button is-primary">
-                login
-              </button>
+            <div class="field is-grouped">
+              <div class="control">
+                <nuxt-link to="/" class="button is-primary is-outlined">
+                  exit
+                </nuxt-link>
+              </div>             
+              <div class="control">
+                <nuxt-link to="/registration-details" class="button is-primary">
+                  login
+                </nuxt-link>
+              </div>
             </div>
             <!-- </div> -->
             <!-- <br> {{ priorityCode }}

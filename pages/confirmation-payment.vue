@@ -92,16 +92,18 @@
           </p>
         </div>
         <div class="space"></div>
-        <div class="alert-bound">
-          <button type="submit" class="button is-primary">
-            Print
-          </button>
-          <span class="space"></span>
-          <button type="submit" class="button is-primary">
-            close
-          </button>
-        </div>
-        
+        <div class="field is-grouped">
+          <div class="control">            
+              <nuxt-link to="" class="button is-primary is-outlined" @click="Print()">
+                  Print
+              </nuxt-link> 
+          </div>
+          <div class="control">                        
+              <nuxt-link to="/" class="button is-primary" @click="Close()">
+                  close
+              </nuxt-link>
+          </div>
+        </div> 
        </section>
     </div>
   </div>
