@@ -4,19 +4,19 @@
       <section class="canvas">
         <h1 class="title is-size-2 is-size-3-mobile">
           Registration Details
-        </h1>      
+        </h1>
         <hr>
         <div class="alert-bound">
           <strong>Unique Priority Code:</strong>
           {{ investor.pCode }}
           <div class="space"></div>
-          <strong>Holder Details:</strong>          
+          <strong>Holder Details:</strong>
           {{ investor.nameAddress1 }}<br>
           {{ investor.nameAddress2 }}<br>
           {{ investor.nameAddress3 }}<br>
           {{ investor.nameAddress4 }}<br>
           {{ investor.nameAddress5 }}
-          <div class="space"></div>          
+          <div class="space"></div>
         </div>
         <hr>
         <b-message>
@@ -30,18 +30,18 @@
         </p>
         <div class="space"></div>
         <div class="field is-grouped">
-          <div class="control">            
+          <div class="control">
               <nuxt-link to="/priority-access" class="button is-primary is-outlined">
                   previous
-              </nuxt-link> 
+              </nuxt-link>
           </div>
-          <div class="control">                        
-              <nuxt-link to="/application-amount" class="button is-primary">
+          <div class="control">
+              <nuxt-link to="/application" class="button is-primary">
                   next
               </nuxt-link>
           </div>
         </div>
-        
+
        </section>
     </div>
   </div>
