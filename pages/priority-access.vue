@@ -4,7 +4,7 @@
       <section class="canvas">
         <h1 class="title is-size-2 is-size-3-mobile">
           Unique Priority Code
-        </h1> 
+        </h1>
         <h4>
           <em>Please enter your Unique Priority Code</em>
         </h4>
@@ -28,9 +28,9 @@
                 <nuxt-link to="/" class="button is-primary is-outlined">
                   exit
                 </nuxt-link>
-              </div>             
+              </div>
               <div class="control">
-                <nuxt-link to="/registration-details" @click="login" class="button is-primary">
+                <nuxt-link to="/registration-details" @click.native="login" class="button is-primary">
                   login
                 </nuxt-link>
               </div>
@@ -38,7 +38,7 @@
             <!-- </div> -->
             <!-- <br> {{ priorityCode }}
             <br> {{ offer }} -->
-          </form>         
+          </form>
         </div>
       </section>
     </div>
@@ -87,14 +87,14 @@ export default {
         //     this.goToOffer(this.offer.Offer);
         //   })
         //   .catch(err => { this.error = 'An error has occurred on the server.' })
-        const investor =  {
+        const investor = {
           pCode: '1234',
-          nameAddress1: 'JOE SMITH',
-          nameAddress2: '123 ANYWHERE ST',
+          nameAddress1: 'HARRY POTTER',
+          nameAddress2: '225 GEORGE STREET',
           nameAddress3: 'SYDNEY',
           nameAddress4: 'NSW',
-          nameAddress5: '3000',
-          unitsApplied: '25,000',
+          nameAddress5: '2000',
+          unitsApplied: '52,000',
           totalAmount:  'A$15,000',
           billerCode: '9876',
           refNumber: 60001234,
