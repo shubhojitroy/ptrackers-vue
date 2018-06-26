@@ -1,31 +1,48 @@
 <template>
-  <section class="section">
+  <div>
     <div class="container">
-      <p>
-        Please enter the Priority Code from your invitation below.
-      </p>
-      <br>
-      <div class="columns">
-        <div class="column is-half-tablet is-one-quarter-desktop">
+      <section class="canvas">
+        <h1 class="title is-size-2 is-size-3-mobile">
+          Unique Priority Code
+        </h1> 
+        <h4>
+          <em>Please enter your Unique Priority Code</em>
+        </h4>
+        <div class="alert-bound">
           <form novalidate @submit.prevent="submitForm">
-
             <b-field label="Priority Code" :type="inputType" :message="inputMessage">
               <b-input id="priority-code" v-model.trim="priorityCode">
               </b-input>
             </b-field>
-            <br>
-            <div class="control">
-            <button type="submit" class="button is-primary">
-              Submit
-            </button>
+            <span class="space"></span>
+            <p>
+              If you believe you are an eligible Priority Applicant yet have not received a Unique Priority Code please contact Boardroom Pty Limited on 1300 767 760 (within Australia) or +61 2 9290 9600 (outside Australia) between 8:30am and 5:30pm (Sydney time) Monday to Friday.
+            <p>
+            <span class="space"></span>
+            <p>
+              If you are uncertain as to whether an investment in the Company is suitable for you, please contact your stockbroker, financial adviser, accountant, lawyer or other professional adviser.
+            <p>
+            <span class="space"></span>
+            <div class="alert-bound">
+            <!-- <div class="control"> -->
+              <button type="submit" class="button is-primary">
+                exit
+              </button>
+            <!-- </div> -->
+            <div class="space"></div>
+            <!-- <div class="control"> -->
+              <button type="submit" class="button is-primary">
+                login
+              </button>
             </div>
+            <!-- </div> -->
             <!-- <br> {{ priorityCode }}
             <br> {{ offer }} -->
-          </form>
+          </form>         
         </div>
-      </div>
+      </section>
     </div>
-  </section>
+  </div>
 </template>
 
 
@@ -97,7 +114,56 @@ export default {
 </script>
 
 <style scoped>
-  #priority-code {
-    text-transform: uppercase;
-  }
+#priority-code {
+  text-transform: uppercase;
+}
+.canvas {
+z-index: 50;
+padding: 1rem;
+background: #fff 50%;
+background-size: cover;
+border-radius: 1px;
+box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.02);
+transition: all 0.5s ease;
+}
+h4 {
+  font-size: 1.33rem;
+  margin: 0.75em 0;
+  font-weight: 500;
+}
+ul {
+  list-style-type: disc;
+}
+li {
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+  margin: 0 1.25em;
+}
+p {
+  line-height: 1.75rem;
+}
+.space {
+  display: block;
+  width: 100%;
+  height: 1.5em;
+}
+.alert-bound {
+  width: 100%;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 1.0rem;
+
+}
+.footnote {
+  font-size: 0.75rem;
+  line-height: 1.2em;
+}
 </style>
