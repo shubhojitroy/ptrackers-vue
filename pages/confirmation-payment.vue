@@ -37,13 +37,13 @@
           <strong>Unique Priority Code:</strong>
           {{ investor.pCode }}
           <div class="space"></div>
-          <strong>Holder Details:</strong>          
+          <strong>Holder Details:</strong>
           {{ investor.nameAddress1 }}<br>
           {{ investor.nameAddress2 }}<br>
           {{ investor.nameAddress3 }}<br>
           {{ investor.nameAddress4 }}<br>
           {{ investor.nameAddress5 }}
-          <div class="space"></div>          
+          <div class="space"></div>
         </div>
           <div class="space"></div>
           <strong>Number of PTrackERS applied for:</strong>
@@ -62,16 +62,12 @@
             <strong>
               Biller Code:
             </strong>
-            <b-field>
-              <b-input v-model="billerCode"></b-input>
-            </b-field>
+            {{ investor.billerCode }}<br>
             <span class="space"></span>
             <strong>
               Ref:
             </strong>
-            <b-field>
-              <b-input v-model="refNumber"></b-input>
-            </b-field>
+            {{ investor.refNumber }}<br>
             <span class="space"></span>
             Telephone & Internet Banking - BPAY®
             <span class="space"></span>
@@ -84,17 +80,17 @@
         </div>
         <div class="space"></div>
         <div class="field is-grouped">
-          <div class="control">            
+          <div class="control">
               <nuxt-link to="" class="button is-primary is-outlined" @click="Print()">
                   Print
-              </nuxt-link> 
+              </nuxt-link>
           </div>
-          <div class="control">                        
+          <div class="control">
               <nuxt-link to="/" class="button is-primary" @click="Close()">
                   close
               </nuxt-link>
           </div>
-        </div> 
+        </div>
        </section>
     </div>
   </div>
@@ -103,13 +99,23 @@
 
 
 <script>
+  import { mapGetters } from 'vuex';
+
   export default {
     data() {
       return {
       };
     },
     computed: {
-      ...mapGetters(['investor']);
+      ...mapGetters(['investor']),
+    },
+    methods: {
+      print() {
+
+      },
+      close() {
+
+      },
     },
   }
 </script>
