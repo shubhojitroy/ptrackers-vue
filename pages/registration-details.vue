@@ -58,7 +58,7 @@
       };
     },
     computed: {
-      ...mapGetters(['investor']);
+      ...mapGetters(['investor']),
     },
   }
 </script>
