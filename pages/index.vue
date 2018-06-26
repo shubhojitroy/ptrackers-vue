@@ -7,6 +7,10 @@
                   <welcome-letter></welcome-letter>
               </b-tab-item>
 
+              <b-tab-item label="General">
+                  <general-welcome></general-welcome>
+              </b-tab-item>
+
               <b-tab-item label="Offer">
                   <offer-overview></offer-overview>
               </b-tab-item>
@@ -29,6 +33,7 @@
 
 <script>
     import WelcomeLetter from '~/components/WelcomeLetter';
+    import GeneralWelcome from '~/components/GeneralWelcome';
     import OfferOverview from '~/components/OfferOverview';
     import KeyDates from '~/components/KeyDates';
     import InvestorToolkit from '~/components/InvestorToolkit';
@@ -36,6 +41,7 @@
     export default {
         components: {
           WelcomeLetter,
+          GeneralWelcome,
           OfferOverview,
           KeyDates,
           InvestorToolkit,

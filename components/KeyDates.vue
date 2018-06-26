@@ -42,11 +42,11 @@
                     :mobile-cards="hasMobileCards">
 
                     <template slot-scope="props">
-                        <b-table-column field="description" label="Key Dates for the PTrackERS" width="70%">
+                        <b-table-column field="description" label="Key Dates for the PTrackERS" width="30%">
                             <strong>{{ props.row.description }}</strong>
                         </b-table-column>
 
-                        <b-table-column field="dates" label="Dates" width="30%">
+                        <b-table-column field="dates" label="Dates" width="70%">
                             {{ props.row.date }}
                         </b-table-column>
                     </template>
@@ -67,17 +67,19 @@
 export default{
     data() {
             const offerEvents = [
-                { description: 'Lodgement of the PDS with ASIC', date: 'Monday 2 July 2018' },
-                { description: 'Record Date', date: 'Monday 9 July 2018' },
+                { description: 'Announcement of the Offer', date: 'Monday 2 July 2018' },
+                { description: 'Lodgement of Prospectus with ASIC ', date: 'Monday 2 July 2018' },
+                { description: 'Expected expiry of Exposure Period', date: 'Monday 9 July 2018' },
+                { description: 'Record Date (for determining Eligible Shareholders)', date: 'Monday 9 July 2018' },
                 { description: 'Entitlement Offer Opens', date: 'Tuesday 10 July 2018' },
-                { description: 'Entitlement Offer Closes', date: 'Friday 27 July 2018' },
-                { description: 'General Public Offer Opens', date: 'Monday 30 July 2018' },
-                { description: 'General Public Offer Closes', date: 'Friday 17 August 2018' },
-                { description: 'Broker Firm Offer Opens ', date: 'Monday 30 July 2018' },
-                { description: 'Broker Firm Offer Closes', date: 'Friday 17 August 2018' },
-                { description: 'Issue of PTrackERS', date: 'Friday 24 August 2018' },
-                { description: 'Expected despatch of Holding Statements', date: 'Friday 24 August 2018' },
-                { description: 'Commencement of trading on the ASX', date: 'Wednesday 29 August 2018' },
+                { description: 'Entitlement Offer Closes', date: 'Wednesday 8 August 2018' },
+                { description: 'General Public Offer Opens', date: 'Monday 10 July 2018' },
+                { description: 'General Public Offer Closes', date: 'Friday 10 August 2018' },
+                { description: 'Broker Firm Offer Opens ', date: 'Monday 10 July 2018' },
+                { description: 'Broker Firm Offer Closes', date: 'Friday 10 August 2018' },
+                { description: 'Issue of PTrackERS', date: 'Friday 17 August 2018' },
+                { description: 'Expected despatch of Holding Statements', date: 'Friday 17 August 2018' },
+                { description: 'Commencement of trading on the ASX', date: 'Wednesday 22 August 2018' },
             ]
             const ptrackerEvents = [
                 { description: 'Intended payment of first Distribution', date: 'March 2019' },

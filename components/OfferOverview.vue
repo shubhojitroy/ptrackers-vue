@@ -9,7 +9,7 @@
           The offer
         </h4>
         <p>
-          The Company is offering a subscription up to Portfolio Tracking Exchangeable Redeemable Securities (Converting Security) (<strong><em>PTrackERS</em></strong>) each having an Issue Price of $1.40 per <strong><em>PTrackERS</em></strong> to raise up to $491,273,967.80.<br><br>
+          The Company is offering a subscription up to Portfolio Tracking Exchangeable Redeemable Securities (Converting Security (<strong><em>PTrackERS</em></strong>) each having an Issue Price of $1.40 per <strong><em>PTrackERS</em></strong> to raise up to $491,273,967.80.<br><br>
           The rights attached to the <span style="font-weight:bold;font-style:oblique;">PTrackERS</span> are set out in Section 6 of the Prospectus.<br><br>
           
           The Offer is made up of the Entitlement Offer (detailed in Section [2.2]) and a Shortfall Offer. The Shortfall Offer consists of the General Public Offer (detailed in Section [2.3]) and the Broker Firm Offer (detailed in Section [2.4]).<br><br>
@@ -33,26 +33,66 @@
           </ul>
         </p>
         <p>
-          Entitlement Offer Applicants may subscribe for PTrackERS in excess of the number of PTrackERS for which they are entitled under the Entitlement Offer, however the excess will form part of the General Public Offer. Excess Applications may also be made under the Broker Firm Offer.<br><br>
-          The Company and PGF will seek to place any PTrackERS not taken up under the Entitlement Offer via the General Public Offer and Broker Firm Offer and may seek to otherwise place such PTrackERS for up to three months after the Entitlement Offer Closing Date.
+          Entitlement Offer Applicants may subscribe for <strong><em>PTrackERS</em></strong> in excess of the number of <strong><em>PTrackERS</em></strong> for which they are entitled under the Entitlement Offer, however the excess will form part of the General Public Offer. Excess Applications may also be made under the Broker Firm Offer.<br><br>
+          The Company and PGF will seek to place any <strong><em>PTrackERS</em></strong>not taken up under the Entitlement Offer via the General Public Offer and Broker Firm Offer and may seek to otherwise place such <strong><em>PTrackERS</em></strong> for up to three months after the Entitlement Offer Closing Date.
         </p>
         <h4>
           General Public Offer
         </h4>
         <p>
-          The General Public Offer is open to all Applicants with a registered address in Australia and New Zealand. To participate in the General Public Offer, your Application Form and Application Monies must be received by the Registry by 5:00pm (AEST) on the General Public Offer Closing Date (expected to be [DD/MM/YYYY]).
+          The General Public Offer is open to all Applicants with a registered address in Australia and New Zealand. To participate in the General Public Offer, your Application Form and Application Monies must be received by the Registry by 5:00pm (AEST) on the General Public Offer Closing Date (expected to be 10 August 2018).
         </p>
         <h4>
           Broker Firm Offer
         </h4>
         <p>
           The Broker Firm Offer is open to persons who have received a firm allocation from their stockbroker or financial adviser and who have a registered address in Australia or New Zealand.<br><br>
-          Applicants who have been offered a firm allocation by a stockbroker or financial adviser will be treated as Applicants under the Broker Firm Offer in respect of that allocation.<br><br>
-          To participate in the Broker Firm Offer, your Application Form must be received by your stockbroker or financial adviser by 5:00pm (AEST) on the Broker Firm Offer Closing Date (expected to be [DD/MM/YYYY]).<br><br>
-          Applicants should contact their stockbroker or financial adviser to determine whether they may be allocated <strong><em>PTrackERS</em></strong> under the Broker Firm Offer.<br><br>
-          The Joint Lead Managers to the Broker Firm and General Public Offers are Morgans Financial Limited, Ord Minnett Limited and Morgan Stanley Australia Limited. The Co-Managers to the Broker Firm and General Public Offers are Shaw and Partners Limited, Baillieu Holst Ltd, Bell Potter, Patersons Securities Limited and Kimber Capital Wealth Management.<br><br>
-          Early lodgement of your Application is recommended, as PM Capital may close the Offer at any time after the expiry of the Exposure Period without prior notice. The Directors may extend the Offer in accordance with the Corporations Act. The Directors reserve the right to terminate the Offer at any time.<br><br>
-          The Prospectus contains important information about the Offer and you should read it carefully before deciding whether or not to participate in the Offer. <strong>Download the Prospectus</strong>.
+          Applicants who have been offered a firm allocation by a stockbroker or financial adviser will be treated as Applicants under the Broker Firm Offer in respect of that allocation. <br><br>
+          To participate in the Broker Firm Offer, your Application Form must be received by your stockbroker or financial adviser by 5:00pm (AEST) on the Broker Firm Offer Closing Date (expected to be 10 August 2018).<br><br>
+          Applicants should contact their stockbroker or financial adviser to determine whether they may be allocated PTrackERS under the Broker Firm Offer.
+        </p>
+        <p>
+          As at the date of this Prospectus, the following firms have been appointed in respect of the Entitlement, Broker Firm and General Public Offers:
+        </p>
+        <ul>
+          <li>
+            Morgans Financial Limited to act as Lead Arranger and Joint Lead Manager; 
+          </li>
+          <li>
+            the following firms as Joint Lead Managers:
+            <ul>
+              <li>
+                Morgan Stanley Australia Securities Limited;
+              </li>
+              <li>
+                Ord Minnett Limited; and 
+              </li>
+            </ul>
+          </li>          
+          <li>
+            the following firms as Co-Managers
+            <ul>
+              <li>
+                Baillieu Holst Limited;
+              </li>
+              <li>
+                Bell Potter Securities Limited;
+              </li>
+              <li>
+                Kimber Capital Pty Ltd;
+              </li>
+              <li>
+                Patersons Securities Limited; and
+              </li>
+              <li>
+                Shaw and Partners Limited.
+              </li>
+            </ul>
+          </li>          
+        </ul>
+        <p>
+          Early lodgement of your Application is recommended, as the Issuers may close the Offer at any time after the expiry of the Exposure Period without prior notice. The Directors may extend the Offer in accordance with the Corporations Act. The Directors reserve the right to terminate the Offer at any time.<br><br>
+          The Prospectus contains important information about the Offer and you should read it carefully before deciding whether or not to participate in the Offer <strong>Download the Prospectus</strong>.
         </p>
         <div class="space"></div>
         <div class="field">
@@ -61,12 +101,12 @@
             </b-checkbox>
         </div>
         <p>
-          If you would like more information or have any questions relating to the Share Registry and Application Enquiries, you can contact Boardroom Pty Limited on 1300 737 760 (within Australia) or +61 2 9290 9600 (outside Australia) between 8:30am and 5:00pm (Sydney time) Monday to Friday.<br><br>
-          If you would like more product information or have any questions relating to <strong><em>PTrackERS</em></strong>, you can contact PM Capital on 02 8243 0888 (within Australia) or + 61 2 8243 0888 (outside Australia) between 8:30am and 5:00pm (Sydney time) Monday to Friday.<br><br>
+          If you would like more information or have any questions relating to the Share Registry and Application Enquiries, you can contact Boardroom Pty Limited on 1300 737 760 (within Australia) or +61 2 9290 9600 (outside Australia) between 9.00am and 5:00pm (AEST) Monday to Friday.<br><br>
+          If you would like more product information or have any questions relating to <strong><em>PTrackERS</em></strong>, you can contact PM Capital on + 61 2 8243 0888 between 9.00am and 5:00pm (AEST) Monday to Friday, or by email on Go2025@pmcapital.com.au.<br><br>
         </p>
         <p>
           <em>
-            If you are uncertain as to whether an investment in the Trust is suitable for you, please contact your stockbroker, financial adviser, accountant, lawyer or other professional adviser.
+            If you are uncertain as to whether an investment in the PTrackERS is suitable for you, please contact your stockbroker, financial adviser, accountant, lawyer or other professional adviser.
           </em>
         </p>
       </section>
