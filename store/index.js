@@ -9,7 +9,7 @@ export const state = () => ({
     nameAddress5: '2000',
     unitsApplied: '10,000',
     totalAmount:  'A$15,000',
-    billerCode: 'XXXX',
+    billerCode: 'AZ89',
     refNumber: 60001234,
   }
 })

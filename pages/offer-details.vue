@@ -1,5 +1,7 @@
 <template>
-    <section>
+  <div>
+    <div class="container">
+      <section class="canvas">
         <br><br>
         <div class="container">
           <b-tabs type="is-boxed" position="is-centered" v-model="activeTab">
@@ -47,6 +49,8 @@
         </div>
 
     </section>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -76,7 +80,7 @@
 <style scoped>
 .canvas {
   z-index: 50;
-  padding: 1rem;
+  /* padding: 1rem; */
   background: #fff 50%;
   background-size: cover;
   border-radius: 1px;
@@ -93,9 +97,8 @@
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
   border-radius: 0.25rem;
   padding: 1.0rem;
-
 }
 </style>
