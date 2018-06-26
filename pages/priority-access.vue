@@ -30,7 +30,7 @@
                 </nuxt-link>
               </div>             
               <div class="control">
-                <nuxt-link to="/registration-details" class="button is-primary">
+                <nuxt-link to="/registration-details" @click="login" class="button is-primary">
                   login
                 </nuxt-link>
               </div>
@@ -48,11 +48,9 @@
 
 <script>
 
-import axios from 'axios'
-import { required } from 'vuelidate/lib/validators'
-
-const offerA = "https://www.investorserve.com.au?offerid=36C12FB1A0F344D886FFB0E663F05C54";
-const offerB = "https://www.investorserve.com.au?offerid=A653D8CB98D14766820EF4D4334BA0E5";
+import axios from 'axios';
+import { required } from 'vuelidate/lib/validators';
+import { mapActions } from 'vuex';
 
 export default {
   components: {
@@ -80,14 +78,28 @@ export default {
     }
   },
   methods: {
+    ...mapActions(['populateInvestor']),
     login () {
-        axios.post('https://api.boardroomlimited.com.au/api/DixonIpo/GetOffer', { PriorityCode: this.priorityCode.toUpperCase() })
-          .then(response => {
-            this.offer = response.data;
-            this.error = '';
-            this.goToOffer(this.offer.Offer);
-          })
-          .catch(err => { this.error = 'An error has occurred on the server.' })
+        // axios.post('https://api.boardroomlimited.com.au/api/DixonIpo/GetOffer', { PriorityCode: this.priorityCode.toUpperCase() })
+        //   .then(response => {
+        //     this.offer = response.data;
+        //     this.error = '';
+        //     this.goToOffer(this.offer.Offer);
+        //   })
+        //   .catch(err => { this.error = 'An error has occurred on the server.' })
+        const investor =  {
+          pCode: '1234',
+          nameAddress1: 'JOE SMITH',
+          nameAddress2: '123 ANYWHERE ST',
+          nameAddress3: 'SYDNEY',
+          nameAddress4: 'NSW',
+          nameAddress5: '3000',
+          unitsApplied: '25,000',
+          totalAmount:  'A$15,000',
+          billerCode: '9876',
+          refNumber: 60001234,
+        };
+        this.populateInvestor(investor);
     },
     goToOffer (offerType) {
       console.log("offertype", offerType)

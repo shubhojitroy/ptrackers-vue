@@ -8,26 +8,14 @@
         <hr>
         <div class="alert-bound">
           <strong>Unique Priority Code:</strong>
-          <b-field>
-            <b-input v-model="pCode"></b-input>
-          </b-field>
+          {{ investor.pCode }}
           <div class="space"></div>
-          <strong>Holder Details:</strong>
-          <b-field>
-            <b-input v-model="nameAddress1"></b-input>
-          </b-field>
-          <b-field>
-            <b-input v-model="nameAddress2"></b-input>
-          </b-field>
-          <b-field>
-            <b-input v-model="nameAddress3"></b-input>
-          </b-field>
-          <b-field>
-            <b-input v-model="nameAddress4"></b-input>
-          </b-field>
-          <b-field>
-            <b-input v-model="nameAddress5"></b-input>
-          </b-field>
+          <strong>Holder Details:</strong>          
+          {{ investor.nameAddress1 }}<br>
+          {{ investor.nameAddress2 }}<br>
+          {{ investor.nameAddress3 }}<br>
+          {{ investor.nameAddress4 }}<br>
+          {{ investor.nameAddress5 }}
           <div class="space"></div>          
         </div>
         <hr>
@@ -62,20 +50,15 @@
 
 
 <script>
+  import { mapGetters } from 'vuex';
+
   export default {
     data() {
       return {
-        pCode: '1234',
-        nameAddress1: 'JOE BLOGGS',
-        nameAddress2: '123 ANYWHERE ST',
-        nameAddress3: 'SYDNEY',
-        nameAddress4: 'NSW',
-        nameAddress5: '2000',
-        unitsApplied: '10,000',
-        totalAmount:  'A$15,000',
-        billerCode: 'XXXX',
-        refNumber: 60001234,
       };
+    },
+    computed: {
+      ...mapGetters(['investor']);
     },
   }
 </script>

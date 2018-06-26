@@ -2,8 +2,8 @@
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" :class="{ 'grow': growHeader }">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://wilsonassetmanagement.com.au/lic/global/">
-          <img src="~assets/img/logo.svg" alt="WAM Global" width="300px">
+        <a class="navbar-item" href="http://www.pmcapital.com.au/global-companies-fund">
+          <img src="~assets/img/pmcaptalgo2025limited.png" alt="PM Capital Limited" width="240px">
         </a>
         <!-- <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
           <span></span>

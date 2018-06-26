@@ -3,10 +3,10 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title is-size-2 is-size-3-mobile">
-          WAM Global Limited
+          PM Capital Go 2025
         </h1>
         <h2 class="subtitle is-size-3 is-size-4-mobile">
-          Public Share Offer
+          Priority Entitlement
         </h2>
       </div>
     </div>
@@ -35,7 +35,7 @@
 
 <style lang="scss" scoped>
 .hero {
-  background-image: url(~/assets/img/website-banner.jpg);
+  background-image: url(~/assets/img/heroimage.png);
   background-size: cover;
   background-position: top;
 }
