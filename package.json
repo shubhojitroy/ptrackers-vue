@@ -1,8 +1,8 @@
 {
-  "name": "wam-global",
+  "name": "ptrackers",
   "version": "1.0.0",
-  "description": "WAM Global Landing page",
-  "author": "Colin Johnsun",
+  "description": "PTrackers IPO landing page",
+  "author": "Boardroom Australia",
   "private": true,
   "scripts": {
     "dev": "nuxt",
