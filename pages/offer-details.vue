@@ -2,7 +2,7 @@
     <section>
         <br><br>
         <div class="container">
-          <b-tabs type="is-boxed" v-model="activeTab">
+          <b-tabs type="is-boxed" position="is-centered" v-model="activeTab">
               <b-tab-item label="Welcome">
                   <welcome-letter></welcome-letter>
               </b-tab-item>
@@ -25,27 +25,27 @@
 
               <b-tab-item label="Contact">
                   <contact-registry></contact-registry>
-              </b-tab-item> 
-              <div class="alert-bound"> 
+              </b-tab-item>
+              <div class="alert-bound">
                 <div class="field is-grouped"><!---->
-                    <div class="control">            
+                    <div class="control">
                         <nuxt-link to="/" class="button is-primary is-outlined">
                             exit
-                        </nuxt-link> 
+                        </nuxt-link>
                     </div>
-                    <div class="control">                        
+                    <div class="control">
                         <nuxt-link to="/important-notification" class="button is-primary">
                             continue
                         </nuxt-link>
                     </div>
-                </div> 
+                </div>
               </div>
           </b-tabs>
-          
-          
-          
+
+
+
         </div>
-        
+
     </section>
 </template>
 

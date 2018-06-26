@@ -3,7 +3,7 @@
     <div class="container">
       <section class="canvas">
         <h1 class="title is-size-2 is-size-3-mobile">
-          PM Capital Global Opportunities Fund Limited PM Capital <span style="color: red;">GO 2025</span> Limited
+          PM Capital Global Opportunities Fund Limited<br>PM Capital <span style="color: red;">GO 2025</span> Limited
         </h1>
         <p>
           Portfolio Tracking Exchangeable Redeemable Securities (Converting Security) (known as ‘<span style="color: red;">PTrackERS</span>’)
