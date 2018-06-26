@@ -25,6 +25,7 @@
             <p>
                 These webpages and any documents on these webpages do not constitute an offer of securities to any person to whom it would not be lawful outside Australia or New Zealand.
             </p>
+            <div class="space"></div>
             <b-message>
                 <h4>
                     By clicking the 'I CONFIRM' button below and accessing these webpages and the documents on these webpages, you represent, warrant and agree that:
@@ -44,6 +45,7 @@
                     you have read and understood, and you agree to, the terms contained in this notice.
                 </li>
             </ol>
+            <div class="space"></div>
             <b-message>
                 <h4>
                     Otherwise, click the 'EXIT' button below. 
