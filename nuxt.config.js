@@ -14,8 +14,10 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: 'favicon.png' }
+      { rel: 'icon', type: 'image/png', href: 'favicon.png' },
+      
     ]
+
   },
 
   /*
@@ -53,7 +55,7 @@ module.exports = {
   ** Router middleware
   */
   router: {
-    base: '/ptrackers/',
+    base: '/ca/ptrackers/',
     scrollBehavior (to, from, savedPosition) {
       if (savedPosition) {
         return savedPosition

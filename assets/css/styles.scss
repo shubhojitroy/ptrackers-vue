@@ -1,11 +1,13 @@
 @import "~bulma/sass/utilities/initial-variables";
 @import "~bulma/sass/utilities/functions";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:400,700');
 
 $brand-color-1: #4A67AB;
 
 $primary: $brand-color-1;
 
-$family-primary: calibiri, $family-sans-serif;
+$family-primary: 'Raleway', $family-sans-serif;
 
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
@@ -33,4 +35,6 @@ html {
 .control a.button {
   width: 100px;
 }
-
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
