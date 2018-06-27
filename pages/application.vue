@@ -145,14 +145,14 @@
 
           <div class="space"></div>
           <div class="field is-grouped">
-            <div class="control">            
+            <div class="control">
                 <nuxt-link to="/" class="button is-primary is-outlined">
                     exit
-                </nuxt-link> 
+                </nuxt-link>
             </div>
-            <div class="control">                        
+            <div class="control">
                 <nuxt-link to="/confirmation-payment" class="button is-primary">
-                    submit
+                    submit&nbsp;<span class="icon"><i class="mdi mdi-application"></i></span>
                 </nuxt-link>
             </div>
           </div>

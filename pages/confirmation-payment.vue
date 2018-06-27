@@ -82,12 +82,12 @@
         <div class="field is-grouped">
           <div class="control">
               <nuxt-link to="" class="button is-primary is-outlined" @click="Print()">
-                  Print
+                  Print&nbsp;&nbsp;<span class="icon"><i class="mdi mdi-printer-alert"></i></span>
               </nuxt-link>
           </div>
           <div class="control">
-              <nuxt-link to="/" class="button is-primary" @click="Close()">
-                  close
+              <nuxt-link to="/end-page" class="button is-primary" @click="Close()">
+                  close&nbsp;&nbsp;<span class="icon"><i class="mdi mdi-ray-end"></i></span>
               </nuxt-link>
           </div>
         </div>

@@ -28,7 +28,7 @@
                 <br>
                 <div class="control">
                 <button type="submit" class="button is-primary">
-                  Submit
+                  Submit&nbsp;<span class="icon"><i class="mdi mdi-login"></i></span>
                 </button>
                 </div>
               </form>

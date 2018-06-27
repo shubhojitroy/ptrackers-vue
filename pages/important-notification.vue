@@ -48,16 +48,16 @@
             <div class="space"></div>
             <b-message>
                 <h4>
-                    Otherwise, click the 'EXIT' button below. 
+                    Otherwise, click the 'EXIT' button below.
                 </h4>
-            </b-message> 
+            </b-message>
             <div class="field is-grouped">
-                <div class="control">            
+                <div class="control">
                     <nuxt-link to="/" class="button is-primary is-outlined">
                         exit
-                    </nuxt-link> 
+                    </nuxt-link>
                 </div>
-                <div class="control">                        
+                <div class="control">
                     <nuxt-link to="/priority-access" class="button is-primary">
                         I Confirm
                     </nuxt-link>

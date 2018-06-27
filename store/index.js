@@ -1,14 +1,14 @@
 export const state = () => ({
   animateFirstTime: true,
   investor: {
-    pCode: '1234',
-    nameAddress1: 'JOE BLOGGS',
-    nameAddress2: '123 ANYWHERE ST',
-    nameAddress3: 'SYDNEY',
-    nameAddress4: 'NSW',
-    nameAddress5: '2000',
-    unitsApplied: '10,000',
-    totalAmount:  'A$15,000',
+    pCode: '',
+    nameAddress1: '',
+    nameAddress2: '',
+    nameAddress3: '',
+    nameAddress4: '',
+    nameAddress5: '',
+    unitsApplied: '',
+    totalAmount:  '',
     billerCode: 'AZ89',
     refNumber: 60001234,
   }
