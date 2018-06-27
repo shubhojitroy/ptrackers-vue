@@ -15,7 +15,7 @@
 
         <div class="control">
             <nuxt-link to="/" class="button is-primary">
-                close&nbsp;&nbsp;<span class="icon"><i class="mdi mdi-arrow-left-bold-hexagon-outline"></i></span>
+                Return&nbsp;&nbsp;<span class="icon"><i class="mdi mdi-arrow-left-bold-hexagon-outline"></i></span>
             </nuxt-link>
         </div>
 
