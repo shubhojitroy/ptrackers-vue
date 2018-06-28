@@ -1,29 +1,82 @@
 <template>
   <div>
-
-        <h1 class="title is-size-2 is-size-3-mobile">
-          Investors Toolkit
-        </h1>
-        <div class="alert-bound">
-          <b-message>
-              <h4>
-                  VIDEO FROM THE INVESTMENT MANAGER - To be provided
-              </h4>
-          </b-message>
-          <div class="space"></div>
-          <b-message>
-              <h4>
-                  FAQ - To be provided
-              </h4>
-          </b-message>
-        </div>
-
+    <h1 class="title">
+      Investors Toolkit
+    </h1>
+    <div class="alert-bound">
+      <b-message>
+          <h4>
+              VIDEO FROM THE INVESTMENT MANAGER - To be provided
+          </h4>
+      </b-message>
+      <div class="space"></div>
+      <b-message>
+          <h4>
+              FAQ - To be provided
+          </h4>
+      </b-message>
+        <faq-item v-model="openItem" title="Item 1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p>
+            Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
+            Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+          </p>
+        </faq-item>
+        <faq-item v-model="openItem" title="Item 2">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p>
+            Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
+            Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+          </p>
+        </faq-item>
+        <faq-item v-model="openItem" title="Item 7">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p>
+            Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
+            Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+          </p>
+        </faq-item>
+        <faq-item v-model="openItem" title="Item 3">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p>
+            Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
+            Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+          </p>
+        </faq-item>
+        <faq-item v-model="openItem" title="Item 4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p>
+            Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
+            Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+          </p>
+        </faq-item>
+    </div>
   </div>
 </template>
 
 <script>
-export default{
+import FaqItem from '~/components/OfferDetails/FaqItem';
 
+export default {
+  components: {
+    FaqItem,
+  },
+  data() {
+    return {
+      openItem: '',
+      isOpen: true
+    }
+  }
 }
 </script>
 
@@ -50,6 +103,5 @@ export default{
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   padding: 1.0rem;
-
 }
 </style>
