@@ -15,8 +15,7 @@
       </div>
 
       <nuxt-link to="/" class="button is-primary">
-        <span class="icon"><i class="mdi mdi-chevron-left"></i></span>
-        &nbsp;Back
+        Back
       </nuxt-link><br>
     </div>
   </section>

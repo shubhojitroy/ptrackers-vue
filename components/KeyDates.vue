@@ -99,7 +99,5 @@ export default{
 </script>
 
 <style lang="scss" scoped>
-.b-table thead  th {
-  background: blue !important;
-}
+
 </style>

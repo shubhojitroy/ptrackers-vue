@@ -120,7 +120,7 @@
       whether or not to participate in the Offer.
       <strong>Download the Prospectus</strong>.
     </p>
-    <div class="field">
+    <div class="field box">
       <b-checkbox class="confirm" v-model="checkbox">
         I have been provided the Prospectus and have read it. I also accept the terms and conditions of the Offer outlined in the
         Prospectus.
