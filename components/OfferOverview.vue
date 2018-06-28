@@ -11,7 +11,7 @@
         <p>
           The Company is offering a subscription up to Portfolio Tracking Exchangeable Redeemable Securities (Converting Security (<strong><em>PTrackERS</em></strong>) each having an Issue Price of $1.40 per <strong><em>PTrackERS</em></strong> to raise up to $491,273,967.80.<br><br>
           The rights attached to the <span style="font-weight:bold;font-style:oblique;">PTrackERS</span> are set out in Section 6 of the Prospectus.<br><br>
-          
+
           The Offer is made up of the Entitlement Offer (detailed in Section [2.2]) and a Shortfall Offer. The Shortfall Offer consists of the General Public Offer (detailed in Section [2.3]) and the Broker Firm Offer (detailed in Section [2.4]).<br><br>
           The Offer will only be made to investors that have a registered address in either Australia or New Zealand.<br><br>
           Early lodgement of your Application is recommended, as the Company and PGF may close the Offer at any time after the expiry of the Exposure Period without prior notice. The Company and PGF may extend the Offer in accordance with the Corporations Act. The Company and PGF reserves the right to terminate the Offer at any time or scale back applications on any part of the Offer at its discretion.
@@ -28,7 +28,7 @@
               1,500 <span style="font-weight:bold;font-style:oblique;">PTrackERS</span>; or
             </li>
             <li>
-              the number of <span style="font-weight:bold;font-style:oblique;">PTrackERS</span> being offered to the Eligible Shareholder under the Entitlement Offer. 
+              the number of <span style="font-weight:bold;font-style:oblique;">PTrackERS</span> being offered to the Eligible Shareholder under the Entitlement Offer.
             </li>
           </ul>
         </p>
@@ -56,7 +56,7 @@
         </p>
         <ul>
           <li>
-            Morgans Financial Limited to act as Lead Arranger and Joint Lead Manager; 
+            Morgans Financial Limited to act as Lead Arranger and Joint Lead Manager;
           </li>
           <li>
             the following firms as Joint Lead Managers:
@@ -65,10 +65,10 @@
                 Morgan Stanley Australia Securities Limited;
               </li>
               <li>
-                Ord Minnett Limited; and 
+                Ord Minnett Limited; and
               </li>
             </ul>
-          </li>          
+          </li>
           <li>
             the following firms as Co-Managers
             <ul>
@@ -88,7 +88,7 @@
                 Shaw and Partners Limited.
               </li>
             </ul>
-          </li>          
+          </li>
         </ul>
         <p>
           Early lodgement of your Application is recommended, as the Issuers may close the Offer at any time after the expiry of the Exposure Period without prior notice. The Directors may extend the Offer in accordance with the Corporations Act. The Directors reserve the right to terminate the Offer at any time.<br><br>
@@ -137,7 +137,7 @@ export default {
 h4 {
   font-size: 1.33rem;
   margin: 0.75em 0;
-  font-weight: 500;
+  font-weight: 600;
 }
 ul {
   list-style-type: disc;
