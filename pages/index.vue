@@ -20,8 +20,11 @@
             <div><!--class="column is-two-thirds-tablet is-half-desktop"-->
               <form novalidate @submit.prevent="submitForm">
                 <b-field label="Country of Primary Residence" :type="countryType" :message="countryMessage">
-                  <b-autocomplete v-model="country" field="name" placeholder="Select a Country" :data="filteredCountries" open-on-focus keep-first
-                    icon="earth" @select="option => selected = option" @blur="$v.country.$touch()">
+                  <b-autocomplete v-model="country" field="name" :placeholder="placeholder" :data="filteredCountries" open-on-focus keep-first
+                    icon="earth"
+                    @select="option => selected = option"
+                    @focus="focusSelect"
+                    @blur="$v.country.$touch()">
                     <template slot="empty">No results found</template>
                   </b-autocomplete>
                 </b-field>
@@ -45,6 +48,8 @@
 import { countries } from "~/assets/js/countries.js"
 import { required } from 'vuelidate/lib/validators'
 
+const _placeholder = 'Select a Country';
+
 export default {
   components: {
   },
@@ -53,12 +58,13 @@ export default {
       name: "",
       country: "",
       selected: null,
+      placeholder: _placeholder,
       countries: countries.items
     }
   },
   validations: {
     country: {
-      required
+      // required
     }
   },
   computed: {
@@ -75,7 +81,8 @@ export default {
     },
     countryMessage() {
      return this.$v.country.$error ? "Country is required" : ""
-    }
+    },
+
   },
   methods: {
     submitForm () {
@@ -83,6 +90,15 @@ export default {
       if (!this.$v.$error) {
         const validCountry = this.selected.code === 'AUS' || this.selected.code === 'NZL' ? '/offer-details' : '/eligibility-notice';
         this.$router.push(validCountry);
+      }
+    },
+    focusSelect () {
+      this.placeholder = this.country;
+      this.country = '';
+    },
+    leaveSelect () {
+      if (this.country === '' && this.placeholder !== _placeholder) {
+        this.country == this.placeholder;
       }
     }
   }
