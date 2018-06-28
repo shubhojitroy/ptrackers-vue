@@ -86,7 +86,7 @@
               </nuxt-link>
           </div>
           <div class="control">
-              <nuxt-link to="/end-page" class="button is-primary" @click="Close()">
+              <nuxt-link to="/application-completed" class="button is-primary" @click="Close()">
                   close&nbsp;&nbsp;<span class="icon"><i class="mdi mdi-ray-end"></i></span>
               </nuxt-link>
           </div>
