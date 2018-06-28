@@ -148,9 +148,9 @@
 <script>
 export default {
   data() {
-      return {
-          checkbox: false,
-      }
+    return {
+      checkbox: false,
+    }
   }
 }
 </script>

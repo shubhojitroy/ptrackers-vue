@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h1 class="title is-size-2 is-size-3-mobile">
+        <h1 class="title">
           Important Dates
         </h1>
         <b-table
@@ -17,18 +17,12 @@
               <b-table-column field="description" label="Key Dates for the Offer" width="50%">
                   <strong>{{ props.row.description }}</strong>
               </b-table-column>
-
-              <b-table-column field="date" label="Dates">
+              <b-table-column field="date" label="Date">
                   {{ props.row.date }}
               </b-table-column>
-
-
           </template>
-
-
         </b-table>
-        <div class="space"></div>
-
+        <br>
         <div>
             <section>
                 <b-table
@@ -46,15 +40,14 @@
                             <strong>{{ props.row.description }}</strong>
                         </b-table-column>
 
-                        <b-table-column field="dates" label="Dates" width="70%">
+                        <b-table-column field="date" label="Dates" width="70%">
                             {{ props.row.date }}
                         </b-table-column>
                     </template>
                 </b-table>
             </section>
         </div>
-
-        <div class="space"></div>
+        <br>
         <p>
             <em>
                 Dates are indicative only and may be subject to change.
@@ -105,32 +98,8 @@ export default{
 }
 </script>
 
-<style scoped>
-.canvas {
-  z-index: 50;
-  padding: 1.0rem;
-  background: #fff 50%;
-  background-size: cover;
-  border-radius: 1px;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.02);
-  transition: all 0.5s ease;
-}
-h4 {
-  font-size: 1.33rem;
-  margin: 0.75em 0;
-  font-weight: 500;
-}
-ul {
-  list-style-type: disc;
-}
-li {
-  line-height: 1.5;
-  padding: 0.5rem 1rem;
-  margin: 0 1.25em;
-}
-.space {
-  display: block;
-  width: 100%;
-  height: 1.5em;
+<style lang="scss" scoped>
+.b-table thead  th {
+  background: blue !important;
 }
 </style>
