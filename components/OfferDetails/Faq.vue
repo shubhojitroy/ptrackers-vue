@@ -1,15 +1,10 @@
 <template>
   <div>
     <h1 class="title">
-      Investors Toolkit
+      Frequently asked Questions
     </h1>
     <div class="alert-bound">
-      <b-message>
-          <h4>
-              VIDEO FROM THE INVESTMENT MANAGER - To be provided
-          </h4>
-      </b-message>
-      <div class="space"></div>
+
       <b-message>
           <h4>
               FAQ - To be provided
