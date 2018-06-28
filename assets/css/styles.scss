@@ -8,6 +8,8 @@ $brand-color-1: #4A67AB;
 $primary: $brand-color-1;
 $button-background-color: #2d495c;
 
+$message-header-background-color: #2f4c5e;
+
 $family-primary: 'Raleway', $family-sans-serif;
 
 @import "~bulma";
@@ -44,4 +46,7 @@ h1, h2, h3 {
 }
 .button.is-primary  {
   background-color: $button-background-color;
+}
+.message.is-primary .message-header {
+  background-color: $message-header-background-color;
 }

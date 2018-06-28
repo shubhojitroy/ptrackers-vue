@@ -39,5 +39,8 @@ export default {
 </script>
 
 <style scoped>
+.message-header {
+  background-color: #2f4c5e;
+}
 
 </style>
