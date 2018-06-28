@@ -5,23 +5,27 @@
         <br><br>
         <div class="container">
           <b-tabs type="is-boxed" position="is-centered" v-model="activeTab">
-              <b-tab-item label="Welcome">
+              <b-tab-item label="Welcome - Issuer">
                   <welcome-letter></welcome-letter>
               </b-tab-item>
 
-              <b-tab-item label="General">
+              <b-tab-item label="Welcome - Investment Manager">
                   <general-welcome></general-welcome>
               </b-tab-item>
 
-              <b-tab-item label="Offer">
+              <b-tab-item label="Offer Overview">
                   <offer-overview></offer-overview>
               </b-tab-item>
 
-              <b-tab-item label="Dates">
+              <b-tab-item label="Important Dates">
                   <key-dates></key-dates>
               </b-tab-item>
 
-              <b-tab-item label="ToolKit">
+              <b-tab-item label="FAQ">
+                  <investor-toolkit></investor-toolkit>
+              </b-tab-item>
+
+              <b-tab-item label="Apply Now">
                   <investor-toolkit></investor-toolkit>
               </b-tab-item>
 
