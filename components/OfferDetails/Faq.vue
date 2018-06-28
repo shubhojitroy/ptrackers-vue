@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div class="container">
-      <section class="canvas">
+
         <h1 class="title is-size-2 is-size-3-mobile">
           Investors Toolkit
         </h1>
@@ -18,8 +17,7 @@
               </h4>
           </b-message>
         </div>
-      </section>
-    </div>
+
   </div>
 </template>
 
