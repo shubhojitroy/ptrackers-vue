@@ -3,10 +3,10 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title is-size-2 is-size-3-mobile">
-          PM Capital Go 2025
+          PM Capital GO 2025 / PM Capital Global Opportunities Fund Limited
         </h1>
         <h2 class="subtitle is-size-3 is-size-4-mobile">
-          Priority Entitlement
+          Entitlement Offer & General Offer
         </h2>
       </div>
     </div>

@@ -9,9 +9,9 @@
                   <welcome-letter></welcome-letter>
               </b-tab-item>
 
-              <b-tab-item label="Welcome - Investment Manager">
+              <!-- <b-tab-item label="Welcome - Investment Manager">
                   <general-welcome></general-welcome>
-              </b-tab-item>
+              </b-tab-item> -->
 
               <b-tab-item label="CIO Letter">
                   <cio-letter></cio-letter>
@@ -64,7 +64,7 @@
 
 <script>
     import WelcomeLetter from '~/components/WelcomeLetter';
-    import GeneralWelcome from '~/components/GeneralWelcome';
+    // import GeneralWelcome from '~/components/GeneralWelcome';
     import CioLetter from '~/components/CioLetter';
     import OfferOverview from '~/components/OfferOverview';
     import KeyDates from '~/components/KeyDates';
@@ -73,7 +73,7 @@
     export default {
         components: {
           WelcomeLetter,
-          GeneralWelcome,
+          // GeneralWelcome,
           CioLetter,
           OfferOverview,
           KeyDates,
