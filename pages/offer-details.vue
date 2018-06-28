@@ -41,12 +41,12 @@
                 <div class="field is-grouped"><!---->
                     <div class="control">
                         <nuxt-link to="/" class="button is-primary is-outlined">
-                            exit
+                            Exit
                         </nuxt-link>
                     </div>
                     <div class="control">
                         <nuxt-link to="/important-notification" class="button is-primary">
-                            continue&nbsp;&nbsp;<span class="icon"><i class="mdi mdi-skip-next-circle-outline"></i></span>
+                            Continue
                         </nuxt-link>
                     </div>
                 </div>

@@ -26,12 +26,12 @@
             <div class="field is-grouped">
               <div class="control">
                 <nuxt-link to="/" class="button is-primary is-outlined">
-                  exit
+                  Exit
                 </nuxt-link>
               </div>
               <div class="control">
                 <nuxt-link to="/registration-details" @click.native="login" class="button is-primary">
-                  login&nbsp;<span class="icon"><i class="mdi mdi-login-variant"></i></span>
+                  Login
                 </nuxt-link>
               </div>
             </div>

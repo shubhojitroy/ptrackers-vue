@@ -54,7 +54,7 @@
             <div class="field is-grouped">
                 <div class="control">
                     <nuxt-link to="/" class="button is-primary is-outlined">
-                        exit
+                        Exit
                     </nuxt-link>
                 </div>
                 <div class="control">

@@ -31,7 +31,7 @@
                 <br>
                 <div class="control">
                 <button type="submit" class="button is-primary">
-                  Submit&nbsp;<span class="icon"><i class="mdi mdi-login"></i></span>
+                  Submit
                 </button>
                 </div>
               </form>
