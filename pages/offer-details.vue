@@ -13,6 +13,11 @@
                   <general-welcome></general-welcome>
               </b-tab-item>
 
+              <b-tab-item label="CIO Letter">
+                  <cio-letter></cio-letter>
+              </b-tab-item>
+
+
               <b-tab-item label="Offer Overview">
                   <offer-overview></offer-overview>
               </b-tab-item>
@@ -60,6 +65,7 @@
 <script>
     import WelcomeLetter from '~/components/WelcomeLetter';
     import GeneralWelcome from '~/components/GeneralWelcome';
+    import CioLetter from '~/components/CioLetter';
     import OfferOverview from '~/components/OfferOverview';
     import KeyDates from '~/components/KeyDates';
     import InvestorToolkit from '~/components/InvestorToolkit';
@@ -68,6 +74,7 @@
         components: {
           WelcomeLetter,
           GeneralWelcome,
+          CioLetter,
           OfferOverview,
           KeyDates,
           InvestorToolkit,
