@@ -33,15 +33,6 @@
             Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
           </p>
         </faq-item>
-        <faq-item v-model="openItem" title="Item 7">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <p>
-            Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
-            Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
-          </p>
-        </faq-item>
         <faq-item v-model="openItem" title="Item 3">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -52,6 +43,15 @@
           </p>
         </faq-item>
         <faq-item v-model="openItem" title="Item 4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p>
+            Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
+            Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+          </p>
+        </faq-item>
+        <faq-item v-model="openItem" title="Item 5">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
