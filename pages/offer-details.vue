@@ -5,6 +5,7 @@
         <br><br>
         <div class="container">
           <b-tabs type="is-boxed" position="is-centered" v-model="activeTab">
+            <div class="content">
               <b-tab-item label="Welcome - Issuer">
                   <welcome-letter></welcome-letter>
               </b-tab-item>
@@ -51,10 +52,8 @@
                     </div>
                 </div>
               </div>
+            </div>
           </b-tabs>
-
-
-
         </div>
 
     </section>
@@ -111,5 +110,8 @@
   /* border: 1px solid rgba(0, 0, 0, 0.125); */
   border-radius: 0.25rem;
   padding: 1.0rem;
+}
+.content {
+  padding: 2rem 3rem;
 }
 </style>
