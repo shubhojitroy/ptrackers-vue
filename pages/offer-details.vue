@@ -28,7 +28,7 @@
               </b-tab-item>
 
               <b-tab-item label="FAQ">
-                  <investor-toolkit></investor-toolkit>
+                  <faq></faq>
               </b-tab-item>
 
               <b-tab-item label="Apply Now">
@@ -66,7 +66,7 @@
     import CioLetter from '~/components/OfferDetails/CioLetter';
     import OfferOverview from '~/components/OfferDetails/OfferOverview';
     import KeyDates from '~/components/OfferDetails/KeyDates';
-    import InvestorToolkit from '~/components/OfferDetails/InvestorToolkit';
+    import Faq from '~/components/OfferDetails/Faq';
     import ContactRegistry from '~/components/OfferDetails/ContactRegistry';
     export default {
         components: {
@@ -74,7 +74,7 @@
           CioLetter,
           OfferOverview,
           KeyDates,
-          InvestorToolkit,
+          Faq,
           ContactRegistry,
         },
         data() {
