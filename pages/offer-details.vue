@@ -62,17 +62,15 @@
 </template>
 
 <script>
-    import WelcomeLetter from '~/components/WelcomeLetter';
-    // import GeneralWelcome from '~/components/GeneralWelcome';
-    import CioLetter from '~/components/CioLetter';
-    import OfferOverview from '~/components/OfferOverview';
-    import KeyDates from '~/components/KeyDates';
-    import InvestorToolkit from '~/components/InvestorToolkit';
-    import ContactRegistry from '~/components/ContactRegistry';
+    import WelcomeLetter from '~/components/OfferDetails/WelcomeLetter';
+    import CioLetter from '~/components/OfferDetails/CioLetter';
+    import OfferOverview from '~/components/OfferDetails/OfferOverview';
+    import KeyDates from '~/components/OfferDetails/KeyDates';
+    import InvestorToolkit from '~/components/OfferDetails/InvestorToolkit';
+    import ContactRegistry from '~/components/OfferDetails/ContactRegistry';
     export default {
         components: {
           WelcomeLetter,
-          // GeneralWelcome,
           CioLetter,
           OfferOverview,
           KeyDates,
