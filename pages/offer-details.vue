@@ -32,7 +32,7 @@
               </b-tab-item>
 
               <b-tab-item label="Apply Now">
-                  <investor-toolkit></investor-toolkit>
+                  <apply-now></apply-now>
               </b-tab-item>
 
               <b-tab-item label="Contact">
@@ -67,6 +67,7 @@
     import OfferOverview from '~/components/OfferDetails/OfferOverview';
     import KeyDates from '~/components/OfferDetails/KeyDates';
     import Faq from '~/components/OfferDetails/Faq';
+    import ApplyNow from '~/components/OfferDetails/ApplyNow';
     import ContactRegistry from '~/components/OfferDetails/ContactRegistry';
     export default {
         components: {
@@ -75,6 +76,7 @@
           OfferOverview,
           KeyDates,
           Faq,
+          ApplyNow,
           ContactRegistry,
         },
         data() {
