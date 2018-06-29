@@ -130,10 +130,6 @@
   </div>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style lang="scss" scoped>
 .footnote {
   font-size: 0.75rem;

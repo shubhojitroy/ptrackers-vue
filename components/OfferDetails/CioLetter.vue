@@ -8,7 +8,6 @@
         VIDEO FROM THE INVESTMENT MANAGER - To be provided
       </h4>
     </b-message>
-    <div class="space"></div>
     <p>
       Australians love to travel. We live a long way from the most populous parts of the world, but it’s not unusual that when
       landing in a foreign city we bump into an Australian or two. Given our outward focus and desire to experience the best
@@ -86,14 +85,3 @@
     <youtube class="youtube" video-id="F6rSnScmkyU"></youtube>
   </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style lang="scss" scoped>
-
-</style>
-

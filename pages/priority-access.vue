@@ -1,50 +1,44 @@
 <template>
-  <div>
-    <div class="container">
-      <section class="canvas">
-        <h1 class="title is-size-2 is-size-3-mobile">
-          Unique Priority Code
-        </h1>
-        <h4>
-          <em>Please enter your Unique Priority Code</em>
-        </h4>
-        <div class="box">
-          <form novalidate @submit.prevent="submitForm">
-            <b-field label="Priority Code" :type="inputType" :message="inputMessage">
-              <b-input id="priority-code" v-model.trim="priorityCode">
-              </b-input>
-            </b-field>
-            <span class="space"></span>
-            <p>
-              If you believe you are an eligible Priority Applicant yet have not received a Unique Priority Code please contact Boardroom Pty Limited on 1300 767 760 (within Australia) or +61 2 9290 9600 (outside Australia) between 8:30am and 5:30pm (Sydney time) Monday to Friday.
-            <p>
-            <span class="space"></span>
-            <p>
-              If you are uncertain as to whether an investment in the Company is suitable for you, please contact your stockbroker, financial adviser, accountant, lawyer or other professional adviser.
-            <p>
-            <span class="space"></span>
-            <div class="field is-grouped">
-              <div class="control">
-                <nuxt-link to="/" class="button is-primary is-outlined">
-                  Exit
-                </nuxt-link>
-              </div>
-              <div class="control">
-                <nuxt-link to="/registration-details" @click.native="login" class="button is-primary">
-                  Login
-                </nuxt-link>
-              </div>
+  <section class="section">
+    <div class="container content">
+      <h1 class="title is-size-2 is-size-3-mobile">
+        Priority Code
+      </h1>
+      <h4>
+        <em>Please enter your Unique Priority Code</em>
+      </h4>
+      <div class="box">
+        <form novalidate @submit.prevent="submitForm">
+          <b-field label="Priority Code" :type="inputType" :message="inputMessage">
+            <b-input id="priority-code" v-model.trim="priorityCode">
+            </b-input>
+          </b-field>
+          <p>
+            If you believe you are an eligible Priority Applicant yet have not received a Unique Priority Code please contact Boardroom
+            Pty Limited on 1300 767 760 (within Australia) or +61 2 9290 9600 (outside Australia) between 8:30am and 5:30pm
+            (Sydney time) Monday to Friday.
+          </p>
+          <p>
+            If you are uncertain as to whether an investment in the Company is suitable for you, please contact your stockbroker, financial
+            adviser, accountant, lawyer or other professional adviser.
+          </p>
+          <div class="field is-grouped">
+            <div class="control">
+              <nuxt-link to="/" class="button is-primary is-outlined">
+                Exit
+              </nuxt-link>
             </div>
-            <!-- </div> -->
-            <!-- <br> {{ priorityCode }}
-            <br> {{ offer }} -->
-          </form>
-        </div>
-      </section>
+            <div class="control">
+              <nuxt-link to="/registration-details" @click.native="login" class="button is-primary">
+                Login
+              </nuxt-link>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
-
 
 <script>
 
@@ -83,16 +77,16 @@ export default {
         // axios.post('https://api.boardroomlimited.com.au/api/DixonIpo/GetOffer', { PriorityCode: this.priorityCode.toUpperCase() })
         //   .then(response => {
                 const investor = {
-                  pCode: '1234',
+                  priorityCode: '1234',
                   nameAddress1: 'HARRY POTTER',
                   nameAddress2: '225 GEORGE STREET',
                   nameAddress3: 'SYDNEY',
                   nameAddress4: 'NSW',
                   nameAddress5: '2000',
-                  unitsApplied: '52,000',
-                  totalAmount:  'A$15,000',
-                  billerCode: '9876',
-                  refNumber: 60001234,
+                  emailAddress: 'harry.potter@gmail.com',
+                  phoneNumber: '9290-1200',
+                  unitPrice: 1.4,
+                  entitlement: 12000,
                 };
                 this.populateInvestor(investor);
         //     this.offer = response.data;
@@ -129,39 +123,5 @@ export default {
 <style scoped>
 #priority-code {
   text-transform: uppercase;
-}
-.canvas {
-z-index: 50;
-padding: 1rem;
-background: #fff 50%;
-background-size: cover;
-border-radius: 1px;
-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.02);
-transition: all 0.5s ease;
-}
-h4 {
-  font-size: 1.33rem;
-  margin: 0.75em 0;
-  font-weight: 500;
-}
-ul {
-  list-style-type: disc;
-}
-li {
-  line-height: 1.5;
-  padding: 0.5rem 1rem;
-  margin: 0 1.25em;
-}
-p {
-  line-height: 1.75rem;
-}
-.space {
-  display: block;
-  width: 100%;
-  height: 1.5em;
-}
-.footnote {
-  font-size: 0.75rem;
-  line-height: 1.2em;
 }
 </style>

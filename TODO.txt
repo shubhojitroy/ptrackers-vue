@@ -16,14 +16,14 @@ DONE: 3.6. Offer Overview tab - remove all text from "The Prospectus contains...
 4.2 Give appropriate message (when validating priority code).
 
 5. Application page
-5.1. Fix inputs and labels.
+DONE: 5.1. Fix inputs and labels.
 5.2. Add business rules and validations to page.
 5.3. Submit button call API to save details
 5.4. Exit button changes to Cancel ==>opens dialog box to confirm before cancelling ==> goes to cancel page
 
 6. Confirmation page
-6.1. Change all inputs into labels.
-6.2. Close button renames to Finish
+DONE: 6.1. Change all inputs into labels.
+DONE: 6.2. Close button renames to Finish
 6.3. Add BPay Logo (SVG) and reformat payment section
 6.4. Add code to print button.
 
