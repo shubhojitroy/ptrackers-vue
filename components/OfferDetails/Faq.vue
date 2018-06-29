@@ -6,36 +6,57 @@
     <div class="alert-bound">
 
       <b-message>
-          <h4>
-              FAQ - To be provided
-          </h4>
+        <h4>
+          FAQ - To be provided
+        </h4>
       </b-message>
-        <faq-item v-model="openItem" title="Item 1">
+        <faq-item v-model="openItem" title="How can I apply for securities offered by GO 2025?">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            To invest in the Offer, you may do so by reading the Prospectus then:
           </p>
+          <ul>
+            <li>
+              completing and returning the attached Application Form along with Applications Moneys; or
+            </li>
+            <li>
+              completion online at either:
+              <ul>
+                <li>
+                  <a href="http://www.pmcapital.com.au" target="_blank">http://www.pmcapital.com.au</a>
+                </li>
+                <li>
+                  <a href="http://www.boardroomlimited.com.au/ca/ptrackers" target="_blank">http://www.boardroomlimited.com.au/ca/ptrackers</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
           <p>
-            Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
-            Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+            The Entitlement Offer is expected to close on 8 August 2018.<br><br>
+            The General and Broker Firm Offer is expected to close on 10 August 2018.<br><br>
+            Nevertheless, it may close at any time, so you are encouraged to submit your Application as soon as possible.<br><br>
+            If you apply online and pay via BPAY, you do not need to complete and return a paper Application Form
           </p>
         </faq-item>
-        <faq-item v-model="openItem" title="Item 2">
+        <faq-item v-model="openItem" title="Who can invest?">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <p>
-            Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
-            Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
-          </p>
+            The Offer is available to applicants with a registered address in Australia and New Zealand.
+          </p>          
         </faq-item>
-        <faq-item v-model="openItem" title="Item 3">
+        <faq-item v-model="openItem" title="What is the minimum number of securities I can apply for?">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+            Applications under the General Offer or Broker Firm Offer must be for a minimum of $2,100 which is equal to 1,500 <strong>PTrackERS</strong> (at the Issue Price of $1.40 per <strong>PTrackERS</strong>). A larger number of <strong>PTrackERS</strong> may be applied for in multiples of 100 shares.
+          </p>          
           <p>
-            Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
-            Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+            The minimum subscription amount payable by an Applicant under the Entitlement Offer is the Issue Price (of $1.40 per PTrackERS) multiplied by the lower of:
           </p>
+          <ul>
+            <li>
+              1,500 <strong><em>PTrackERS</em></strong>; or
+            </li>
+            <li>
+              the number of <strong><em>PTrackERS</em></strong> being offered to the Applicant (being an Eligible Shareholder under the Entitlement Offer).
+            </li>
+          </ul>
         </faq-item>
         <faq-item v-model="openItem" title="Item 4">
           <p>
