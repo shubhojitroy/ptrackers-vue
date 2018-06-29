@@ -3,7 +3,7 @@
     <h1 class="title">
       Frequently Asked Questions
     </h1>
-    <div class="alert-bound">
+    <div class="box">
       <h2 class="title">
         Application
       </h2>
@@ -37,12 +37,12 @@
       <faq-item v-model="openItem" title="Who can invest?">
         <p>
           The Offer is available to applicants with a registered address in Australia and New Zealand.
-        </p>          
+        </p>
       </faq-item>
       <faq-item v-model="openItem" title="What is the minimum number of securities I can apply for?">
         <p>
           Applications under the General Offer or Broker Firm Offer must be for a minimum of $2,100 which is equal to 1,500 <strong>PTrackERS</strong> (at the Issue Price of $1.40 per <strong>PTrackERS</strong>). A larger number of <strong>PTrackERS</strong> may be applied for in multiples of 100 shares.
-        </p>          
+        </p>
         <p>
           The minimum subscription amount payable by an Applicant under the Entitlement Offer is the Issue Price (of $1.40 per PTrackERS) multiplied by the lower of:
         </p>
@@ -74,12 +74,12 @@
       <faq-item v-model="openItem" title="What is the maximum size of the capital raising?">
         <p>
           The offer will be strictly limited to $491,273,967.80, consisting of 350,909,977 securities issued.
-        </p>          
+        </p>
       </faq-item>
       <faq-item v-model="openItem" title="Who is entitled to participate in the Entitlement Offer?">
         <p>
           Shareholders of PGF as at 5.00pm (AEST) on 9 July 2018 are eligible to subscribe for 1 PTrackERS for every 1 PGF share held.
-        </p>          
+        </p>
       </faq-item>
       <faq-item v-model="openItem" title="What is the size of the Entitlement allocation?">
         <p>
@@ -87,10 +87,10 @@
         </p>
         <p>
           Any remaining securities which are not taken up under the Entitlement Offer will be made available under the General Public Offer and the Broker Firm Offer.
-        </p> 
+        </p>
         <p>
           * with registered addresses in Australia or New Zealand.
-        </p>         
+        </p>
       </faq-item>
       <faq-item v-model="openItem" title="If I participate in the Entitlement priority allocation, will I get all the securities I apply for?">
         <p>
@@ -98,20 +98,20 @@
         </p>
         <p>
           If the Offer is oversubscribed, applications in the General Offer and Broker Firm Offer will be scaled back.
-        </p> 
+        </p>
         <p>
           Early lodgement of your application is recommended as the Offer may be closed early at the Directors’ discretion.
-        </p>         
+        </p>
       </faq-item>
       <faq-item v-model="openItem" title="Can PGF shareholders take up more securities than available under the Entitlement offer?">
         <p>
           PGF shareholders may subscribe for more PTrackERS than their entitlement. However, the excess will form part of the General Public Offer. Excess applications may also be made under the Broker Firm Offer.
-        </p>          
+        </p>
       </faq-item>
       <faq-item v-model="openItem" title="How can I participate in the Entitlement Offer?">
         <p>
-          Shareholders who are invested in PGF as at the Record Date will be contacted by email or post once the Offer opens. They will be issued a Unique Entitlement Code which will enable them to participate in the Entitlement offer. 
-        </p> 
+          Shareholders who are invested in PGF as at the Record Date will be contacted by email or post once the Offer opens. They will be issued a Unique Entitlement Code which will enable them to participate in the Entitlement offer.
+        </p>
         <p>
           You can also apply online at either:
         </p>
@@ -122,12 +122,12 @@
           <li>
             <a href="http://www.boardroomlimited.com.au/ca/ptrackers">http://www.boardroomlimited.com.au/ca/ptrackers</a>
           </li>
-        </ul>         
+        </ul>
       </faq-item>
       <faq-item v-model="openItem" title="How can I participate in the General Public Offer?">
         <p>
           The General Public Offer is open to all Applicants with a registered address in Australia and New Zealand. To participate in the General Public Offer, your Application Form and Application Monies must be received by the Registry by 5:00pm (AEST) on the General Public Offer Closing Date (expected to be 10 August 2018).
-        </p>          
+        </p>
       </faq-item>
       <faq-item v-model="openItem" title="How can I participate in the Broker Firm Offer?">
         <p>
@@ -138,18 +138,18 @@
         </p>
         <p>
           Contact your stockbroker or financial adviser to determine if they will allocate you PTrackERS under the Broker Firm Offer.
-        </p>          
+        </p>
       </faq-item>
       <faq-item v-model="openItem" title="Can I apply for shares for my children or grandchildren?">
         <p>
           Most brokers do not allow you to trade on behalf of a minor. You may be able to open an account in your name as a trustee. Once the minor has turned 18, the shares can be transferred into their account under their name.
-        </p>          
+        </p>
       </faq-item>
       <faq-item v-model="openItem" title="Are there any brokerage fees payable if I apply for shares in the IPO?">
-      
+
         <p>
           No brokerage, commission or stamp duty is payable by Applicants for PTrackERS.
-        </p>          
+        </p>
       </faq-item>
     </div>
     <hr>
@@ -185,18 +185,5 @@ export default {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.02);
   transition: all 0.5s ease;
 }
-.alert-bound {
-  width: 100%;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  padding: 1.0rem;
-}
+
 </style>

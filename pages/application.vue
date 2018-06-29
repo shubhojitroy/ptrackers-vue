@@ -50,7 +50,7 @@
             By clicking 'Submit' you are confirming the application details as made above and declaring that I/We:
           </p>
           <div class="space"></div>
-          <ol class="alert-bound">
+          <ol class="box">
             <li>
               <em>
                 have received a copy and read the Prospectus in full;
@@ -198,21 +198,7 @@ p {
   width: 100%;
   height: 1.5em;
 }
-.alert-bound {
-  width: 100%;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  padding: 1.0rem;
 
-}
 .footnote {
   font-size: 0.75rem;
   line-height: 1.2em;

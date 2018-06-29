@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <section class="canvas">
+      <section class="content">
         <h1 class="title is-size-2 is-size-3-mobile">
           Confirmation and Payment Instruction
         </h1>
@@ -12,7 +12,7 @@
         <h4>
           Payment by Cheque
         </h4>
-        <div class="alert-bound">
+        <div class="box">
           <p>
             To submit your Application Monies by cheque, bank draft or money order, follow the instructions below:
           </p>
@@ -32,8 +32,8 @@
           </ul>
         </div>
         <hr>
-        <div class="alert-bound">
-          <div class="alert-bound">
+        <div class="box">
+          <div class="box">
           <strong>Unique Priority Code:</strong>
           {{ investor.pCode }}
           <div class="space"></div>
@@ -57,7 +57,7 @@
           </b-field>
         </div>
         <hr>
-        <div class="alert-bound">
+        <div class="box">
           <p>
             <strong>
               Biller Code:
@@ -150,21 +150,6 @@ p {
   display: block;
   width: 100%;
   height: 1.5em;
-}
-.alert-bound {
-  width: 100%;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  padding: 1.0rem;
-
 }
 .footnote {
   font-size: 0.75rem;
