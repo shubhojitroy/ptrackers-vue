@@ -39,6 +39,7 @@ module.exports = {
     '~plugins/vuelidate',
     '~plugins/vue-filters',
     '~plugins/vue-youtube-embed',
+    '~plugins/vue-html-to-paper',
   ],
 
   /*
