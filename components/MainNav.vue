@@ -12,10 +12,10 @@
         </div> -->
       </div>
       <!-- <div class="navbar-menu has-text-left" :class="{ 'is-active': showNav }">
-        <div class="navbar-end">
-              <a class="navbar-item is-size-4" href="tel:1300069436">
-                1300 069 436
-              </a>
+        <div class="navbar-brand">
+          <a class="navbar-item" href="http://www.pmcapital.com.au/global-companies-fund">
+            <img src="~assets/img/pmcaptalgo2025limited.png" alt="PM Capital Limited">
+          </a>
         </div>
       </div> -->
     </div>

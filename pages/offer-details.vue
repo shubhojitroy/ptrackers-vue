@@ -47,7 +47,7 @@
                     </div>
                     <div class="control">
                         <nuxt-link to="/important-notification" class="button is-primary">
-                            Continue
+                            Apply Now
                         </nuxt-link>
                     </div>
                 </div>
