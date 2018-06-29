@@ -9,8 +9,13 @@ $primary: $brand-color-1;
 $button-background-color: #2d495c;
 
 $message-header-background-color: #2f4c5e;
+$message-header-border-radius: 0;
+
+
 
 $family-primary: 'Raleway', $family-sans-serif;
+
+
 
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
@@ -49,4 +54,9 @@ h1, h2, h3 {
 }
 .message.is-primary .message-header {
   background-color: $message-header-background-color;
+  border-radius: $message-header-border-radius;
+}
+
+.message-body {
+  border-radius: $message-header-border-radius;
 }
