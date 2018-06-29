@@ -1,0 +1,28 @@
+1. Add second logo to the nav header.
+2. Update HERO image to the new banner image
+
+3. Application Details Page
+3.1. Add Next button to go to the next tabbed page
+3.2. Add Apply Now button to go to the Apply Now tab (all tabs except Apply Now tab)
+3.3. Add Continue button to Apply Now tab ONLY
+3.4. Change Apply Now tab to blue background etc
+3.5. CIO Letter tab - Add youtube video
+3.6. Offer Overview tab - remove all text from "The Prospectus contains..." (it's a repeat of the Apply Now tab)
+3.7. Important Dates tab - Align column width the same for both tables. Change table header formatting.
+3.8. FAQ tab - Add the remaining FAQ items.
+
+4. Priority Code page
+4.1 API call to retrieve Investor details.
+4.2 Give appropriate message (when validating priority code).
+
+5. Application page
+5.1. Fix inputs and labels.
+5.2. Add business rules and validations to page.
+5.3. Submit button call API to save details
+5.4. Exit button changes to Cancel ==>opens dialog box to confirm before cancelling ==> goes to cancel page
+
+6. Confirmation page
+6.1. Change all inputs into labels.
+6.2. Close button renames to Finish
+6.3. Add BPay Logo (SVG) and reformat payment section
+6.4. Add code to print button.
