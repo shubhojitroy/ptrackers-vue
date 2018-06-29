@@ -4,12 +4,6 @@
       Frequently asked Questions
     </h1>
     <div class="alert-bound">
-
-      <b-message>
-        <h4>
-          FAQ - To be provided
-        </h4>
-      </b-message>
         <faq-item v-model="openItem" title="How can I apply for securities offered by GO 2025?">
           <p>
             To invest in the Offer, you may do so by reading the Prospectus then:
@@ -58,9 +52,9 @@
             </li>
           </ul>
         </faq-item>
-        <faq-item v-model="openItem" title="Item 4">
+        <faq-item v-model="openItem" title="How can I pay for my securities?">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <strong>BPAY</strong>: Applicants wishing to pay by BPAY should complete the online Application Form accompanying the electronic version of this Prospectus which is available at either:
           </p>
           <p>
             Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
