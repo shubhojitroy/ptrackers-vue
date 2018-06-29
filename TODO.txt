@@ -1,13 +1,13 @@
-1. Add second logo to the nav header.
+1. Add second logo to the nav header. (copied new logo images into assets/img folder.)
 2. Update HERO image to the new banner image
 
 3. Application Details Page
-3.1. Add Next button to go to the next tabbed page
-3.2. Add Apply Now button to go to the Apply Now tab (all tabs except Apply Now tab)
-3.3. Add Continue button to Apply Now tab ONLY
-3.4. Change Apply Now tab to blue background etc
-3.5. CIO Letter tab - Add youtube video
-3.6. Offer Overview tab - remove all text from "The Prospectus contains..." (it's a repeat of the Apply Now tab)
+DONE: 3.1. Add Next button to go to the next tabbed page
+DONE: 3.2. Add Apply Now button to go to the Apply Now tab (all tabs except Apply Now tab)
+DONE: 3.3. Add Continue button to Apply Now tab ONLY
+DONE: 3.4. Change Apply Now tab to blue background etc
+DONE: 3.5. CIO Letter tab - Add youtube video (added placeholder video until real one is available)
+DONE: 3.6. Offer Overview tab - remove all text from "The Prospectus contains..." (it's a repeat of the Apply Now tab)
 3.7. Important Dates tab - Align column width the same for both tables. Change table header formatting.
 3.8. FAQ tab - Add the remaining FAQ items.
 
@@ -26,3 +26,46 @@
 6.2. Close button renames to Finish
 6.3. Add BPay Logo (SVG) and reformat payment section
 6.4. Add code to print button.
+
+
+Notes:
+
+Need to apply colour them as used in https://www.pmcapital.com.au website.
+
+See these pages for examples:
+http://www.pmcapital.com.au/global-companies-fund
+http://www.pmcapital.com.au/general-enquiry
+
+
+
+* Form background is duck blue
+* Page background is white
+* Panels are various shades of blue (see http://www.pmcapital.com.au/global-companies-fund for examples)
+* Action buttons are RED (call to actions) (#EE464C)
+* Header font is Playfair Display
+* Header font color is #2B3E50
+* Body font is Raleway
+* Body font color is #383838. Some cases it uses #2E2E2E (Bold #323232)
+
+Colours used for panels:
+
+background: #E8EFF2 / border: #A8C1CC / text color: #2B3E50 (pale blue)
+background: #A8C1CC / border: #A8C1CC / text color: #FFFFFF (light grey)
+background: #6CBCDC / border: #A8C1CC / text color: #FFFFFF (blue)
+background: #404042 / border: #A8C1CC / text color: #FFFFFF (black)
+background: #2B3E50 / border: none    / text color: #FFFFFF (dark)
+background: #EE464C / border: none    / text color: #FFFFFF (red)
+
+
+primary color is the dark color (#2B3E50)
+link color is (possibly) the red color (#EE464C) - red in hover mode for anchor links in the main menu
+
+red button:
+normal #EE464C
+hover  #BE383C
+
+red gradient button:
+linear-gradient(-180deg,#EE464C 0%,#D3363B 100%);
+
+
+

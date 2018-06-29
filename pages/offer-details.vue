@@ -1,18 +1,12 @@
 <template>
-  <div>
+  <section class="section">
     <div class="container">
       <section class="canvas">
-        <br><br>
-        <div class="container">
           <b-tabs type="is-boxed" position="is-centered" v-model="activeTab">
             <div class="content">
               <b-tab-item label="Welcome - Issuer">
                   <welcome-letter></welcome-letter>
               </b-tab-item>
-
-              <!-- <b-tab-item label="Welcome - Investment Manager">
-                  <general-welcome></general-welcome>
-              </b-tab-item> -->
 
               <b-tab-item label="CIO Letter">
                   <cio-letter></cio-letter>
@@ -31,34 +25,42 @@
                   <faq></faq>
               </b-tab-item>
 
-              <b-tab-item label="Apply Now">
+              <b-tab-item id="apply-now" label="Apply Now">
                   <apply-now></apply-now>
               </b-tab-item>
 
               <b-tab-item label="Contact">
                   <contact-registry></contact-registry>
               </b-tab-item>
-              <div class="alert-bound">
-                <div class="field is-grouped"><!---->
-                    <div class="control">
-                        <nuxt-link to="/" class="button is-primary is-outlined">
-                            Exit
-                        </nuxt-link>
-                    </div>
-                    <div class="control">
-                        <nuxt-link to="/important-notification" class="button is-primary">
-                            Apply Now
-                        </nuxt-link>
-                    </div>
-                </div>
-              </div>
             </div>
           </b-tabs>
-        </div>
-
+          <div class="alert-bound">
+            <div class="field is-grouped"><!---->
+                <div class="control">
+                    <nuxt-link to="/" class="button is-primary is-outlined">
+                        Exit
+                    </nuxt-link>
+                </div>
+                <div class="control" v-if="activeTab != 6">
+                    <nuxt-link to="" class="button is-link" @click.native="nextTab">
+                        Next
+                    </nuxt-link>
+                </div>
+                <div class="control" v-if="activeTab != 5">
+                    <nuxt-link to="" class="button is-primary" @click.native="activeTab = 5">
+                        Apply Now
+                    </nuxt-link>
+                </div>
+                <div class="control" v-if="activeTab == 5">
+                    <nuxt-link to="/important-notification" class="button is-primary">
+                        Continue
+                    </nuxt-link>
+                </div>
+            </div>
+          </div>
     </section>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -83,11 +85,17 @@
             return {
                 activeTab: 0,
             }
+        },
+        methods: {
+          nextTab () {
+            this.activeTab = this.activeTab + 1;
+            window.scrollTo(0, 0);
+          }
         }
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .canvas {
   z-index: 50;
   /* padding: 1rem; */
@@ -114,4 +122,5 @@
 .content {
   padding: 2rem 3rem;
 }
+
 </style>

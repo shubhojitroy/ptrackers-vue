@@ -82,6 +82,8 @@
       Paul Moore
       <br> Chairman and Chief Investment Officer
     </p>
+    <br>
+    <youtube class="youtube" video-id="F6rSnScmkyU"></youtube>
   </div>
 </template>
 

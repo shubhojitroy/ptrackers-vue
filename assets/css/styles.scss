@@ -4,27 +4,24 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:400,700');
 
 $brand-color-1: #4A67AB;
+$brand-color-2: #2d495c;
+$brand-color-3: #2f4c5e;
 
-$primary: $brand-color-1;
-$button-background-color: #2d495c;
+$primary: $brand-color-2;
+//$button-background-color: #2d495c;
 
-$message-header-background-color: #2f4c5e;
+$message-header-background-color: $brand-color-3;
 $message-header-border-radius: 0;
 
-
-
 $family-primary: 'Raleway', $family-sans-serif;
-
-
 
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 
 
-
-html {
-  background-color: #f4f4f4;
-}
+// html {
+//   background-color: #f4f4f4;
+// }
 .page-enter-active, .page-leave-active {
   transition: all .25s ease-in-out;
 }
@@ -41,22 +38,39 @@ html {
   padding-left: .75rem;
 }
 .control a.button {
-  width: 120px;
+  width: 140px;
 }
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
 .button {
   text-transform: uppercase;
-}
-.button.is-primary  {
-  background-color: $button-background-color;
-}
-.message.is-primary .message-header {
-  background-color: $message-header-background-color;
-  border-radius: $message-header-border-radius;
+  font-weight: 700;
 }
 
-.message-body {
-  border-radius: $message-header-border-radius;
+// .message.is-primary .message-header {
+//   background-color: $message-header-background-color;
+//   border-radius: $message-header-border-radius;
+// }
+
+// .message-body {
+//   border-radius: $message-header-border-radius;
+// }
+
+.b-tabs li:nth-child(6) a {
+  background-color: rgba($color: $brand-color-2, $alpha: 0.5);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  span {
+    color: white;
+  }
+}
+.b-tabs li:nth-child(6):hover a {
+  background-color: $brand-color-2;
+}
+.b-tabs li:nth-child(6).is-active a {
+  background-color: $brand-color-2;
+  span {
+    font-weight: 700;
+  }
 }
