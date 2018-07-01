@@ -23,8 +23,12 @@
             <faq></faq>
           </b-tab-item>
 
-          <b-tab-item label="Apply Now">
+          <!-- <b-tab-item label="Apply Now">
             <apply-now></apply-now>
+          </b-tab-item> -->
+
+          <b-tab-item label="Prospectus">
+            <prospectus></prospectus>
           </b-tab-item>
 
           <b-tab-item label="Contact">
@@ -66,7 +70,8 @@ import CioLetter from '~/components/OfferDetails/CioLetter';
 import OfferOverview from '~/components/OfferDetails/OfferOverview';
 import KeyDates from '~/components/OfferDetails/KeyDates';
 import Faq from '~/components/OfferDetails/Faq';
-import ApplyNow from '~/components/OfferDetails/ApplyNow';
+import Prospectus from '~/components/OfferDetails/Prospectus';
+// import ApplyNow from '~/components/OfferDetails/ApplyNow';
 import ContactRegistry from '~/components/OfferDetails/ContactRegistry';
 
 export default {
@@ -76,7 +81,8 @@ export default {
     OfferOverview,
     KeyDates,
     Faq,
-    ApplyNow,
+    // ApplyNow,
+    Prospectus,
     ContactRegistry,
   },
   data() {

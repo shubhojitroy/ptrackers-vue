@@ -146,7 +146,6 @@
         </p>
       </faq-item>
       <faq-item v-model="openItem" title="Are there any brokerage fees payable if I apply for shares in the IPO?">
-
         <p>
           No brokerage, commission or stamp duty is payable by Applicants for PTrackERS.
         </p>
