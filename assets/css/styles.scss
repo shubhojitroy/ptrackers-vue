@@ -39,30 +39,14 @@ $content-heading-weight: $weight-bold;
   transform-origin: 50% 50%;
 }
 
-// .content li {
-//   margin-left: 1rem;
-//   padding-left: .75rem;
-// }
-.control a.button {
-  width: 140px;
-}
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
 .button {
+  width: 140px;
   text-transform: uppercase;
   font-weight: 700;
 }
-
-// .message.is-primary .message-header {
-//   background-color: $message-header-background-color;
-//   border-radius: $message-header-border-radius;
-// }
-
-// .message-body {
-//   border-radius: $message-header-border-radius;
-// }
-
 .b-tabs li:nth-child(6) a {
   background-color: rgba($color: $brand-color-2, $alpha: 0.5);
   border-top-left-radius: 3px;
