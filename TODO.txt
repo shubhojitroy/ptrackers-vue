@@ -1,4 +1,4 @@
-1. Add second logo to the nav header. (copied new logo images into assets/img folder.)
+DONE: 1. Add second logo to the nav header. (copied new logo images into assets/img folder.)
 2. Update HERO image to the new banner image
 
 3. Application Details Page
@@ -8,7 +8,7 @@ DONE: 3.3. Add Continue button to Apply Now tab ONLY
 DONE: 3.4. Change Apply Now tab to blue background etc
 DONE: 3.5. CIO Letter tab - Add youtube video (added placeholder video until real one is available)
 DONE: 3.6. Offer Overview tab - remove all text from "The Prospectus contains..." (it's a repeat of the Apply Now tab)
-3.7. Important Dates tab - Align column width the same for both tables. Change table header formatting.
+DONE: 3.7. Important Dates tab - Align column width the same for both tables. Change table header formatting.
 3.8. FAQ tab - Add the remaining FAQ items.
 
 4. Priority Code page

@@ -14,7 +14,7 @@
       :mobile-cards="hasMobileCards">
 
       <template slot-scope="props">
-        <b-table-column field="description" label="Key Dates for the Offer" width="50%">
+        <b-table-column field="description" label="Key Dates for the Offer" width="400">
           <strong>{{ props.row.description }}</strong>
         </b-table-column>
         <b-table-column field="date" label="Date">
@@ -34,11 +34,11 @@
       :mobile-cards="hasMobileCards">
 
       <template slot-scope="props">
-        <b-table-column field="description" label="Key Dates for the PTrackERS" width="30%">
+        <b-table-column field="description" label="Key Dates for the PTrackERS" width="400">
           <strong>{{ props.row.description }}</strong>
         </b-table-column>
 
-        <b-table-column field="date" label="Dates" width="70%">
+        <b-table-column field="date" label="Dates">
           {{ props.row.date }}
         </b-table-column>
       </template>
