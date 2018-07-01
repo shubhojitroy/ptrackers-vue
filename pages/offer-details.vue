@@ -44,12 +44,12 @@
               Next
             </nuxt-link>
           </div>
-          <div class="control" v-if="activeTab != 5">
+          <div class="control right-side" v-if="activeTab != 5">
             <nuxt-link to="" class="button is-primary" @click.native="activeTab = 5">
               Apply Now
             </nuxt-link>
           </div>
-          <div class="control" v-if="activeTab == 5">
+          <div class="control right-side" v-if="activeTab == 5">
             <nuxt-link to="/important-notification" class="button is-primary">
               Continue
             </nuxt-link>
@@ -61,33 +61,42 @@
 </template>
 
 <script>
-    import WelcomeLetter from '~/components/OfferDetails/WelcomeLetter';
-    import CioLetter from '~/components/OfferDetails/CioLetter';
-    import OfferOverview from '~/components/OfferDetails/OfferOverview';
-    import KeyDates from '~/components/OfferDetails/KeyDates';
-    import Faq from '~/components/OfferDetails/Faq';
-    import ApplyNow from '~/components/OfferDetails/ApplyNow';
-    import ContactRegistry from '~/components/OfferDetails/ContactRegistry';
-    export default {
-        components: {
-          WelcomeLetter,
-          CioLetter,
-          OfferOverview,
-          KeyDates,
-          Faq,
-          ApplyNow,
-          ContactRegistry,
-        },
-        data() {
-          return {
-            activeTab: 0,
-          }
-        },
-        methods: {
-          nextTab () {
-            this.activeTab = this.activeTab + 1;
-            window.scrollTo(0, 0);
-          }
-        }
+import WelcomeLetter from '~/components/OfferDetails/WelcomeLetter';
+import CioLetter from '~/components/OfferDetails/CioLetter';
+import OfferOverview from '~/components/OfferDetails/OfferOverview';
+import KeyDates from '~/components/OfferDetails/KeyDates';
+import Faq from '~/components/OfferDetails/Faq';
+import ApplyNow from '~/components/OfferDetails/ApplyNow';
+import ContactRegistry from '~/components/OfferDetails/ContactRegistry';
+
+export default {
+  components: {
+    WelcomeLetter,
+    CioLetter,
+    OfferOverview,
+    KeyDates,
+    Faq,
+    ApplyNow,
+    ContactRegistry,
+  },
+  data() {
+    return {
+      activeTab: 0,
     }
+  },
+  methods: {
+    nextTab() {
+      this.activeTab = this.activeTab + 1;
+      window.scrollTo(0, 0);
+    }
+  }
+}
 </script>
+
+<style lang="scss" scoped>
+.right-side {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+</style>
