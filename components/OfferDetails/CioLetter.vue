@@ -82,6 +82,8 @@
       <br> Chairman and Chief Investment Officer
     </p>
     <br>
-    <youtube class="youtube" video-id="F6rSnScmkyU"></youtube>
+    <div class="level">
+      <youtube class="level-item youtube" video-id="F6rSnScmkyU"></youtube>
+    </div>
   </div>
 </template>
