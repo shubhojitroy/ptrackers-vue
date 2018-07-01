@@ -20,7 +20,6 @@
       <h4>
         Payment by Cheque
       </h4>
-      <div class="box">
         <p>
           To submit your Application Monies by cheque, bank draft or money order, follow the instructions below:
         </p>
@@ -42,8 +41,6 @@
             should allow sufficient time for collection and delivery by postal services.
           </li>
         </ul>
-      </div>
-      <hr>
       <div class="box">
         <b-field label="Priority Code:">
           {{ investor.priorityCode }}
@@ -62,7 +59,6 @@
           {{ applicationAmount | currency('$', 2) }}
         </b-field>
       </div>
-      <hr>
       <div class="box">
         <div class="bpay-box">
           <img src="~/assets/img/bpay.svg"/>
