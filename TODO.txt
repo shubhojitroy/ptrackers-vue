@@ -12,8 +12,8 @@ DONE: 3.7. Important Dates tab - Align column width the same for both tables. Ch
 3.8. FAQ tab - Add the remaining FAQ items.
 
 4. Priority Code page
-4.1 API call to retrieve Investor details.
-4.2 Give appropriate message (when validating priority code).
+DONE: 4.1 API call to retrieve Investor details.
+DONE: 4.2 Give appropriate message (when validating priority code).
 
 5. Application page
 DONE: 5.1. Fix inputs and labels.
@@ -24,7 +24,7 @@ DONE: 5.1. Fix inputs and labels.
 6. Confirmation page
 DONE: 6.1. Change all inputs into labels.
 DONE: 6.2. Close button renames to Finish
-6.3. Add BPay Logo (SVG) and reformat payment section
+DONE: 6.3. Add BPay Logo (SVG) and reformat payment section
 6.4. Add code to print button.
 
 

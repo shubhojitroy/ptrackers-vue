@@ -64,12 +64,13 @@
       </div>
       <hr>
       <div class="box">
-        <b-field label="Biller Code:" horizontal>
-          {{ payment.billerCode }}
-        </b-field>
-        <b-field label="Reference:" horizontal>
-          {{ payment.refNumber }}
-        </b-field>
+        <div class="bpay-box">
+          <img src="~/assets/img/bpay.svg"/>
+          <div class="bpay-details">
+            <span>Biller Code: {{ payment.billerCode }}</span>
+            <span>Ref: {{ payment.refNumber }}</span>
+          </div>
+        </div>
         <p>
           Telephone &amp; Internet Banking - BPAY®
         </p>
@@ -120,4 +121,37 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+$bpay-color: #142c61;
+
+.bpay-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  img {
+    width: 80px;
+    border: 4px solid $bpay-color;
+    margin-right: 4px;
+  }
+}
+.bpay-details {
+  border: 4px solid $bpay-color;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: $bpay-color;
+    font-weight: 700;
+    }
+}
+</style>
+
 
