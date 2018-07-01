@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="payment" class="section">
     <div class="container content">
       <h1 class="title is-size-2 is-size-3-mobile">
         Confirmation and Payment Instruction
@@ -116,7 +116,7 @@ export default {
   },
   methods: {
     print() {
-
+      this.$htmlToPaper('payment');
     },
   },
 }
