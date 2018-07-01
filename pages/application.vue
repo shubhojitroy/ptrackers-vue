@@ -45,9 +45,9 @@
           </b-input>
         </b-field>
         <div class="box terms">
-        <p>
-          By clicking 'Submit' you are confirming the application details as made above and declaring that I/We:
-        </p>
+          <p>
+            By clicking 'Submit' you are confirming the application details as made above and declaring that I/We:
+          </p>
           <ol>
             <li>
               have received a copy and read the Prospectus in full;
@@ -126,9 +126,9 @@
         </p>
         <div class="field is-grouped">
           <div class="control">
-            <nuxt-link to="/" class="button is-primary is-outlined">
-              Exit
-            </nuxt-link>
+            <button class="button is-primary is-outlined" @click="cancel()">
+              Cancel
+            </button>
           </div>
           <div class="control">
             <nuxt-link to="/confirmation-payment" class="button is-primary"
@@ -173,6 +173,17 @@ export default {
         refNumber: 809276394,
       };
       this.assignPayment(payment);
+    },
+    cancel () {
+      this.$dialog.confirm({
+        title: 'Cancel application',
+        message: 'Are you sure you want to <b>cancel</b> your application?',
+        cancelText: 'No',
+        confirmText: 'Yes',
+        type: 'is-warning',
+        hasIcon: true,
+        onConfirm: () => this.$router.push('/')
+      })
     },
   },
 };
