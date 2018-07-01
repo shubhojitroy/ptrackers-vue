@@ -1,10 +1,8 @@
 <template>
-  <div>
-    <div class="container">
-      <section class="canvas">
-    <div class="container box">
-      <h1 class="title">Legal Restrictions</h1>
-      <div class="content">
+  <section class="section">
+    <div class="container content">
+      <div class="box">
+        <h1 class="title">Legal Restrictions</h1>
         <p>
           Unfortunately, legal restrictions prevent us from allowing you access to this part of the website.
         </p>
@@ -12,15 +10,12 @@
           If you have any questions, please contact us by email by clicking on
           <a href="mailto:corporateactions@boardroomlimited.com.au">this&nbsp;link</a>.
         </p>
+        <nuxt-link to="/" class="button is-primary">
+          Back
+        </nuxt-link>
       </div>
-
-      <nuxt-link to="/" class="button is-primary">
-        Back
-      </nuxt-link><br>
     </div>
   </section>
-    </div>
-  </div>
 </template>
 
 <script>

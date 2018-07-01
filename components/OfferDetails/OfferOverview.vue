@@ -45,10 +45,10 @@
       for which they are entitled. However, in order to participate in the Entitlement Offer, Eligible Shareholder must
       subscribe for a number of <span class="hl">PTrackERS</span> being not less than the lower of:
     </p>
-      <ul>
-        <li>1,500 <span class="hl">PTrackERS</span>; or</li>
-        <li>the number of <span class="hl">PTrackERS</span> being offered to the Eligible Shareholder under the Entitlement Offer.</li>
-      </ul>
+    <ul>
+      <li>1,500 <span class="hl">PTrackERS</span>; or</li>
+      <li>the number of <span class="hl">PTrackERS</span> being offered to the Eligible Shareholder under the Entitlement Offer.</li>
+    </ul>
     <p>
       Entitlement Offer Applicants may subscribe for <span class="hl">PTrackERS</span> in excess of the number of
       <span class="hl">PTrackERS</span> for which they are entitled under the Entitlement Offer, however the excess will form part of the General Public

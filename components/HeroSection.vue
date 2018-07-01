@@ -14,23 +14,23 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        show: false
-      }
-    },
-    methods: {
-      showHeader: function () {
-        this.show = true;
-      }
-    },
-    mounted () {
-      setTimeout(() => {
-        this.showHeader()
-      }, 1000);
+export default {
+  data () {
+    return {
+      show: false
     }
-  }
+  },
+  mounted () {
+    setTimeout(() => {
+      this.showHeader()
+    }, 1000);
+  },
+  methods: {
+    showHeader: function () {
+      this.show = true;
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>

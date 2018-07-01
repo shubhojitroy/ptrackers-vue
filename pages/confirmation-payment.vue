@@ -10,47 +10,51 @@
         paying by BPAY®, you will be deemed to have accepted the terms of the Offer.
       </p>
       <p>
-        You should submit your BPAY® payment immediately using the Biller Code and Reference provided below. The time of
-        your Application will be the time at which the Unit Registry has received both your valid online Application and
-        your BPAY® payment. If you submit an online Application in the 24 hours before 5.00pm (Sydney time) on XXXX, XX XXXX
-        2018 you must ensure that your BPAY® payment is processed by your bank so that your Application Monies are received
-        before 5.00pm (Sydney time) on XXXX, XX XXXX 2018. If your BPAY® payment is not received by this time, it will be
-        treated as a late Application and may not be processed.
+        You should submit your BPAY® payment immediately using the Biller Code and Reference provided below. The time of your Application
+        will be the time at which the Unit Registry has received both your valid online Application and your BPAY® payment.
+        If you submit an online Application in the 24 hours before 5.00pm (Sydney time) on XXXX, XX XXXX 2018 you must ensure
+        that your BPAY® payment is processed by your bank so that your Application Monies are received before 5.00pm (Sydney
+        time) on XXXX, XX XXXX 2018. If your BPAY® payment is not received by this time, it will be treated as a late Application
+        and may not be processed.
       </p>
       <h4>
         Payment by Cheque
       </h4>
-        <p>
-          To submit your Application Monies by cheque, bank draft or money order, follow the instructions below:
-        </p>
-        <ul>
-          <li>
-            Print out this page and attach your cheque, bank draft or money order to it.
-          </li>
-          <li>
-            Your cheque, bank draft or money order must be drawn on an Australian financial institution and in Australian dollars for
-            the amount of A, crossed "Not Negotiable" and made payable to PM Capital GO 2025 Limited – Offer A/C" Cheques
-            returned unpaid may not be re-presented and are likely to result in your Application being rejected.
-          </li>
-          <li>
-            If you are not able to print out this page, then write the reference number and the name of the Offer as set out above on
-            the back of your cheque, bank draft or money order.
-          </li>
-          <li>
-            Post your payment to: Boardroom Pty Limited, GPO Box 3993, Sydney NSW 2001. If you are returning your payment by post, you
-            should allow sufficient time for collection and delivery by postal services.
-          </li>
-        </ul>
+      <p>
+        To submit your Application Monies by cheque, bank draft or money order, follow the instructions below:
+      </p>
+      <ul>
+        <li>
+          Print out this page and attach your cheque, bank draft or money order to it.
+        </li>
+        <li>
+          Your cheque, bank draft or money order must be drawn on an Australian financial institution and in Australian dollars for
+          the amount of A, crossed "Not Negotiable" and made payable to PM Capital GO 2025 Limited – Offer A/C" Cheques returned
+          unpaid may not be re-presented and are likely to result in your Application being rejected.
+        </li>
+        <li>
+          If you are not able to print out this page, then write the reference number and the name of the Offer as set out above on
+          the back of your cheque, bank draft or money order.
+        </li>
+        <li>
+          Post your payment to: Boardroom Pty Limited, GPO Box 3993, Sydney NSW 2001. If you are returning your payment by post, you
+          should allow sufficient time for collection and delivery by postal services.
+        </li>
+      </ul>
       <div class="box">
         <b-field label="Priority Code:">
           {{ investor.priorityCode }}
         </b-field>
         <b-field label="Holder Details:" :addons="false">
           {{ investor.nameAddress1 }}
-          <br> {{ investor.nameAddress2 }}
-          <br> {{ investor.nameAddress3 }}
-          <br> {{ investor.nameAddress4 }}
-          <br> {{ investor.nameAddress5 }}
+          <br v-if="investor.nameAddress2">
+          {{ investor.nameAddress2 }}
+          <br v-if="investor.nameAddress3">
+          {{ investor.nameAddress3 }}
+          <br v-if="investor.nameAddress4">
+          {{ investor.nameAddress4 }}
+          <br v-if="investor.nameAddress5">
+          {{ investor.nameAddress5 }}
         </b-field>
         <b-field label="Number of PTrackERS applied for:">
           {{ payment.unitsApplied | currency('', 0) }}
@@ -61,7 +65,7 @@
       </div>
       <div class="box">
         <div class="bpay-box">
-          <img src="~/assets/img/bpay.svg"/>
+          <img src="~/assets/img/bpay.svg" />
           <div class="bpay-details">
             <span>Biller Code: {{ payment.billerCode }}</span>
             <span>Ref: {{ payment.refNumber }}</span>

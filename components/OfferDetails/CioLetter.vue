@@ -83,7 +83,7 @@
     </p>
     <br>
     <div class="level">
-      <youtube class="level-item youtube" video-id="F6rSnScmkyU"></youtube>
+      <youtube class="level-item" video-id="F6rSnScmkyU"></youtube>
     </div>
   </div>
 </template>

@@ -131,8 +131,7 @@
             </button>
           </div>
           <div class="control">
-            <nuxt-link to="/confirmation-payment" class="button is-primary"
-              @click.native="submitPayment()">
+            <nuxt-link to="/confirmation-payment" class="button is-primary" @click.native="submitPayment()">
               Submit
             </nuxt-link>
           </div>

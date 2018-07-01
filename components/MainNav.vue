@@ -5,50 +5,42 @@
         <a class="navbar-item" href="http://www.pmcapital.com.au/global-companies-fund">
           <img src="~assets/img/pm-capital-go2025.png" alt="PM Capital Limited">
         </a>
-        <!-- <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div> -->
       </div>
-      <!-- <div class="navbar-menu has-text-left" :class="{ 'is-active': showNav }"> -->
-        <div class="navbar-brand">
-          <a class="navbar-item" href="http://www.pmcapital.com.au/global-companies-fund">
-            <img src="~assets/img/pm-capital-global.png" alt="PM Capital Limited">
-          </a>
-        </div>
-      <!-- </div> -->
+      <div class="navbar-brand">
+        <a class="navbar-item" href="http://www.pmcapital.com.au/global-companies-fund">
+          <img src="~assets/img/pm-capital-global.png" alt="PM Capital Limited">
+        </a>
+      </div>
     </div>
   </nav>
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        showNav: false,
-        growHeader: true
-      }
-    },
-    head () {
-      return {
-        htmlAttrs: {
-          class: "has-navbar-fixed-top"
-        }
-      }
-    },
-    methods: {
-      handleScroll(event) {
-        this.growHeader = (window.scrollY < 40);
-      }
-    },
-    created () {
-      // window.addEventListener("scroll", this.handleScroll);
-    },
-    destroyed () {
-      // window.removeEventListener("scroll", this.handleScroll);
+export default {
+  data () {
+    return {
+      growHeader: true
     }
-  }
+  },
+  head () {
+    return {
+      htmlAttrs: {
+        class: "has-navbar-fixed-top"
+      }
+    }
+  },
+  created () {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll(event) {
+      this.growHeader = (window.scrollY < 40);
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>

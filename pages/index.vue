@@ -20,23 +20,18 @@
             <form novalidate @submit.prevent="submitForm">
               <b-field label="Country of Primary Residence" :type="countryType" :message="countryMessage">
                 <b-autocomplete v-model="country" field="name" :placeholder="placeholder" :data="filteredCountries" open-on-focus keep-first
-                  icon="earth"
-                  @select="onSelect"
-                  @focus="focusSelect"
-                  @blur="leaveSelect">
-                  <!-- <template slot="header">
-                    <a @click="clearSelect">
-                        <span> Clear </span>
-                    </a>
-                  </template> -->
+                                icon="earth"
+                                @select="onSelect"
+                                @focus="focusSelect"
+                                @blur="leaveSelect">
                   <template slot="empty">No results found</template>
                 </b-autocomplete>
               </b-field>
               <br>
               <div class="control">
-              <button type="submit" class="button is-primary">
-                Submit
-              </button>
+                <button type="submit" class="button is-primary">
+                  Submit
+                </button>
               </div>
             </form>
           </div>

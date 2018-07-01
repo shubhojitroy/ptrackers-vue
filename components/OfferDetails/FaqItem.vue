@@ -1,7 +1,7 @@
 <template>
   <b-collapse class="message is-primary" :open="isOpen" @open="activateOpen()">
     <div slot="trigger" class="message-header">
-        <strong>{{ title }}</strong>
+      <strong>{{ title }}</strong>
     </div>
     <div class="message-body">
       <slot></slot>
@@ -11,6 +11,10 @@
 
 <script>
 export default {
+  model: {
+    prop: 'value',
+    event: 'open'
+  },
   props: {
     value: {
       type: String,
@@ -20,10 +24,6 @@ export default {
       type: String,
       required: true
     },
-  },
-  model: {
-    prop: 'value',
-    event: 'open'
   },
   computed: {
     isOpen () {
