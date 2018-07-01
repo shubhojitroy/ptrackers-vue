@@ -19,7 +19,7 @@ DONE: 4.2 Give appropriate message (when validating priority code).
 DONE: 5.1. Fix inputs and labels.
 5.2. Add business rules and validations to page.
 5.3. Submit button call API to save details
-5.4. Exit button changes to Cancel ==>opens dialog box to confirm before cancelling ==> goes to cancel page
+DONE: 5.4. Exit button changes to Cancel ==>opens dialog box to confirm before cancelling ==> goes to cancel page
 
 6. Confirmation page
 DONE: 6.1. Change all inputs into labels.
