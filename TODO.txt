@@ -25,7 +25,7 @@ DONE: 5.1. Fix inputs and labels.
 DONE: 6.1. Change all inputs into labels.
 DONE: 6.2. Close button renames to Finish
 DONE: 6.3. Add BPay Logo (SVG) and reformat payment section
-6.4. Add code to print button.
+DONE: 6.4. Add code to print button.
 
 
 Notes:
