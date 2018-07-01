@@ -27,15 +27,15 @@ export default {
   },
   computed: {
     isOpen () {
-      return this.value === this.title
+      return this.value === this.title;
     }
   },
   methods: {
     activateOpen () {
-      this.$emit('open', this.title)
+      this.$emit('open', this.title);
     }
   }
-}
+};
 </script>
 
 <style scoped>

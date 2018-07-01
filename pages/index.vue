@@ -42,9 +42,8 @@
 </template>
 
 <script>
-
-import { countries } from "~/assets/js/countries.js"
-import { required } from 'vuelidate/lib/validators'
+import { countries } from '~/assets/js/countries.js';
+import { required } from 'vuelidate/lib/validators';
 
 const _placeholder = 'Select a Country';
 
@@ -53,13 +52,13 @@ export default {
   },
   data () {
     return {
-      name: "",
-      country: "",
-      country2: "",
+      name: '',
+      country: '',
+      country2: '',
       selected: null,
       placeholder: _placeholder,
       countries: countries.items
-    }
+    };
   },
   validations: {
     country: {
@@ -72,16 +71,15 @@ export default {
         return option.name
           .toString()
           .toLowerCase()
-          .indexOf(this.country.toLowerCase()) >= 0
-        })
+          .indexOf(this.country.toLowerCase()) >= 0;
+        });
     },
     countryType() {
-      return this.$v.country.$error ? "is-danger" : ""
+      return this.$v.country.$error ? 'is-danger' : '';
     },
     countryMessage() {
-     return this.$v.country.$error ? "Country is required" : ""
+     return this.$v.country.$error ? 'Country is required' : '';
     },
-
   },
   methods: {
     submitForm () {
@@ -101,19 +99,16 @@ export default {
     },
     onSelect (option) {
       this.selected = option;
-      console.log('selected!!', option && option.name)
     },
     leaveSelect () {
-      console.log(`leaving!!!! country=${this.country}, placeholder=${this.placeholder}`, this.selected)
       if (this.country === '' && this.placeholder !== _placeholder) {
         this.country2 = this.placeholder;
-      }
+      };
       let vm = this;
       setTimeout(function() {
         if (vm.country === '') { vm.country = vm.country2; }
-      },200)
-    //  this.$v.country.$touch()
+      }, 200);
     },
   }
-}
+};
 </script>

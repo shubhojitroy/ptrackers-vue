@@ -123,9 +123,9 @@ export default {
   data() {
     return {
       checkbox: false,
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

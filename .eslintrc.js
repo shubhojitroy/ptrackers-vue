@@ -22,5 +22,8 @@ module.exports = {
     'vue/max-attributes-per-line': 'off',
     'vue/attributes-order': 'off',
     'vue/html-self-closing': 'off',
+    'quotes': ['error', 'single'],
+    'semi': ['error', 'always'],
+    // 'comma-dangle': ['error', 'always'],
   }
 }

@@ -170,7 +170,7 @@ export default {
     return {
       openItem: '',
       isOpen: true
-    }
+    };
   }
-}
+};
 </script>

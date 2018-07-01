@@ -13,15 +13,15 @@
 </template>
 
 <script>
-import MainNav from '~/components/MainNav.vue'
-import HeroSection from "~/components/HeroSection.vue"
+import MainNav from '~/components/MainNav.vue';
+import HeroSection from '~/components/HeroSection.vue';
 
 export default {
   components: {
     MainNav,
-    HeroSection
+    HeroSection,
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

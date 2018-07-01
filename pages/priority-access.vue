@@ -47,9 +47,9 @@ export default {
   },
   data () {
     return {
-      priorityCode: "",
-      error: ""
-    }
+      priorityCode: '',
+      error: ''
+    };
   },
   validations: {
     priorityCode: {
@@ -58,11 +58,11 @@ export default {
   },
   computed: {
     inputType() {
-      return this.$v.priorityCode.$error || this.error ? "is-danger" : "is-primary"
+      return this.$v.priorityCode.$error || this.error ? 'is-danger' : 'is-primary';
     },
     inputMessage() {
       return this.$v.priorityCode.$error
-        ? "Priority Code is required"
+        ? 'Priority Code is required'
         : this.error;
     }
   },
@@ -73,7 +73,7 @@ export default {
       if (!this.$v.$error) {
         this.login({ priorityCode: this.priorityCode })
           .then(() => {
-            this.$router.push('/registration-details')
+            this.$router.push('/registration-details');
           })
           .catch((err) => {
             this.$snackbar.open({
@@ -87,12 +87,12 @@ export default {
                 el.focus();
                 el.select();
               }
-            })
-          })
+            });
+          });
       }
     }
   }
-}
+};
 </script>
 
 <style scoped>

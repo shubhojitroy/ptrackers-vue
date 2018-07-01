@@ -82,7 +82,7 @@ export default {
   data() {
     return {
       activeTab: 0,
-    }
+    };
   },
   methods: {
     nextTab() {
@@ -90,7 +90,7 @@ export default {
       window.scrollTo(0, 0);
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

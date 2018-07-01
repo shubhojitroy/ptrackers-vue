@@ -20,27 +20,27 @@ export default {
   data () {
     return {
       growHeader: true
-    }
+    };
   },
   head () {
     return {
       htmlAttrs: {
-        class: "has-navbar-fixed-top"
+        class: 'has-navbar-fixed-top'
       }
-    }
+    };
   },
   created () {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   },
   destroyed () {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     handleScroll(event) {
       this.growHeader = (window.scrollY < 40);
     }
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

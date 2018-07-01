@@ -119,7 +119,7 @@ export default {
       this.$htmlToPaper('payment');
     },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

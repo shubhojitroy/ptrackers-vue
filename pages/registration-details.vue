@@ -10,10 +10,14 @@
         </b-field>
         <b-field label="Holder Details:" :addons="false">
           {{ investor.nameAddress1 }}
-          <br> {{ investor.nameAddress2 }}
-          <br> {{ investor.nameAddress3 }}
-          <br> {{ investor.nameAddress4 }}
-          <br> {{ investor.nameAddress5 }}
+          <br v-if="investor.nameAddress2">
+          {{ investor.nameAddress2 }}
+          <br v-if="investor.nameAddress3">
+          {{ investor.nameAddress3 }}
+          <br v-if="investor.nameAddress4">
+          {{ investor.nameAddress4 }}
+          <br v-if="investor.nameAddress5">
+          {{ investor.nameAddress5 }}
         </b-field>
       </div>
       <b-message>
@@ -55,5 +59,5 @@ export default {
   computed: {
     ...mapGetters(['investor']),
   },
-}
+};
 </script>

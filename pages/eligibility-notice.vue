@@ -18,12 +18,6 @@
   </section>
 </template>
 
-<script>
-  export default {
-
-  }
-</script>
-
 <style scoped>
 .canvas {
   z-index: 50;

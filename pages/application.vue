@@ -150,17 +150,17 @@ export default {
     return {
       phoneNo: store.getters.investor.phoneNumber,
       emailAdrs: store.getters.investor.emailAddress,
-    }
+    };
   },
   data () {
     return {
       unitsApplied: 0,
-    }
+    };
   },
   computed: {
     ...mapGetters(['investor']),
     applicationAmount () {
-      return this.investor.unitPrice * this.unitsApplied
+      return this.investor.unitPrice * this.unitsApplied;
     }
   },
   methods: {
@@ -182,7 +182,7 @@ export default {
         type: 'is-warning',
         hasIcon: true,
         onConfirm: () => this.$router.push('/')
-      })
+      });
     },
   },
 };

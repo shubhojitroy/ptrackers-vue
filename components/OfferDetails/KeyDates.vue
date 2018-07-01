@@ -88,7 +88,7 @@ export default {
       isFocusable: false,
       isLoading: false,
       hasMobileCards: true
-    }
+    };
   }
-}
+};
 </script>

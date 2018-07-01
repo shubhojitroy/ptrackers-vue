@@ -6,7 +6,7 @@
           PM Capital GO 2025 / PM Capital Global Opportunities Fund Limited
         </h1>
         <h2 class="subtitle is-size-3 is-size-4-mobile">
-          Entitlement Offer & General Offer
+          Entitlement Offer &amp; General Offer
         </h2>
       </div>
     </div>
@@ -18,11 +18,11 @@ export default {
   data () {
     return {
       show: false
-    }
+    };
   },
   mounted () {
     setTimeout(() => {
-      this.showHeader()
+      this.showHeader();
     }, 1000);
   },
   methods: {
@@ -30,7 +30,7 @@ export default {
       this.show = true;
     }
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

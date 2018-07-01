@@ -1,4 +1,4 @@
-const pkg = require('./package')
+const pkg = require('./package');
 
 module.exports = {
   mode: 'spa',
@@ -15,9 +15,7 @@ module.exports = {
     ],
     link: [
       { rel: 'shortcut icon', type: 'image/vnd.microsoft.icon', href: 'favicon.ico' },
-
-    ]
-
+    ],
   },
 
   /*
@@ -59,9 +57,9 @@ module.exports = {
     base: '/ca/ptrackers/',
     scrollBehavior (to, from, savedPosition) {
       if (savedPosition) {
-        return savedPosition
+        return savedPosition;
       } else {
-        return { x: 0, y: 0 }
+        return { x: 0, y: 0 };
       }
     }
   },
@@ -88,8 +86,8 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
-        })
+        });
       }
     }
   }
-}
+};

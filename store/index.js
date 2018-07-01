@@ -17,14 +17,14 @@ export const state = () => ({
     billerCode: 123465,
     refNumber: 60001234,
   },
-})
+});
 
 export const getters = {
   animate: state => state.animateFirstTime,
   investor: state => state.investor,
   payment: state => state.payment,
   applicationAmount: state => state.investor.unitPrice * state.payment.unitsApplied,
-}
+};
 
 export const mutations = {
   stopAnimation (state) {
@@ -36,7 +36,7 @@ export const mutations = {
   setPayment (state, value) {
     state.payment = value;
   },
-}
+};
 
 export const actions = {
   stopAnimation ({ commit }) {
@@ -65,5 +65,4 @@ export const actions = {
       return Promise.reject('Invalid Priority Code');
     }
   },
-}
-
+};
