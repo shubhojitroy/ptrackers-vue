@@ -26,18 +26,6 @@ export const getters = {
   applicationAmount: state => state.investor.unitPrice * state.payment.unitsApplied,
 }
 
-export const actions = {
-  stopAnimation ({ commit }) {
-    commit('stopAnimation');
-  },
-  populateInvestor ({ commit }, value) {
-    commit('setInvestor', value);
-  },
-  assignPayment ({ commit }, value) {
-    commit('setPayment', value);
-  },
-}
-
 export const mutations = {
   stopAnimation (state) {
     state.animateFirstTime = false;
@@ -49,3 +37,33 @@ export const mutations = {
     state.payment = value;
   },
 }
+
+export const actions = {
+  stopAnimation ({ commit }) {
+    commit('stopAnimation');
+  },
+  assignPayment ({ commit }, value) {
+    commit('setPayment', value);
+  },
+  login ({ commit }, credentials) {
+    const investor = {
+      priorityCode: '1234',
+      nameAddress1: 'HARRY JAMES POTTER',
+      nameAddress2: '225 GEORGE STREET',
+      nameAddress3: 'SYDNEY',
+      nameAddress4: 'NSW',
+      nameAddress5: '2000',
+      emailAddress: 'harry.potter@gmail.com',
+      phoneNumber: '9290-1200',
+      unitPrice: 1.4,
+      entitlement: 12000,
+    };
+    if (credentials.priorityCode === '12345') {
+      commit('setInvestor', investor);
+      return Promise.resolve();
+    } else {
+      return Promise.reject('Invalid Priority Code');
+    }
+  },
+}
+
