@@ -7,7 +7,10 @@
       <h2 class="title">
         Application
       </h2>
-      <faq-item v-model="openItem" title="How can I apply for securities offered by GO 2025?">
+      <faq-item v-model="openItem" key-value="99">
+        <template slot="title">
+          How can I apply for securities offered by <span class="gotext">GO 2025</span>?"
+        </template>
         <p>
           To invest in the Offer, you may do so by reading the Prospectus then:
         </p>
