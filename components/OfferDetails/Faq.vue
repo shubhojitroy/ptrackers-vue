@@ -383,7 +383,7 @@
         </ol>
         <p>
           Past performance is not a reliable indicator of future performance. These are not indications of actual, nor forecasts of future, performance of either PGF or PTrackERS.
-        </p>       
+        </p>
         <p>
           The PM Capital Global Companies Fund is in its 20th year of operation, having an inception date of October 1998. As at 31 May 2018, the PM Capital Global Companies Fund had generated compound annual returns <strong>DOUBLE</strong> that of the MSCI World Net Total Return Index after all fees and expenses. Fund returns have been 9.0% pa vs the index of 4.5% per annum.
         </p>
@@ -556,16 +556,6 @@ export default {
 .no-abbreviation {
   font-weight: 100;
   text-decoration: none !important;
-}
-.left-side{
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-start;
-}
-.right-side {
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
 }
 .diagonal {
   font-style: oblique;
