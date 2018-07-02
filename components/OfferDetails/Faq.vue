@@ -335,10 +335,155 @@
         <p>
           The Company will generally make distributions on PTrackERS semi-annually (expected to be in or around March and September of each year) but may do so less frequently at the discretion of the Board. No distributions will be made during the first 6 months after the PTrackERS have been issued. As such, it is expected that the first semi-annual distribution will be made in March 2019. 
         </p>        
-      </faq-item>
-
-      
+      </faq-item>      
     </div>
+    <hr>
+    <div class="box">    
+      <h1 class="title">
+        About the Investment Manager
+      </h1>      
+      <faq-item v-model="openItem" title="How does the Investment Manager for GO 2025 compare to its peers over the long term?">
+        <p>
+          PGF’s and GO 2025’s Investment Strategy will be managed consistent with PM Capital’s unlisted managed investment scheme, the PM Capital Global Companies Fund (ARSN 092 434 618), and other associated global mandates. 
+        </p>
+        <p>
+          For both Financial Year 2017 and Calendar Year 2017, PM Capital’s managed funds and mandates appeared as #1 ranked for fund performance over 5, 7 and 8 years compound returns in their Morningstar peer group of over 140 peers. The table below shows fund/mandate returns and peer ranking over the 5, 6, 7, 8, and 9 year compound returns to 31 December 20172.
+        </p>
+        <div>
+        </div>
+        <ol>
+          <li></li>
+        </ol>
+        <p>
+          The PM Capital Global Companies Fund is in its 20th year of operation, having an inception date of October 1998. As at 31 May 2018, the PM Capital Global Companies Fund had generated compound annual returns <strong>DOUBLE</strong> that of the MSCI World Net Total Return Index after all fees and expenses. Fund returns have been 9.0% pa vs the index of 4.5% per annum.
+        </p>
+        <p>
+          Past performance is not a reliable indicator of future performance. These are not indications of actual, nor forecasts of future, performance of either PGF or PTrackERS.
+        </p>
+      </faq-item>
+      <faq-item v-model="openItem" title="Has the Investment Manager for GO 2025 received any third party recognition for its investment management of strategies consistent with that which will be used by GO 2025?">
+        <p>
+          Yes. PM Capital has won numerous industry awards in recognition of its investment management. Recent awards include: 
+        </p>
+      </faq-item>
+      <faq-item v-model="openItem" title="Beyond the redemption feature, how is PM Capital aligned with investors?">
+        <p>
+          The Investment Manager, PM Capital, and its staff are in aggregate the largest holders in <span class="gotext">GO 2025</span>’s parent, PGF, with a co-investment representing 8.9% of the company. PGF has the same investment strategy as <span class="gotext">GO 2025</span>. 
+        </p>
+        <p>
+          The investment manager, PM Capital, is paying for all costs associated with the offer. This means every dollar invested will be generating investment returns from day 1, and the NTA at the listing date will be equal to the Issue Price. 
+        </p>
+      </faq-item>
+    </div>
+    <hr>
+    <div class="box">    
+      <h1 class="title">
+        General
+      </h1>      
+      <faq-item v-model="openItem" title="Will there be a dividend/ security reinvestment plan?">
+        <p>
+          No 
+        </p>
+      </faq-item>
+      <faq-item v-model="openItem" title="What disclosure will be provided on GO 2025? ">
+        <p>
+          Disclosure frequency and quality will be the same as PGF, this will include: 
+        </p>
+        <ul>
+          <li>
+            Estimated attributable NTA announced weekly and monthly,
+          </li>
+          <li>
+            Monthly fund update and quarterly fund update; including:
+            <ul>
+              <li>
+                Disclosure of portfolio positions, current stock examples, currency exposure, domicile of listing and domicile of business. 
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </faq-item>      
+    </div>
+    <hr>
+    <div class="box">
+      <h1 class="title">
+        More information
+      </h1>
+      <faq-item v-model="openItem" title="Where can I find more information about the Offer or get a Prospectus?">
+        <div class="">
+          <p>
+            <strong>
+              For information on the Offer:
+            </strong>
+          </p>
+          <p>
+            PM Capital Limited
+          </p>
+          <p>
+            Telephone 	+61 2 8243 0888
+          </p>
+          <div class="space"></div>
+          <div class="space"></div>
+          <p>
+            Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:Go2025@pmcapital.com.au"><span class="gotext">Go2025</span>@pmcapital.com.au</a>
+          </p>
+          <p>
+            Website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pmcapital.com.au" target="_blank">www.pmcapital.com.au</a>
+          </p>
+        </div>
+        <div class="left-side">
+          <p>
+            <strong>
+              For information on the Offer:
+            </strong>
+          </p>
+          <p>
+            PM Capital Limited
+          </p>
+          <p>
+            Telephone 	+61 2 8243 0888
+          </p>
+          
+          <p>
+            Email<a href="mailto:Go2025@pmcapital.com.au"><span class="gotext">Go2025</span>@pmcapital.com.au</a>
+          </p>
+          <p>
+            Website<a href="http://www.pmcapital.com.au" target="_blank">www.pmcapital.com.au</a>
+          </p>
+        </div>
+        <div class="right-side">
+          <p>
+            <strong>
+              For information on your PGF holding, and Entitlement:
+            </strong>
+          </p>
+          <p>
+            Boardroom Pty Limited
+          </p>
+          <p>
+            Telephone 	1300 737 760 (within Australia)
+          </p>
+          <p>
+            Telephone 	+61 2 9290 9600 (outside Australia)
+          </p>
+          <span class="space"></span>
+          <p>
+            Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:Go2025@pmcapital.com.au"><span class="gotext">Go2025</span>@pmcapital.com.au</a>
+          </p>
+          <p>
+            Website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.boardroomlimited.com.au/ca/ptrackers" target="_blank">www.boardroomlimited.com.au/ca/ptrackers</a>
+          </p>
+        </div>
+      </faq-item>
+    </div>
+    <hr>
+    <h1 class="title">
+      Disclaimer
+    </h1>
+    <p>
+      The Prospectus (dated 2 July 2018) is jointly issued by PM Capital Global Opportunities Fund Limited (ACN 166 064 875) (‘PGF’), and PM Capital <span class="gotext">Go 2025</span> Limited (ACN 623 887 285) and is an invitation to Australian and New Zealand resident investors to acquire up to 350,909,977 PTrackERS each having an Issue Price of $1.40 to raise up to $491,273,967.80 (Offer). The PTrackERS will be exchanged for fully-paid ordinary shares of PGF) at 30 June 2025, unless a redemption election at the option of the Securityholder has been made on terms described in the Prospectus. The information herein, and given in the Prospectus, does not constitute investment advice or financial product advice. This and Prospectus are of a general nature and have been prepared without taking into account your individual investment objectives, financial situation, tax position or particular investment needs. The Issuers (or any of its directors, staff, associates or external service providers), do not guarantee the repayment of capital or any rate of return. Investments in PTrackERS are not bank deposits.
+    </p> 
+
   </div>
 </template>
 
@@ -377,5 +522,15 @@ export default {
 .no-abbreviation {
   font-weight: 100;
   text-decoration: none !important;
+}
+.left-side{  
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.right-side {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 </style>
