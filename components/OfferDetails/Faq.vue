@@ -184,7 +184,7 @@
         </p>
       </faq-item>
     </div>
-    <hr>
+
     <div class="box">
       <h1 class="title">
         About the offer
@@ -220,7 +220,7 @@
         </p>
       </faq-item>
     </div>
-    <hr>
+
     <div class="box">
       <h1 class="title">
         About PTrackers
@@ -360,7 +360,7 @@
         </p>
       </faq-item>
     </div>
-    <hr>
+
     <div class="box">
       <h1 class="title">
         About the Investment Manager
@@ -444,7 +444,7 @@
         </p>
       </faq-item>
     </div>
-    <hr>
+
     <div class="box">
       <h1 class="title">
         General
@@ -476,7 +476,7 @@
         </ul>
       </faq-item>
     </div>
-    <hr>
+
     <div class="box">
       <h1 class="title">
         More information
@@ -530,7 +530,7 @@
         </div>
       </faq-item>
     </div>
-    <hr>
+
     <h1 class="title">
       Disclaimer
     </h1>
