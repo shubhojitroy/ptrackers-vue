@@ -45,7 +45,7 @@ export default {
   opacity: 0;
 }
 .subtitle {
-  color: lightgray;
+  color: white;
   opacity: 0;
 }
 

@@ -319,6 +319,18 @@
         <p>
           History demonstrates that LICs as an industry can cycle between premium and discounts and as such it is very difficult for LIC investors to receive a return equal to that which the investment manager generates. This is demonstrated below using the following three well known LICs as examples:
         </p>
+        <div class="graph">
+          <p>Large-cap Australian Shares</p>
+          <img src="~/assets/img/faq-large-cap.png" alt="Large-cap Australian Shares"/>
+        </div>
+        <div class="graph">
+          <p>Small-Medium cap Australian Shares</p>
+          <img src="~/assets/img/faq-small-medium-cap.png" alt="Small-Medium cap Australian Shares"/>
+        </div>
+        <div class="graph">
+          <p>International Shares</p>
+          <img src="~/assets/img/faq-international.png" alt="International Shares"/>
+        </div>
       </faq-item>
       <faq-item v-model="openItem" key-value="2">
         <template slot="title">
@@ -335,16 +347,16 @@
         <p>
           The Company will generally make distributions on PTrackERS semi-annually (expected to be in or around March and September of each year) but may do so less frequently at the discretion of the Board. No distributions will be made during the first 6 months after the PTrackERS have been issued. As such, it is expected that the first semi-annual distribution will be made in March 2019.
         </p>
-      </faq-item>      
+      </faq-item>
     </div>
     <hr>
-    <div class="box">    
+    <div class="box">
       <h1 class="title">
         About the Investment Manager
-      </h1>      
+      </h1>
       <faq-item v-model="openItem" title="How does the Investment Manager for GO 2025 compare to its peers over the long term?">
         <p>
-          PGF’s and GO 2025’s Investment Strategy will be managed consistent with PM Capital’s unlisted managed investment scheme, the PM Capital Global Companies Fund (ARSN 092 434 618), and other associated global mandates. 
+          PGF’s and GO 2025’s Investment Strategy will be managed consistent with PM Capital’s unlisted managed investment scheme, the PM Capital Global Companies Fund (ARSN 092 434 618), and other associated global mandates.
         </p>
         <p>
           For both Financial Year 2017 and Calendar Year 2017, PM Capital’s managed funds and mandates appeared as #1 ranked for fund performance over 5, 7 and 8 years compound returns in their Morningstar peer group of over 140 peers. The table below shows fund/mandate returns and peer ranking over the 5, 6, 7, 8, and 9 year compound returns to 31 December 20172.
@@ -381,31 +393,53 @@
       </faq-item>
       <faq-item v-model="openItem" title="Has the Investment Manager for GO 2025 received any third party recognition for its investment management of strategies consistent with that which will be used by GO 2025?">
         <p>
-          Yes. PM Capital has won numerous industry awards in recognition of its investment management. Recent awards include: 
+          Yes. PM Capital has won numerous industry awards in recognition of its investment management. Recent awards include:
         </p>
+        <table class="awards table">
+          <tbody>
+            <tr>
+              <td>
+                <img src="~/assets/img/faq-award-1.png" alt="Fund Manager of the Year">
+              </td>
+              <td><strong><em>Fund Manager of the Year</em></strong> award in the 2018 <em>Money Management</em> / Lonsec long short equities category</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="~/assets/img/faq-award-2.png" alt="Winner - Professional Planner">
+              </td>
+              <td>Winner - <em>Professional Planner</em> / Zenith International Equities (Alternative Strategies) Fund of the Year 2015</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="~/assets/img/faq-award-3.png" alt="Australian Fund Manager Foundation">
+              </td>
+              <td>Winner - Australian Fund Manager Foundation Best Australian-Based Global Equity Manger of the Year 2015</td>
+            </tr>
+          </tbody>
+        </table>
       </faq-item>
       <faq-item v-model="openItem" title="Beyond the redemption feature, how is PM Capital aligned with investors?">
         <p>
-          The Investment Manager, PM Capital, and its staff are in aggregate the largest holders in <span class="gotext">GO 2025</span>’s parent, PGF, with a co-investment representing 8.9% of the company. PGF has the same investment strategy as <span class="gotext">GO 2025</span>. 
+          The Investment Manager, PM Capital, and its staff are in aggregate the largest holders in <span class="gotext">GO 2025</span>’s parent, PGF, with a co-investment representing 8.9% of the company. PGF has the same investment strategy as <span class="gotext">GO 2025</span>.
         </p>
         <p>
-          The investment manager, PM Capital, is paying for all costs associated with the offer. This means every dollar invested will be generating investment returns from day 1, and the NTA at the listing date will be equal to the Issue Price. 
+          The investment manager, PM Capital, is paying for all costs associated with the offer. This means every dollar invested will be generating investment returns from day 1, and the NTA at the listing date will be equal to the Issue Price.
         </p>
       </faq-item>
     </div>
     <hr>
-    <div class="box">    
+    <div class="box">
       <h1 class="title">
         General
-      </h1>      
+      </h1>
       <faq-item v-model="openItem" title="Will there be a dividend/ security reinvestment plan?">
         <p>
-          No 
+          No
         </p>
       </faq-item>
       <faq-item v-model="openItem" title="What disclosure will be provided on GO 2025? ">
         <p>
-          Disclosure frequency and quality will be the same as PGF, this will include: 
+          Disclosure frequency and quality will be the same as PGF, this will include:
         </p>
         <ul>
           <li>
@@ -415,12 +449,12 @@
             Monthly fund update and quarterly fund update; including:
             <ul>
               <li>
-                Disclosure of portfolio positions, current stock examples, currency exposure, domicile of listing and domicile of business. 
+                Disclosure of portfolio positions, current stock examples, currency exposure, domicile of listing and domicile of business.
               </li>
             </ul>
           </li>
         </ul>
-      </faq-item>      
+      </faq-item>
     </div>
     <hr>
     <div class="box">
@@ -428,69 +462,51 @@
         More information
       </h1>
       <faq-item v-model="openItem" title="Where can I find more information about the Offer or get a Prospectus?">
-        <div class="">
-          <p>
-            <strong>
-              For information on the Offer:
-            </strong>
-          </p>
-          <p>
-            PM Capital Limited
-          </p>
-          <p>
-            Telephone 	+61 2 8243 0888
-          </p>
-          <div class="space"></div>
-          <div class="space"></div>
-          <p>
-            Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:Go2025@pmcapital.com.au"><span class="gotext">Go2025</span>@pmcapital.com.au</a>
-          </p>
-          <p>
-            Website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pmcapital.com.au" target="_blank">www.pmcapital.com.au</a>
-          </p>
-        </div>
-        <div class="left-side">
-          <p>
-            <strong>
-              For information on the Offer:
-            </strong>
-          </p>
-          <p>
-            PM Capital Limited
-          </p>
-          <p>
-            Telephone 	+61 2 8243 0888
-          </p>
-          
-          <p>
-            Email<a href="mailto:Go2025@pmcapital.com.au"><span class="gotext">Go2025</span>@pmcapital.com.au</a>
-          </p>
-          <p>
-            Website<a href="http://www.pmcapital.com.au" target="_blank">www.pmcapital.com.au</a>
-          </p>
-        </div>
-        <div class="right-side">
-          <p>
-            <strong>
-              For information on your PGF holding, and Entitlement:
-            </strong>
-          </p>
-          <p>
-            Boardroom Pty Limited
-          </p>
-          <p>
-            Telephone 	1300 737 760 (within Australia)
-          </p>
-          <p>
-            Telephone 	+61 2 9290 9600 (outside Australia)
-          </p>
-          <span class="space"></span>
-          <p>
-            Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:Go2025@pmcapital.com.au"><span class="gotext">Go2025</span>@pmcapital.com.au</a>
-          </p>
-          <p>
-            Website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.boardroomlimited.com.au/ca/ptrackers" target="_blank">www.boardroomlimited.com.au/ca/ptrackers</a>
-          </p>
+        <div class="more-info">
+          <div class="contact">
+            <p>For information on the Offer:</p>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td colspan="2">PM Capital Limited</td>
+                </tr>
+                <tr>
+                  <td>Telephone</td>
+                  <td>+61&nbsp;2&nbsp;8243&nbsp;0888</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td><a href="mailto:Go2025@pmcapital.com.au">Go2025@pmcapital.com.au</a></td>
+                </tr>
+                <tr>
+                  <td>Website</td>
+                  <td><a href="https://www.pmcapital.com.au/"></a>www.pmcapital.com.au</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="contact">
+            <p>For information on your PGF holding, and Entitlement:</p>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td colspan="2">Boardroom Pty Limited</td>
+                </tr>
+                <tr>
+                  <td>Telephone</td>
+                  <td>1300&nbsp;737&nbsp;760 (within Australia)<br>+61&nbsp;2&nbsp;9290&nbsp;9600 (outside Australia)</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td><a href="mailto:Go2025@boardroomlimited.com.au">Go2025@boardroomlimitedwww.com.au</a></td>
+                </tr>
+                <tr>
+                  <td>Website</td>
+                  <td><a href="https://www.boardroomlimited.com.au/ca/ptrackers/"></a>www.boardroomlimited.com.au/ca/ptrackers</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </faq-item>
     </div>
@@ -500,7 +516,7 @@
     </h1>
     <p>
       The Prospectus (dated 2 July 2018) is jointly issued by PM Capital Global Opportunities Fund Limited (ACN 166 064 875) (‘PGF’), and PM Capital <span class="gotext">Go 2025</span> Limited (ACN 623 887 285) and is an invitation to Australian and New Zealand resident investors to acquire up to 350,909,977 PTrackERS each having an Issue Price of $1.40 to raise up to $491,273,967.80 (Offer). The PTrackERS will be exchanged for fully-paid ordinary shares of PGF) at 30 June 2025, unless a redemption election at the option of the Securityholder has been made on terms described in the Prospectus. The information herein, and given in the Prospectus, does not constitute investment advice or financial product advice. This and Prospectus are of a general nature and have been prepared without taking into account your individual investment objectives, financial situation, tax position or particular investment needs. The Issuers (or any of its directors, staff, associates or external service providers), do not guarantee the repayment of capital or any rate of return. Investments in PTrackERS are not bank deposits.
-    </p> 
+    </p>
 
   </div>
 </template>
@@ -541,7 +557,7 @@ export default {
   font-weight: 100;
   text-decoration: none !important;
 }
-.left-side{  
+.left-side{
   flex-grow: 1;
   display: flex;
   justify-content: flex-start;
@@ -554,5 +570,49 @@ export default {
 .diagonal {
   font-style: oblique;
   font-size: 0.87rem;
+}
+.graph {
+  padding: 1rem 0 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-weight: 700;
+    margin-right: 1rem;
+    max-width: 150px;
+  }
+}
+.awards.table {
+  td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  td:nth-child(1) {
+    width: 35%;
+  }
+}
+.more-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact {
+  min-width: 50%;
+  padding: 1rem;
+  flex-grow: 1;
+  p {
+    font-weight: 700;
+  }
+  .table {
+    border: 1px solid #eee;
+    td:nth-child(1) {
+      width: 120px;
+    }
+  }
+}
+@media screen and (max-width: 1215px) {
+  .graph p { max-width: 100%;}
+
 }
 </style>
