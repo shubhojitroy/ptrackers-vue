@@ -186,11 +186,158 @@
           ‘GO’ stands for Global Opportunities. ‘2025’ is the year of the maturity date for the PTrackERS.
         </p>
       </faq-item>
-      <faq-item v-model="openItem" title="What is PM Capital GO 2025 Limited (‘GO 2025’)?">
+      <faq-item v-model="openItem">
+        <template slot="title">
+          What is PM Capital <span class="gotext">GO 2025</span> Limited (‘<span class="gotext">GO 2025</span>’)?
+        </template>
         <p>
-          <span class="gotext">GO 2025</span> is a newly incorporated and wholly owned subsidiary of the PM Capital Global Opportunities Fund (PGF). PGF is a listed investment company (LIC).  is a newly incorporated and wholly owned subsidiary of the PM Capital Global Opportunities Fund (PGF). PGF is a listed investment company (LIC). 
+          <span class="gotext">GO 2025</span> is a newly incorporated and wholly owned subsidiary of the PM Capital Global Opportunities Fund (PGF). PGF is a listed investment company (LIC). 
+        </p>
+        <p>
+          The investment manager of PGF and <span class="gotext">GO 2025</span>, PM Capital Limited, is an award winning investment manager known for having generated some of the industry’s leading long term returns. PM Capital has won numerous awards, most recently being awarded the prestigious Money Management/ Lonsec 2018 Fund Manager of the Year in the equities long/short category. 
+        </p>
+        <p>
+          PGF invests (and GO 2025 will invest) in a concentrated portfolio of global securities diversified across global equity markets  with the objective of providing long-term capital growth over a 7-year plus investment period.
         </p>
       </faq-item>
+      <faq-item v-model="openItem" title="What am I subscribing for?">
+        <p>
+          You are subscribing for ‘PTrackERS’, to be offered by GO 2025 and PM Capital Global Opportunities Fund Limited.
+        </p>
+        <p>
+          ‘PTrackERS’ stands for ‘<span class="abbreviation">P</span>ortfolio <span class="abbreviation">Track</span>ing <span class="abbreviation">E</span>xchangeable <span class="abbreviation">R</span>edeemable <span class="abbreviation">S</span>ecurities (Converting Security)’.
+        </p>
+      </faq-item>
+    </div>
+    <hr>
+    <div class="box">    
+      <h1 class="title">
+        About PTrackers
+      </h1>      
+      <faq-item v-model="openItem" title="What are PTrackERS?">
+        <p>
+          PTrackERS are the next generation of Listed Investment Company (LIC) securities and have been developed by PM Capital to improve LIC investor outcomes and choice.  On a look-through basis, they represent your investment exposure to an underlying portfolio held by the Company –  like a LIC – but with the benefit of allowing you the option to exit your investment based on NTA as at 30 June 2025.
+        </p>
+        <p>
+          This innovation is designed with the objective of providing investors the choice to:
+        </p>
+        <ol>
+          <li>
+            redeem in the future based on NTA;
+          </li>
+          <li>
+            convert into fully paid ordinary PGF shares:
+            <ul>
+              <li>
+                without incurring any dilution to NTA Before Tax plus Franking Credits per PTrackERS; and
+              </li>
+              <li>
+                without triggering a CGT event (please obtain your own tax advise. An ATO Product Ruling has been obtained by GO 2025 and PGF); or
+              </li>
+            </ul>
+          </li>
+          <li>
+            sell at any time on the ASX at prevailing market prices if you choose to.
+          </li>
+        </ol>
+        <p>
+          PM Capital has trademarked the term PTrackERS, given it represents significant evolution and innovation for traditional LIC investors.
+        </p>
+      </faq-item>           
+      <faq-item v-model="openItem">
+        <template slot="title">
+          How does <span class="gotext">GO 2025’s</span> improve the outcomes for securityholders compared to other LICs?
+        </template>
+        <ul>
+          <li class="abbreviation">
+            More choice, more control, more flexibility:
+          </li>
+          <p>
+            Investors can sell at any time on market, or they may redeem or convert on 30 June 2025.
+          </p>
+          <p>
+            LICs can and do trade on the ASX at discounts to their Net Tangible Assets, a negative for traditional LIC investor returns. Whilst PTrackERS may also trade at a discount or premium to NTA, the ability to redeem at a known date based on NTA provides investors access to the underlying portfolio performance and should help market prices trade closer to NTA than would otherwise be the case.
+          </p>
+          <p>
+            If PTrackERS investors wish to realise their investment on 30 June 2025, they have the choice of redeeming based on NTA or selling on the ASX.
+          </p>
+          <p>
+            If not redeemed, PTrackERS will be automatically exchanged for fully-paid Ordinary Shares of PGF in a manner which is non-dilutionary to NTA Before Tax Plus Franking Credits for both PGF shareholders and holders of PTrackERS.
+          </p>
+          <div class="space"></div>
+          <li class="abbreviation">
+            More equitable:
+          </li>
+          <p>
+            In essence, PTrackERS allow the capital base to be grown without diluting NTA before Tax Plus Franking Credits of either investors in PGF or GO 2025 PTrackERS. This will provide for better scales of economy after exchange of PTrackERS for PGF Shares. Further, it is anticipated to provide more trading, liquidity and market awareness in the stock, both prior to and after 30 June 2025. This is a significant improvement to many LICs that have diluted shareholders by raising capital at a discount to NTA.
+          </p>
+          <div class="space"></div>
+          <li class="abbreviation">
+            A clear and simple distribution policy:
+          </li>
+          <p>
+            The Company will target a distribution yield of between 3% and 4% per annum. This is comprised of semi-annual distributions equal to between 1.5% and 2% multiplied by the average of the previous 6 month-end NTA After Tax Liabilities.
+          </p>
+          <div class="space"></div>
+          <li class="abbreviation">
+            More alignment and accountability for the investment manager:
+          </li>
+          <p>
+            Unlike other LICs which seek to permanently lock up your capital (regardless of your investment experience), with PTrackERS you have the option of remaining invested via an Exchange of PTrackERS into PGF Shares, or leaving by redeeming based on NTA at 30 June 2025 . This feature makes the investment manager highly accountable for investment performance and communication, as clients can redeem if unhappy, or exchange for PGF Shares if they wish to remain invested.
+          </p>
+          <div class="space"></div>
+          <li class="abbreviation">
+            More direct and transparent exposure to investment returns:
+          </li>
+          <p>
+            Importantly, GO 2025 does not intend to issue any further securities over the life of the product (seven years). Changes in an LIC’s capital adds complexity for investors wishing to track and obtain the underlying performance of the Investment Manager. By participating in the offer, you enter at NTA, have the option of exiting based on NTA at maturity, and shouldn’t have your NTA diluted due to capital raisings. As such, tracking performance over the life of the PTrackERS should be more straight forward than with traditional LICs.
+          </p>
+          <div class="space"></div>
+          <li class="abbreviation">
+            Whilst retaining the benefits of a traditional LIC:
+          </li>
+          <ol start="a" class="content-left">
+            <li class="no-abbreviation">
+              PTrackERS can be traded daily on the ASX consistent with shares of LICs;
+            </li>
+            <li class="no-abbreviation">
+              the Investment Manager can, due to the seven year time frame, genuinely invest for the long term without the distraction of daily capital flows; and
+            </li>
+            <li class="no-abbreviation">
+              dividends can be franked where franking credits are available.
+            </li>
+          </ol>  
+        </ul>
+      </faq-item>
+      <faq-item v-model="openItem" title="Why is the PTrackERS redemption innovation is important for LIC investors?">
+        <p>
+          Even when LIC shareholders have invested for the Investment Manager’s recommended investment horizon (7 years, in the case of the Company), shareholders are subject to the vagaries of the market. This can have a significant effect on investor returns, depending on where a traditional LIC’s shares trade relative to its NTA in the future. 
+        </p>
+        <p>
+          LIC shares, including those issued by LICs with strong performance track-records, can trade on the ASX at substantial discounts to NTA. Whereas, while PTrackERS may also trade at levels different to their NTA over the seven year time frame, investors can require that the Company return proceeds based on NTA at the Maturity Date of 30 June 2025. This helps remove the uncertainty for investors as to whether they can obtain the underlying value of their securities upon the investment’s recommended 7-year time frame.
+        </p>
+        <p>
+          History demonstrates that LICs as an industry can cycle between premium and discounts and as such it is very difficult for LIC investors to receive a return equal to that which the investment manager generates. This is demonstrated below using the following three well known LICs as examples:
+        </p>
+      </faq-item>
+      <faq-item v-model="openItem">
+        <template slot="title">
+          Will <span class="gotext">GO 2025’s</span> PTrackERS pay distributions?
+        </template>
+        <p>
+          <span class="gotext">GO 2025’s</span> has a distribution policy that intends to target a distribution yield of between 3% and 4% per annum, plus franking where franking is available.
+        </p>
+        <p>
+          It is the intention of the Board to frank all distributions to the maximum extent possible.
+        </p>
+      </faq-item>
+      <faq-item v-model="openItem" title="When will the first distribution be paid?">
+        <p>
+          The Company will generally make distributions on PTrackERS semi-annually (expected to be in or around March and September of each year) but may do so less frequently at the discretion of the Board. No distributions will be made during the first 6 months after the PTrackERS have been issued. As such, it is expected that the first semi-annual distribution will be made in March 2019. 
+        </p>        
+      </faq-item>
+
+      
     </div>
   </div>
 </template>
@@ -217,5 +364,18 @@ export default {
 }
 .gotext{
   color: #ea6363;
+}
+.abbreviation {
+  font-weight:700; 
+  text-decoration:underline;
+}
+.space {
+  display: block;
+  width: 100%;
+  height: 10px;
+}
+.no-abbreviation {
+  font-weight: 100;
+  text-decoration: none !important;
 }
 </style>
