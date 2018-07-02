@@ -350,10 +350,28 @@
           For both Financial Year 2017 and Calendar Year 2017, PM Capital’s managed funds and mandates appeared as #1 ranked for fund performance over 5, 7 and 8 years compound returns in their Morningstar peer group of over 140 peers. The table below shows fund/mandate returns and peer ranking over the 5, 6, 7, 8, and 9 year compound returns to 31 December 20172.
         </p>
         <div>
+          <img src="~assets/img/investmentreturnranking.png" alt="" border="0" display="block" width="100%" />
         </div>
-        <ol>
-          <li></li>
+        <p>
+          <em>Source: Morningstar Direct</em>
+        </p>
+        <ol class="content-left diagonal">
+          <li>
+            to 31 December 2017. The annualised returns are the returns for each 5 to 9 year period to 31 December 2017.
+          </li>
+          <li>
+            Peer group: Australia OE Equity World Large Blend.
+          </li>
+          <li>
+            Differences in after fee investment return ranking between the above investment strategies managed by PM Capital relate to differences in fee structure and variations in portfolio composition.
+          </li>
+          <li>
+            &#35;Offered within the unlisted ‘FirstChoice’ products issued by Colonial First State Investments Limited (ABN 98 002 348 352, AFS Licence 232468).
+          </li>
         </ol>
+        <p>
+          Past performance is not a reliable indicator of future performance. These are not indications of actual, nor forecasts of future, performance of either PGF or PTrackERS.
+        </p>       
         <p>
           The PM Capital Global Companies Fund is in its 20th year of operation, having an inception date of October 1998. As at 31 May 2018, the PM Capital Global Companies Fund had generated compound annual returns <strong>DOUBLE</strong> that of the MSCI World Net Total Return Index after all fees and expenses. Fund returns have been 9.0% pa vs the index of 4.5% per annum.
         </p>
@@ -532,5 +550,9 @@ export default {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
+}
+.diagonal {
+  font-style: oblique;
+  font-size: 0.87rem;
 }
 </style>
