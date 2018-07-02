@@ -1,7 +1,12 @@
 <template>
   <b-collapse class="message is-primary" :open="isOpen" @open="activateOpen()">
     <div slot="trigger" class="message-header">
-      <strong>{{ title }}</strong>
+      <strong>
+        <template v-if="title">
+          {{ title }}
+        </template>
+        <slot v-else name="title"></slot>
+      </strong>
     </div>
     <div class="message-body">
       <slot></slot>
@@ -18,11 +23,11 @@ export default {
   props: {
     value: {
       type: String,
-      required: true
+      required: true,
     },
     title: {
       type: String,
-      required: true
+      default: '',
     },
   },
   computed: {
@@ -42,5 +47,4 @@ export default {
 .message-header {
   background-color: #2f4c5e;
 }
-
 </style>
