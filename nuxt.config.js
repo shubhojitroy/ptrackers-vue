@@ -38,6 +38,7 @@ module.exports = {
     '~plugins/vue-filters',
     '~plugins/vue-youtube-embed',
     '~plugins/vue-html-to-paper',
+    { src: '~plugins/vue-vimeo-player', ssr: false },
   ],
 
   /*
@@ -67,6 +68,9 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: [
+      'vue-vimeo-player',
+    ],
     postcss: {
       plugins: {
         'postcss-custom-properties': {

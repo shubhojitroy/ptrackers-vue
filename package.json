@@ -20,6 +20,7 @@
     "nuxt": "^1.0.0",
     "nuxt-buefy": "0.0.4",
     "vue-html-to-paper": "^1.0.3",
+    "vue-vimeo-player": "0.0.6",
     "vue-youtube-embed": "^2.1.3",
     "vue2-filters": "^0.3.0",
     "vuelidate": "^0.6.2"
