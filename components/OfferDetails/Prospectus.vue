@@ -2,11 +2,11 @@
   <div>
     <h1 class="title">
       Prospectus
-    </h1>    
+    </h1>
     <p>
       The Prospectus contains important information about the Offer and you should read it carefully before deciding whether or
       not to participate in the Offer.
-      <strong>Download the Prospectus</strong>.
+      <strong><a href="/ca/ptrackers/go2025-prospectus.pdf">Download the Prospectus</a></strong>.
     </p>
     <p>
       If you would like more information or have any questions relating to the Share Registry and Application Enquiries, you can
