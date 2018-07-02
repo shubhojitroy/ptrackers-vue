@@ -129,9 +129,3 @@
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-.footnote {
-  font-size: 0.75rem;
-}
-</style>
