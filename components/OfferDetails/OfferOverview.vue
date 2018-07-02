@@ -12,8 +12,7 @@
       The rights attached to the <span class="hl">PTrackERS</span> are set out in Section 6 of the Prospectus.
     </p>
     <p>
-      The Offer is made up of the Entitlement Offer (detailed in Section [2.2]) and a Shortfall Offer. The Shortfall
-      Offer consists of the General Public Offer (detailed in Section [2.3]) and the Broker Firm Offer (detailed in Section [2.4]).
+      The Offer is made up of the Entitlement Offer and a Shortfall Offer. The Shortfall Offer consists of the General Public Offer and a Broker Firm Offer (see Section 2 of the Prospectus for more information).
     </p>
     <p>
       The Offer will only be made to investors that have a registered address in either Australia or New Zealand.
@@ -28,7 +27,7 @@
       Entitlement Offer
     </h3>
     <p>
-      The Entitlement Offer entitles Eligible Shareholders of PGF as at 5.00pm (AEST) on 9 July 2018 (<span class="hl">Record Date</span>)
+      The Entitlement Offer entitles Eligible Shareholders of PGF as at 7.00pm (AEST) on 9 July 2018 (<span class="hl">Record Date</span>)
       to subscribe for 1 <span class="hl">PTrackERS</span> for every 1 Share held (<span class="hl">Entitlement Offer</span>).
       Eligible Shareholders are those Shareholders registered as the holder of fully paid Ordinary Shares in PGF on
       the Record Date, whose registered address is in Australia or New Zealand.

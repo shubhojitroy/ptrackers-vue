@@ -72,8 +72,8 @@ export default {
     ];
     const ptrackerEvents = [
         { description: 'Intended payment of first Distribution', date: 'March 2019' },
-        { description: 'Redemption Election Period', date: '1 April 2025 to 9 June 2025' },
-        { description: 'Last Date to elect to redeem', date: '9 June 2025' },
+        { description: 'Redemption Election Period', date: '1 April 2025 to 8 June 2025' },
+        { description: 'Last Date to elect to redeem', date: '8 June 2025' },
         { description: 'Maturity Date', date: '30 June 2025 (or such earlier date where 30 June 2025 is not a Business Day)' }
     ];
 

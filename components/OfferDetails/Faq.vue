@@ -111,7 +111,7 @@
       </faq-item>
       <faq-item v-model="openItem" title="Who is entitled to participate in the Entitlement Offer?">
         <p>
-          Shareholders of PGF as at 5.00pm (AEST) on 9 July 2018 are eligible to subscribe for 1 PTrackERS for every 1 PGF share held.
+          Shareholders of PGF as at 7.00pm (AEST) on 9 July 2018 are eligible to subscribe for 1 PTrackERS for every 1 PGF share held.
         </p>
       </faq-item>
       <faq-item v-model="openItem" title="What is the size of the Entitlement allocation?">
@@ -535,7 +535,10 @@
       Disclaimer
     </h1>
     <p>
-      The Prospectus (dated 2 July 2018) is jointly issued by PM Capital Global Opportunities Fund Limited (ACN 166 064 875) (‘PGF’), and PM Capital <span class="gotext">Go 2025</span> Limited (ACN 623 887 285) and is an invitation to Australian and New Zealand resident investors to acquire up to 350,909,977 PTrackERS each having an Issue Price of $1.40 to raise up to $491,273,967.80 (Offer). The PTrackERS will be exchanged for fully-paid ordinary shares of PGF) at 30 June 2025, unless a redemption election at the option of the Securityholder has been made on terms described in the Prospectus. The information herein, and given in the Prospectus, does not constitute investment advice or financial product advice. This and Prospectus are of a general nature and have been prepared without taking into account your individual investment objectives, financial situation, tax position or particular investment needs. The Issuers (or any of its directors, staff, associates or external service providers), do not guarantee the repayment of capital or any rate of return. Investments in PTrackERS are not bank deposits.
+      This website is issued by PM Capital Limited (ABN 69 083 644 731, AFSL No. 230222). It contains general information only and does not constitute financial product or investment advice, an offer, invitation, solicitation or recommendation with respect to the purchase or sale of any securities. The information herein is not intended for any person outside, or non-resident, of Australia or New Zealand, and does not constitute an offer to sell, or a solicitation of an offer to buy, any securities in the United States. It seeks to provide an insight into how and why we make our investment decisions, and is subject to change without notice. It does not, take into account any investors’ investment objectives, financial situation, tax position or particular investment needs. Investors should seek their own financial advice, and must make their own assessment of the PTrackERS and consider the Prospectus* (dated 2 July 2017) prior to making a decision to invest. Past performance is not a reliable indicator of future performance and no guarantee of future returns, trading prices, or ASX liquidity is implied or given.
+    </p>
+    <p>
+      * The Prospectus (dated 2 July 2018) is jointly issued by PM Capital Global Opportunities Fund Limited (ACN 166 064 875, ‘PGF’), and PM Capital GO 2025 Limited (ACN 623 887 285, ‘GO2025’) and is an invitation to Australian and New Zealand resident investors to acquire up to 350,909,977 PTrackERS each having an Issue Price of $1.40 to raise up to $491,273,967.80 (Offer). PTrackERS will be exchanged for fully-paid ordinary shares of PGF at 30 June 2025, unless a redemption election at the option of the Securityholder has been made on terms described in the Prospectus. PTrackERS are not bank deposits. Capital and income of an investment in PTrackERS may go down as well as up due to various market forces. Accordingly, there is risk that investors may lose all or a substantial portion of their investment. PTrackERS will not be registered under the U.S. Securities Act of 1933, as amended (“US Securities Act) or the securities laws of any state or other jurisdiction of the United States. See the company announcements platform at <a href="http://www.asx.com.au" target="_blank">www.asx.com.au</a> for further information on PGF, GO2025, and PTrackERS.
     </p>
 
   </div>
