@@ -1,5 +1,6 @@
 export const state = () => ({
   animateFirstTime: true,
+  activeTab: 0,
   investor: {
     priorityCode: '',
     nameAddress1: '',
@@ -21,6 +22,7 @@ export const state = () => ({
 
 export const getters = {
   animate: state => state.animateFirstTime,
+  activeTab: state => state.activeTab,
   investor: state => state.investor,
   payment: state => state.payment,
   applicationAmount: state => state.investor.unitPrice * state.payment.unitsApplied,
@@ -29,6 +31,9 @@ export const getters = {
 export const mutations = {
   stopAnimation (state) {
     state.animateFirstTime = false;
+  },
+  setActiveTab (state, value) {
+    state.activeTab = value;
   },
   setInvestor (state, value) {
     state.investor = value;
@@ -41,6 +46,9 @@ export const mutations = {
 export const actions = {
   stopAnimation ({ commit }) {
     commit('stopAnimation');
+  },
+  setActiveTab ({ commit }, value) {
+    commit('setActiveTab', value);
   },
   assignPayment ({ commit }, value) {
     commit('setPayment', value);

@@ -7,6 +7,11 @@
       <h2 class="title">
         Application
       </h2>
+      <faq-item v-model="openItem" title="What are the key dates of the Offer?">
+        <p>
+          The key dates of this offer can be found <a @click="setActiveTab(3)">here</a>.
+        </p>
+      </faq-item>
       <faq-item v-model="openItem" key-value="99">
         <template slot="title">
           How can I apply for securities offered by <span class="gotext">GO 2025</span>?"
@@ -538,6 +543,7 @@
 
 <script>
 import FaqItem from '~/components/OfferDetails/FaqItem';
+import { mapActions } from 'vuex';
 
 export default {
   components: {
@@ -548,7 +554,10 @@ export default {
       openItem: '',
       isOpen: true
     };
-  }
+  },
+  methods: {
+    ...mapActions(['setActiveTab']),
+  },
 };
 </script>
 

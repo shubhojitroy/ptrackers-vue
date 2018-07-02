@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="container">
-      <b-tabs type="is-boxed" position="is-centered" v-model="activeTab">
+      <b-tabs type="is-boxed" position="is-centered" :value="activeTab">
         <div class="content">
           <b-tab-item label="Welcome - Issuer">
             <welcome-letter></welcome-letter>
@@ -49,7 +49,7 @@
             </nuxt-link>
           </div>
           <div class="control right-side" v-if="activeTab != 5">
-            <nuxt-link to="" class="button is-primary" @click.native="activeTab = 5">
+            <nuxt-link to="" class="button is-primary" @click.native="setActiveTab(5)">
               <!-- Apply Now -->
               Prospectus
             </nuxt-link>
@@ -74,6 +74,7 @@ import Faq from '~/components/OfferDetails/Faq';
 import Prospectus from '~/components/OfferDetails/Prospectus';
 // import ApplyNow from '~/components/OfferDetails/ApplyNow';
 import ContactRegistry from '~/components/OfferDetails/ContactRegistry';
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
   components: {
@@ -86,14 +87,13 @@ export default {
     Prospectus,
     ContactRegistry,
   },
-  data() {
-    return {
-      activeTab: 0,
-    };
+  computed: {
+    ...mapGetters(['activeTab']),
   },
   methods: {
+    ...mapActions(['setActiveTab']),
     nextTab() {
-      this.activeTab = this.activeTab + 1;
+      this.setActiveTab(this.activeTab + 1);
       window.scrollTo(0, 0);
     }
   }
