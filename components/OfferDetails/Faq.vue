@@ -74,13 +74,13 @@
           and follow the instructions on the online Application Form (which includes the Biller Code and your unique Customer Reference Number (CRN)). At the completion of the online application process, you will be given a Biller Code and a unique Customer Reference Number (CRN). When completing your BPAY payment, please make sure that you use the specific Biller Code and your unique CRN provided on the online Application Form.
         </p>
         <p>
-          <strong>Cheque</strong>: Completed Application Forms and accompanying cheques, made payable to “PM Capital GO 2025 Limited – Offer A/C”, and crossed “Not Negotiable”, in Australian currency and drawn at an Australian branch of a financial institution, are to be lodged:
+          <strong>Cheque</strong>: Completed Application Forms and accompanying cheques, made payable to “PM Capital <span class="gotext">GO 2025</span> Limited – Offer A/C”, and crossed “Not Negotiable”, in Australian currency and drawn at an Australian branch of a financial institution, are to be lodged:
         </p>
         <p>
           By mail:
         </p>
         <p class="content-left">
-          PM Capital GO 2025 Limited<br>
+          PM Capital <span class="gotext">GO 2025</span> Limited<br>
           c/- Boardroom Pty Limited<br>
           GPO Box 3993<br>
           Sydney NSW 2001<br>
@@ -89,7 +89,7 @@
           Hand delivered:
         </p>
         <p class="content-left">
-          PM Capital GO 2025 Limited<br>
+          PM Capital <span class="gotext">GO 2025</span> Limited<br>
           c/- Boardroom Pty Limited<br>
           Level 12, 225 George Street<br>
           Sydney NSW 2000<br>
@@ -108,7 +108,7 @@
       </faq-item>
       <faq-item v-model="openItem" title="What is the size of the Entitlement allocation?">
         <p>
-          All securities offered by GO 2025 will be first offered to shareholders* in PGF on a 1 for 1 basis. This is up to 350,909,977 million securities to be issued at an Issue Price of $1.40 per PTrackERS to raise up to $491,273,967.80.
+          All securities offered by <span class="gotext">GO 2025</span> will be first offered to shareholders* in PGF on a 1 for 1 basis. This is up to 350,909,977 million securities to be issued at an Issue Price of $1.40 per PTrackERS to raise up to $491,273,967.80.
         </p>
         <p>
           Any remaining securities which are not taken up under the Entitlement Offer will be made available under the General Public Offer and the Broker Firm Offer.
@@ -177,9 +177,21 @@
       </faq-item>
     </div>
     <hr>
-    <h1 class="title">
-      Applications
-    </h1>
+    <div class="box">    
+      <h1 class="title">
+        About the offer
+      </h1>      
+      <faq-item v-model="openItem" title="Why is it called GO 2025?">
+        <p>
+          ‘GO’ stands for Global Opportunities. ‘2025’ is the year of the maturity date for the PTrackERS.
+        </p>
+      </faq-item>
+      <faq-item v-model="openItem" title="What is PM Capital GO 2025 Limited (‘GO 2025’)?">
+        <p>
+          <span class="gotext">GO 2025</span> is a newly incorporated and wholly owned subsidiary of the PM Capital Global Opportunities Fund (PGF). PGF is a listed investment company (LIC).  is a newly incorporated and wholly owned subsidiary of the PM Capital Global Opportunities Fund (PGF). PGF is a listed investment company (LIC). 
+        </p>
+      </faq-item>
+    </div>
   </div>
 </template>
 
@@ -202,5 +214,8 @@ export default {
 <style lang="scss" scoped>
 .content-left {
   padding-left: 2rem;
+}
+.gotext{
+  color: #ea6363;
 }
 </style>
