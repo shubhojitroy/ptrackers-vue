@@ -50,14 +50,15 @@
           </div>
           <div class="control right-side" v-if="activeTab != 5">
             <nuxt-link to="" class="button is-primary" @click.native="activeTab = 5">
-              Apply Now
+              <!-- Apply Now -->
+              Prospectus
             </nuxt-link>
           </div>
-          <div class="control right-side" v-if="activeTab == 5">
+          <!-- <div class="control right-side" v-if="activeTab == 5">
             <nuxt-link to="/important-notification" class="button is-primary">
               Continue
             </nuxt-link>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
