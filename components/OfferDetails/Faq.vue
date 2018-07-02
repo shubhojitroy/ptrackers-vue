@@ -184,7 +184,10 @@
       <h1 class="title">
         About the offer
       </h1>
-      <faq-item v-model="openItem" title="Why is it called GO 2025?">
+      <faq-item v-model="openItem" key-value="98">
+        <template slot="title">
+          Why is it called <span class="gotext">GO 2025</span>?"
+        </template>
         <p>
           ‘GO’ stands for Global Opportunities. ‘2025’ is the year of the maturity date for the PTrackERS.
         </p>
@@ -200,12 +203,12 @@
           The investment manager of PGF and <span class="gotext">GO 2025</span>, PM Capital Limited, is an award winning investment manager known for having generated some of the industry’s leading long term returns. PM Capital has won numerous awards, most recently being awarded the prestigious Money Management/ Lonsec 2018 Fund Manager of the Year in the equities long/short category.
         </p>
         <p>
-          PGF invests (and GO 2025 will invest) in a concentrated portfolio of global securities diversified across global equity markets  with the objective of providing long-term capital growth over a 7-year plus investment period.
+          PGF invests (and <span class="gotext">GO 2025</span> will invest) in a concentrated portfolio of global securities diversified across global equity markets  with the objective of providing long-term capital growth over a 7-year plus investment period.
         </p>
       </faq-item>
       <faq-item v-model="openItem" title="What am I subscribing for?">
         <p>
-          You are subscribing for ‘PTrackERS’, to be offered by GO 2025 and PM Capital Global Opportunities Fund Limited.
+          You are subscribing for ‘PTrackERS’, to be offered by <span class="gotext">GO 2025</span> and PM Capital Global Opportunities Fund Limited.
         </p>
         <p>
           ‘PTrackERS’ stands for ‘<span class="abbreviation">P</span>ortfolio <span class="abbreviation">Track</span>ing <span class="abbreviation">E</span>xchangeable <span class="abbreviation">R</span>edeemable <span class="abbreviation">S</span>ecurities (Converting Security)’.
@@ -235,7 +238,7 @@
                 without incurring any dilution to NTA Before Tax plus Franking Credits per PTrackERS; and
               </li>
               <li>
-                without triggering a CGT event (please obtain your own tax advise. An ATO Product Ruling has been obtained by GO 2025 and PGF); or
+                without triggering a CGT event (please obtain your own tax advise. An ATO Product Ruling has been obtained by <span class="gotext">GO 2025</span> and PGF); or
               </li>
             </ul>
           </li>
@@ -249,7 +252,7 @@
       </faq-item>
       <faq-item v-model="openItem" key-value="1">
         <template slot="title">
-          How does <span class="gotext">GO 2025’s</span> improve the outcomes for securityholders compared to other LICs?
+          How does <span class="gotext">GO 2025</span> improve the outcomes for securityholders compared to other LICs?
         </template>
         <ul>
           <li class="abbreviation">
@@ -272,7 +275,7 @@
             More equitable:
           </li>
           <p>
-            In essence, PTrackERS allow the capital base to be grown without diluting NTA before Tax Plus Franking Credits of either investors in PGF or GO 2025 PTrackERS. This will provide for better scales of economy after exchange of PTrackERS for PGF Shares. Further, it is anticipated to provide more trading, liquidity and market awareness in the stock, both prior to and after 30 June 2025. This is a significant improvement to many LICs that have diluted shareholders by raising capital at a discount to NTA.
+            In essence, PTrackERS allow the capital base to be grown without diluting NTA before Tax Plus Franking Credits of either investors in PGF or <span class="gotext">GO 2025</span> PTrackERS. This will provide for better scales of economy after exchange of PTrackERS for PGF Shares. Further, it is anticipated to provide more trading, liquidity and market awareness in the stock, both prior to and after 30 June 2025. This is a significant improvement to many LICs that have diluted shareholders by raising capital at a discount to NTA.
           </p>
           <div class="space"></div>
           <li class="abbreviation">
@@ -293,7 +296,7 @@
             More direct and transparent exposure to investment returns:
           </li>
           <p>
-            Importantly, GO 2025 does not intend to issue any further securities over the life of the product (seven years). Changes in an LIC’s capital adds complexity for investors wishing to track and obtain the underlying performance of the Investment Manager. By participating in the offer, you enter at NTA, have the option of exiting based on NTA at maturity, and shouldn’t have your NTA diluted due to capital raisings. As such, tracking performance over the life of the PTrackERS should be more straight forward than with traditional LICs.
+            Importantly, <span class="gotext">GO 2025</span> does not intend to issue any further securities over the life of the product (seven years). Changes in an LIC’s capital adds complexity for investors wishing to track and obtain the underlying performance of the Investment Manager. By participating in the offer, you enter at NTA, have the option of exiting based on NTA at maturity, and shouldn’t have your NTA diluted due to capital raisings. As such, tracking performance over the life of the PTrackERS should be more straight forward than with traditional LICs.
           </p>
           <div class="space"></div>
           <li class="abbreviation">
@@ -337,10 +340,10 @@
       </faq-item>
       <faq-item v-model="openItem" key-value="2">
         <template slot="title">
-          Will <span class="gotext">GO 2025’s</span> PTrackERS pay distributions?
+          Will <span class="gotext">GO 2025</span>’s PTrackERS pay distributions?
         </template>
         <p>
-          <span class="gotext">GO 2025’s</span> has a distribution policy that intends to target a distribution yield of between 3% and 4% per annum, plus franking where franking is available.
+          <span class="gotext">GO 2025</span> has a distribution policy that intends to target a distribution yield of between 3% and 4% per annum, plus franking where franking is available.
         </p>
         <p>
           It is the intention of the Board to frank all distributions to the maximum extent possible.
@@ -357,9 +360,12 @@
       <h1 class="title">
         About the Investment Manager
       </h1>
-      <faq-item v-model="openItem" title="How does the Investment Manager for GO 2025 compare to its peers over the long term?">
+      <faq-item v-model="openItem" key-value="97">
+        <template slot="title">
+          How does the Investment Manager for <span class="gotext">GO 2025</span> compare to its peers over the long term?
+        </template>
         <p>
-          PGF’s and GO 2025’s Investment Strategy will be managed consistent with PM Capital’s unlisted managed investment scheme, the PM Capital Global Companies Fund (ARSN 092 434 618), and other associated global mandates.
+          PGF’s and <span class="gotext">GO 2025</span>’s Investment Strategy will be managed consistent with PM Capital’s unlisted managed investment scheme, the PM Capital Global Companies Fund (ARSN 092 434 618), and other associated global mandates.
         </p>
         <p>
           For both Financial Year 2017 and Calendar Year 2017, PM Capital’s managed funds and mandates appeared as #1 ranked for fund performance over 5, 7 and 8 years compound returns in their Morningstar peer group of over 140 peers. The table below shows fund/mandate returns and peer ranking over the 5, 6, 7, 8, and 9 year compound returns to 31 December 20172.
@@ -394,7 +400,10 @@
           Past performance is not a reliable indicator of future performance. These are not indications of actual, nor forecasts of future, performance of either PGF or PTrackERS.
         </p>
       </faq-item>
-      <faq-item v-model="openItem" title="Has the Investment Manager for GO 2025 received any third party recognition for its investment management of strategies consistent with that which will be used by GO 2025?">
+      <faq-item v-model="openItem" key-value="96">
+        <template slot="title">
+          Has the Investment Manager for <span class="gotext">GO 2025</span> received any third party recognition for its investment management of strategies consistent with that which will be used by <span class="gotext">GO 2025</span>?
+        </template>
         <p>
           Yes. PM Capital has won numerous industry awards in recognition of its investment management. Recent awards include:
         </p>
@@ -440,7 +449,10 @@
           No
         </p>
       </faq-item>
-      <faq-item v-model="openItem" title="What disclosure will be provided on GO 2025? ">
+      <faq-item v-model="openItem" key-value="95">
+        <template slot="title">
+          What disclosure will be provided on <span class="gotext">GO 2025</span>?
+        </template>
         <p>
           Disclosure frequency and quality will be the same as PGF, this will include:
         </p>
@@ -479,11 +491,11 @@
                 </tr>
                 <tr>
                   <td>Email</td>
-                  <td><a href="mailto:Go2025@pmcapital.com.au">Go2025@pmcapital.com.au</a></td>
+                  <td><a href="mailto:Go2025@pmcapital.com.au"><span class="gotext">GO 2025</span>@pmcapital.com.au</a></td>
                 </tr>
                 <tr>
                   <td>Website</td>
-                  <td><a href="https://www.pmcapital.com.au/"></a>www.pmcapital.com.au</td>
+                  <td><a href="https://www.pmcapital.com.au/" target="_blank">www.pmcapital.com.au</a></td>
                 </tr>
               </tbody>
             </table>
@@ -501,11 +513,11 @@
                 </tr>
                 <tr>
                   <td>Email</td>
-                  <td><a href="mailto:Go2025@boardroomlimited.com.au">Go2025@boardroomlimitedwww.com.au</a></td>
+                  <td><a href="mailto:Go2025@boardroomlimited.com.au"><span class="gotext">GO 2025</span>@boardroomlimitedwww.com.au</a></td>
                 </tr>
                 <tr>
                   <td>Website</td>
-                  <td><a href="https://www.boardroomlimited.com.au/ca/ptrackers/"></a>www.boardroomlimited.com.au/ca/ptrackers</td>
+                  <td><a href="https://www.boardroomlimited.com.au/ca/ptrackers/" target="_blank">www.boardroomlimited.com.au/ca/ptrackers</a></td>
                 </tr>
               </tbody>
             </table>
