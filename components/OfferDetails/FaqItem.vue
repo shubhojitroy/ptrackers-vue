@@ -29,15 +29,22 @@ export default {
       type: String,
       default: '',
     },
+    keyValue: {
+      type: String,
+      default: '',
+    },
   },
   computed: {
+    keyVal () {
+      return (this.title == '') ? this.keyValue : this.title;
+    },
     isOpen () {
-      return this.value === this.title;
+      return this.value === this.keyVal;
     }
   },
   methods: {
     activateOpen () {
-      this.$emit('open', this.title);
+      this.$emit('open', this.keyVal);
     }
   }
 };

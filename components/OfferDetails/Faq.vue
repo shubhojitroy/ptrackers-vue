@@ -177,24 +177,24 @@
       </faq-item>
     </div>
     <hr>
-    <div class="box">    
+    <div class="box">
       <h1 class="title">
         About the offer
-      </h1>      
+      </h1>
       <faq-item v-model="openItem" title="Why is it called GO 2025?">
         <p>
           ‘GO’ stands for Global Opportunities. ‘2025’ is the year of the maturity date for the PTrackERS.
         </p>
       </faq-item>
-      <faq-item v-model="openItem">
+      <faq-item v-model="openItem" key-value="3">
         <template slot="title">
           What is PM Capital <span class="gotext">GO 2025</span> Limited (‘<span class="gotext">GO 2025</span>’)?
         </template>
         <p>
-          <span class="gotext">GO 2025</span> is a newly incorporated and wholly owned subsidiary of the PM Capital Global Opportunities Fund (PGF). PGF is a listed investment company (LIC). 
+          <span class="gotext">GO 2025</span> is a newly incorporated and wholly owned subsidiary of the PM Capital Global Opportunities Fund (PGF). PGF is a listed investment company (LIC).
         </p>
         <p>
-          The investment manager of PGF and <span class="gotext">GO 2025</span>, PM Capital Limited, is an award winning investment manager known for having generated some of the industry’s leading long term returns. PM Capital has won numerous awards, most recently being awarded the prestigious Money Management/ Lonsec 2018 Fund Manager of the Year in the equities long/short category. 
+          The investment manager of PGF and <span class="gotext">GO 2025</span>, PM Capital Limited, is an award winning investment manager known for having generated some of the industry’s leading long term returns. PM Capital has won numerous awards, most recently being awarded the prestigious Money Management/ Lonsec 2018 Fund Manager of the Year in the equities long/short category.
         </p>
         <p>
           PGF invests (and GO 2025 will invest) in a concentrated portfolio of global securities diversified across global equity markets  with the objective of providing long-term capital growth over a 7-year plus investment period.
@@ -210,10 +210,10 @@
       </faq-item>
     </div>
     <hr>
-    <div class="box">    
+    <div class="box">
       <h1 class="title">
         About PTrackers
-      </h1>      
+      </h1>
       <faq-item v-model="openItem" title="What are PTrackERS?">
         <p>
           PTrackERS are the next generation of Listed Investment Company (LIC) securities and have been developed by PM Capital to improve LIC investor outcomes and choice.  On a look-through basis, they represent your investment exposure to an underlying portfolio held by the Company –  like a LIC – but with the benefit of allowing you the option to exit your investment based on NTA as at 30 June 2025.
@@ -243,8 +243,8 @@
         <p>
           PM Capital has trademarked the term PTrackERS, given it represents significant evolution and innovation for traditional LIC investors.
         </p>
-      </faq-item>           
-      <faq-item v-model="openItem">
+      </faq-item>
+      <faq-item v-model="openItem" key-value="1">
         <template slot="title">
           How does <span class="gotext">GO 2025’s</span> improve the outcomes for securityholders compared to other LICs?
         </template>
@@ -306,12 +306,12 @@
             <li class="no-abbreviation">
               dividends can be franked where franking credits are available.
             </li>
-          </ol>  
+          </ol>
         </ul>
       </faq-item>
       <faq-item v-model="openItem" title="Why is the PTrackERS redemption innovation is important for LIC investors?">
         <p>
-          Even when LIC shareholders have invested for the Investment Manager’s recommended investment horizon (7 years, in the case of the Company), shareholders are subject to the vagaries of the market. This can have a significant effect on investor returns, depending on where a traditional LIC’s shares trade relative to its NTA in the future. 
+          Even when LIC shareholders have invested for the Investment Manager’s recommended investment horizon (7 years, in the case of the Company), shareholders are subject to the vagaries of the market. This can have a significant effect on investor returns, depending on where a traditional LIC’s shares trade relative to its NTA in the future.
         </p>
         <p>
           LIC shares, including those issued by LICs with strong performance track-records, can trade on the ASX at substantial discounts to NTA. Whereas, while PTrackERS may also trade at levels different to their NTA over the seven year time frame, investors can require that the Company return proceeds based on NTA at the Maturity Date of 30 June 2025. This helps remove the uncertainty for investors as to whether they can obtain the underlying value of their securities upon the investment’s recommended 7-year time frame.
@@ -320,7 +320,7 @@
           History demonstrates that LICs as an industry can cycle between premium and discounts and as such it is very difficult for LIC investors to receive a return equal to that which the investment manager generates. This is demonstrated below using the following three well known LICs as examples:
         </p>
       </faq-item>
-      <faq-item v-model="openItem">
+      <faq-item v-model="openItem" key-value="2">
         <template slot="title">
           Will <span class="gotext">GO 2025’s</span> PTrackERS pay distributions?
         </template>
@@ -333,8 +333,8 @@
       </faq-item>
       <faq-item v-model="openItem" title="When will the first distribution be paid?">
         <p>
-          The Company will generally make distributions on PTrackERS semi-annually (expected to be in or around March and September of each year) but may do so less frequently at the discretion of the Board. No distributions will be made during the first 6 months after the PTrackERS have been issued. As such, it is expected that the first semi-annual distribution will be made in March 2019. 
-        </p>        
+          The Company will generally make distributions on PTrackERS semi-annually (expected to be in or around March and September of each year) but may do so less frequently at the discretion of the Board. No distributions will be made during the first 6 months after the PTrackERS have been issued. As such, it is expected that the first semi-annual distribution will be made in March 2019.
+        </p>
       </faq-item>      
     </div>
     <hr>
@@ -511,7 +511,7 @@ export default {
   color: #ea6363;
 }
 .abbreviation {
-  font-weight:700; 
+  font-weight:700;
   text-decoration:underline;
 }
 .space {
