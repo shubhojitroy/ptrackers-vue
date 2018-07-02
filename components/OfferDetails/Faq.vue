@@ -57,6 +57,9 @@
       </faq-item>
       <faq-item v-model="openItem" title="How can I pay for my securities?">
         <p>
+          By BPAY or Cheque.
+        </p>
+        <p>
           <strong>BPAY</strong>: Applicants wishing to pay by BPAY should complete the online Application Form accompanying the electronic version of this Prospectus which is available at either:
         </p>
         <ul>
@@ -70,6 +73,28 @@
         <p>
           and follow the instructions on the online Application Form (which includes the Biller Code and your unique Customer Reference Number (CRN)). At the completion of the online application process, you will be given a Biller Code and a unique Customer Reference Number (CRN). When completing your BPAY payment, please make sure that you use the specific Biller Code and your unique CRN provided on the online Application Form.
         </p>
+        <p>
+          <strong>Cheque</strong>: Completed Application Forms and accompanying cheques, made payable to “PM Capital GO 2025 Limited – Offer A/C”, and crossed “Not Negotiable”, in Australian currency and drawn at an Australian branch of a financial institution, are to be lodged:
+        </p>
+        <p>
+          By mail:
+        </p>
+        <p class="content-left">
+          PM Capital GO 2025 Limited<br>
+          c/- Boardroom Pty Limited<br>
+          GPO Box 3993<br>
+          Sydney NSW 2001<br>
+        </p>
+        <p>
+          Hand delivered:
+        </p>
+        <p class="content-left">
+          PM Capital GO 2025 Limited<br>
+          c/- Boardroom Pty Limited<br>
+          Level 12, 225 George Street<br>
+          Sydney NSW 2000<br>
+        </p>
+
       </faq-item>
       <faq-item v-model="openItem" title="What is the maximum size of the capital raising?">
         <p>
@@ -173,3 +198,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.content-left {
+  padding-left: 2rem;
+}
+</style>
