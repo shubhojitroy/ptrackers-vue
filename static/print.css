@@ -37,3 +37,8 @@ h1, h2, h3 {
   color: #142c61;
   font-weight: 700;
 }
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+}

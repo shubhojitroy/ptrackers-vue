@@ -4,12 +4,12 @@
       <h1 class="title is-size-2 is-size-3-mobile">
         Confirmation and Payment Instruction
       </h1>
-      <p>
+      <p class="no-print">
         Your Application Monies must be received by the Share Registry by BPAY® or Cheque by 5.00pm (Sydney time) on XXXX, XX XXXX
         2018. If you do not make a BPAY® payment, your online Application will be incomplete and will not be accepted. By
         paying by BPAY®, you will be deemed to have accepted the terms of the Offer.
       </p>
-      <p>
+      <p class="no-print">
         You should submit your BPAY® payment immediately using the Biller Code and Reference provided below. The time of your Application
         will be the time at which the Unit Registry has received both your valid online Application and your BPAY® payment.
         If you submit an online Application in the 24 hours before 5.00pm (Sydney time) on XXXX, XX XXXX 2018 you must ensure
@@ -87,7 +87,7 @@
           your payment will be received by the Registry in time.
         </p>
       </div>
-      <div class="field is-grouped">
+      <div class="field is-grouped no-print">
         <div class="control">
           <button class="button is-primary is-outlined" @click="print()">
             Print
@@ -151,6 +151,11 @@ $bpay-color: #142c61;
     color: $bpay-color;
     font-weight: 700;
     }
+}
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
 }
 </style>
 
