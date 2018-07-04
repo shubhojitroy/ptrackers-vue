@@ -5,14 +5,30 @@
 < done >
 
 ### Priority Code page
+* Rename title to "Entitlement Offer"
+* Below Priority Code section, add General Offer section.
+    "If you are not an eligible PM Capital Opportunity Fund holder, you can apply through the General Offer"
+    "General Offer" button that will take user to new page of the Online Application.
 
 ### Application page
 5.2. Add business rules and validations to page.
 5.3. Submit button call API to save details
+* Rename title from "Application Amount" to "Application"
+* Fix typo in first paragraph. "Recird Date" to "Record Date"
+* Entitlement amount should have 1000 separator (comma)
+* "Please enter the number of PTrackERS for which you are subscribing"
+* Remove <hr> element
+* Make data entry section into a form. See example at http://www.pmcapital.com.au/general-enquiry
+* Logic: If apply > entitlement then display split details.
+    "You have applied for your full amount of your entitlement of 12,000 PTrackERS"
+    "You have also applied for an additional 28,000 PTRackERS in the General Offer"
 
 ### Confirmation page
-< done >
+* Date applied in the BPAY section is 8 August
+* Print - From "Payment by Cheque"
+    hint: apply "no-print class" to sections that do not need to be printed.
 
+---
 
 ## COMPLETED TASKS
 
@@ -53,7 +69,6 @@ Need to apply colour them as used in https://www.pmcapital.com.au website.
 See these pages for examples:
 http://www.pmcapital.com.au/global-companies-fund
 http://www.pmcapital.com.au/general-enquiry
-
 
 
 * Form background is duck blue
