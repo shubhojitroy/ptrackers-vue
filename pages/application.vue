@@ -2,11 +2,11 @@
   <section class="section">
     <div class="container content">
       <h1 class="title is-size-2 is-size-3-mobile">
-        Application Amount
+        Application
       </h1>
       <p>
         As an eligible Priority Applicant, you are invited to subscribe for an amount of PTrackERS equal to the number of PM Capital
-        Global Opportunity Funds Limited Ordinary Shares held at the Recird Date, subject to a minimum of 1,500 securities.
+        Global Opportunity Funds Limited Ordinary Shares held at the Record Date, subject to a minimum of 1,500 securities.
       </p>
       <p>
         If you are in doubt as to how to deal with this online Application, please contact your accountant, solicitor, stockbroker
@@ -16,22 +16,21 @@
       </p>
       <form novalidate @submit.prevent="submitForm">
 
-        <b-field label="Priority Invitation (Number of PTrackERS):">
-          {{ investor.entitlement }}
+        <b-field label="Priority Invitation (Number of PTrackERS)">
+          {{ investor.entitlement | currency('', 0) }}
         </b-field>
 
-        <b-field label="Number applied for (PTrackERS):">
+        <b-field label="Please enter the number of PTrackERS for which you are subscribing">
           <b-input type="number" v-model.number="unitsApplied" placeholder="Units"></b-input>
         </b-field>
 
-        <b-field label="Issue price per Unit:">
+        <b-field label="Issue price per Unit">
           {{ investor.unitPrice | currency('$', 2) }}
         </b-field>
 
-        <b-field label="Application Monies based on PTrackERS applied for:">
+        <b-field label="Application Monies based on PTrackERS applied for">
           {{ applicationAmount | currency('$', 2) }}
         </b-field>
-        <hr>
 
         <p>
           Please enter your contact details in case we need to contact you about this online Application.
