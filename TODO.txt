@@ -1,7 +1,26 @@
-DONE: 1. Add second logo to the nav header. (copied new logo images into assets/img folder.)
-2. Update HERO image to the new banner image
+### All Pages
+< done >
 
-3. Application Details Page
+### Offer Details Page
+< done >
+
+### Priority Code page
+
+### Application page
+5.2. Add business rules and validations to page.
+5.3. Submit button call API to save details
+
+### Confirmation page
+< done >
+
+
+## COMPLETED TASKS
+
+### All Pages
+DONE: 1.1 Add second logo to the nav header. (copied new logo images into assets/img folder.)
+NOT REQUIRED: 2.1 Update HERO image to the new banner image
+
+### Offer Details Page
 DONE: 3.1. Add Next button to go to the next tabbed page
 DONE: 3.2. Add Apply Now button to go to the Apply Now tab (all tabs except Apply Now tab)
 DONE: 3.3. Add Continue button to Apply Now tab ONLY
@@ -9,23 +28,22 @@ DONE: 3.4. Change Apply Now tab to blue background etc
 DONE: 3.5. CIO Letter tab - Add youtube video (added placeholder video until real one is available)
 DONE: 3.6. Offer Overview tab - remove all text from "The Prospectus contains..." (it's a repeat of the Apply Now tab)
 DONE: 3.7. Important Dates tab - Align column width the same for both tables. Change table header formatting.
-3.8. FAQ tab - Add the remaining FAQ items.
+DONE: 3.8. FAQ tab - Add the remaining FAQ items.
 
-4. Priority Code page
+### Priority Code page
 DONE: 4.1 API call to retrieve Investor details.
 DONE: 4.2 Give appropriate message (when validating priority code).
 
-5. Application page
+### Application page
 DONE: 5.1. Fix inputs and labels.
-5.2. Add business rules and validations to page.
-5.3. Submit button call API to save details
 DONE: 5.4. Exit button changes to Cancel ==>opens dialog box to confirm before cancelling ==> goes to cancel page
 
-6. Confirmation page
+### Confirmation page
 DONE: 6.1. Change all inputs into labels.
 DONE: 6.2. Close button renames to Finish
 DONE: 6.3. Add BPay Logo (SVG) and reformat payment section
 DONE: 6.4. Add code to print button.
+
 
 
 Notes:
