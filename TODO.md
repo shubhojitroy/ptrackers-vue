@@ -13,20 +13,19 @@
 ### Application page
 5.2. Add business rules and validations to page.
 5.3. Submit button call API to save details
-* Rename title from "Application Amount" to "Application"
-* Fix typo in first paragraph. "Recird Date" to "Record Date"
-* Entitlement amount should have 1000 separator (comma)
-* "Please enter the number of PTrackERS for which you are subscribing"
-* Remove <hr> element
+DONE: * Rename title from "Application Amount" to "Application"
+DONE: * Fix typo in first paragraph. "Recird Date" to "Record Date"
+DONE: * Entitlement amount should have 1000 separator (comma)
+DONE: * "Please enter the number of PTrackERS for which you are subscribing"
+DONE: * Remove <hr> element
 * Make data entry section into a form. See example at http://www.pmcapital.com.au/general-enquiry
 * Logic: If apply > entitlement then display split details.
     "You have applied for your full amount of your entitlement of 12,000 PTrackERS"
     "You have also applied for an additional 28,000 PTRackERS in the General Offer"
 
 ### Confirmation page
-* Date applied in the BPAY section is 8 August
-* Print - From "Payment by Cheque"
-    hint: apply "no-print class" to sections that do not need to be printed.
+DONE: * Date applied in the BPAY section is 8 August
+DONE: * Print - From "Payment by Cheque".  hint: apply "no-print class" to sections that do not need to be printed.
 
 ---
 
