@@ -2,18 +2,18 @@
   <section class="section">
     <div class="container content">
       <h1 class="title is-size-2 is-size-3-mobile">
-        Priority Code
+        Login
       </h1>
       <h4>
-        <em>Please enter your Unique Priority Code</em>
+        <em>Please enter your Unique Entitlement Number</em>
       </h4>
       <form class="box" novalidate @submit.prevent="submitForm">
-        <b-field label="Priority Code" :type="inputType" :message="inputMessage">
+        <b-field label="Entitlement Number" :type="inputType" :message="inputMessage">
           <b-input id="priority-code" v-model.trim="priorityCode">
           </b-input>
         </b-field>
         <p>
-          If you believe you are an eligible Priority Applicant yet have not received a Unique Priority Code please contact Boardroom
+          If you believe you are an eligible Priority Applicant yet have not received your Unique Entitlement Number please contact Boardroom
           Pty Limited on 1300 767 760 (within Australia) or +61 2 9290 9600 (outside Australia) between 8:30am and 5:30pm
           (Sydney time) Monday to Friday.
         </p>
