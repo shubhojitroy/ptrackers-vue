@@ -5,10 +5,10 @@
         Registration Details
       </h1>
       <div class="box">
-        <b-field label="Unique Priority Code:">
+        <b-field label="Unique Entitlement Number">
           {{ investor.priorityCode }}
         </b-field>
-        <b-field label="Holder Details:" :addons="false">
+        <b-field label="Holder Details" :addons="false" custom-class="rego">
           {{ investor.nameAddress1 }}
           <br v-if="investor.nameAddress2">
           {{ investor.nameAddress2 }}
@@ -18,6 +18,8 @@
           {{ investor.nameAddress4 }}
           <br v-if="investor.nameAddress5">
           {{ investor.nameAddress5 }}
+          <br v-if="investor.nameAddress6">
+          {{ investor.nameAddress6 }}
         </b-field>
       </div>
       <b-message>
@@ -61,3 +63,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.rego {
+  margin-bottom: 0 !important;
+}
+</style>
+

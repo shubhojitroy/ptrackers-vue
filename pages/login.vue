@@ -34,6 +34,16 @@
           </div>
         </div>
       </form>
+      <div class="box">
+        <p>
+          If you are not an eligible PM Capital Opportunity Fund holder, you can apply through the General Offer
+        </p>
+        <div class="control offer">
+          <a href="https://www.investorserve.com.au/?offer=1234" target="_blank" class="button is-light">
+            General Offer
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -62,7 +72,7 @@ export default {
     },
     inputMessage() {
       return this.$v.priorityCode.$error
-        ? 'Priority Code is required'
+        ? 'Entitlement Number is required'
         : this.error;
     }
   },
@@ -77,7 +87,7 @@ export default {
           })
           .catch((err) => {
             this.$snackbar.open({
-              message: 'The priority code was invalid. Please try again',
+              message: 'The entitlement number was invalid. Please try again',
               type: 'is-danger',
               position: 'is-bottom',
               actionText: 'OK',
@@ -98,5 +108,8 @@ export default {
 <style scoped>
 #priority-code {
   text-transform: uppercase;
+}
+.offer .button {
+  width: 180px;
 }
 </style>

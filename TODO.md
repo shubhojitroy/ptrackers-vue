@@ -5,7 +5,7 @@
 < done >
 
 ### Priority Code page
-* Rename title to "Entitlement Offer"
+* Rename title to ~"Entitlement Offer"~ "Login"
 * Below Priority Code section, add General Offer section.
     "If you are not an eligible PM Capital Opportunity Fund holder, you can apply through the General Offer"
     "General Offer" button that will take user to new page of the Online Application.
