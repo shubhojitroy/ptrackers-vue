@@ -61,7 +61,7 @@
           </nuxt-link>
         </div>
         <div class="control">
-          <nuxt-link to="/priority-access" class="button is-primary">
+          <nuxt-link to="/login" class="button is-primary">
             I Confirm
           </nuxt-link>
         </div>

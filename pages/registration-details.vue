@@ -34,7 +34,7 @@
       </p>
       <div class="field is-grouped">
         <div class="control">
-          <nuxt-link to="/priority-access" class="button is-primary is-outlined">
+          <nuxt-link to="/login" class="button is-primary is-outlined">
             Previous
           </nuxt-link>
         </div>
