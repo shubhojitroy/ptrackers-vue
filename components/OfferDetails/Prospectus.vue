@@ -6,7 +6,9 @@
     <p>
       The Prospectus contains important information about the Offer and you should read it carefully before deciding whether or
       not to participate in the Offer.
-      <strong><a href="/ca/ptrackers/go2025-prospectus.pdf" target="_blank">Download the Prospectus</a></strong>.
+    </p>
+    <p>
+      <strong><a href="/ca/ptrackers/go2025-prospectus.pdf" target="_blank" class="button is-primary">Download</a></strong>.
     </p>
     <p>
       If you would like more information or have any questions relating to the Share Registry and Application Enquiries, you can
