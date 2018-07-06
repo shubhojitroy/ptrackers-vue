@@ -1,3 +1,5 @@
+import api from '@api';
+
 export const state = () => ({
   animateFirstTime: true,
   activeTab: 0,
@@ -54,18 +56,7 @@ export const actions = {
     commit('setPayment', value);
   },
   login ({ commit }, credentials) {
-    const investor = {
-      priorityCode: '1234',
-      nameAddress1: 'HARRY JAMES POTTER',
-      nameAddress2: '225 GEORGE STREET',
-      nameAddress3: 'SYDNEY',
-      nameAddress4: 'NSW',
-      nameAddress5: '2000',
-      emailAddress: 'harry.potter@gmail.com',
-      phoneNumber: '9290-1200',
-      unitPrice: 1.4,
-      entitlement: 12000,
-    };
+    /// need to update this stuff for use with api.
     if (credentials.priorityCode === '12345') {
       commit('setInvestor', investor);
       return Promise.resolve();
