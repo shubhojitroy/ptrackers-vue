@@ -21,7 +21,7 @@
         </b-field>
 
         <b-field label="Please enter the number of PTrackERS for which you are subscribing">
-          <b-input type="number" v-model.number="unitsApplied" placeholder="Units"></b-input>
+          <b-input type="number" v-model.number="applicationAmount" placeholder="Units"></b-input>
         </b-field>
 
         <b-field label="Issue price per Unit">
@@ -29,18 +29,18 @@
         </b-field>
 
         <b-field label="Application Monies based on PTrackERS applied for">
-          {{ applicationAmount | currency('$', 2) }}
+          {{ applicationValue | currency('$', 2) }}
         </b-field>
 
         <p>
           Please enter your contact details in case we need to contact you about this online Application.
         </p>
         <b-field label="Contact Number: Please include area code e.g. '04XXXXXXXX' or '02XXXXXXXX'">
-          <b-input type="tel" v-model.trim="phoneNo" placeholder="Contact number"></b-input>
+          <b-input type="tel" v-model.trim="phoneNumber" placeholder="Contact number"></b-input>
         </b-field>
 
-        <b-field label="Email" :type="is-danger" message="">
-          <b-input type="email" v-model="emailAdrs">
+        <b-field label="Email" message="">
+          <b-input type="email" v-model="emailAdress">
           </b-input>
         </b-field>
         <div class="box terms">
@@ -130,9 +130,9 @@
             </button>
           </div>
           <div class="control">
-            <nuxt-link to="/confirmation-payment" class="button is-primary" @click.native="submitPayment()">
+            <button type="submit" class="button is-primary">
               Submit
-            </nuxt-link>
+            </button>
           </div>
         </div>
       </form>
@@ -141,36 +141,50 @@
 </template>
 
 <script>
+import { required } from 'vuelidate/lib/validators';
 import { mapGetters, mapActions } from 'vuex';
 
 export default {
   asyncData ({ store }) {
     console.log(store);
     return {
-      phoneNo: store.getters.investor.phoneNumber,
-      emailAdrs: store.getters.investor.emailAddress,
+      phoneNumber: store.getters.investor.phoneNumber,
+      emailAdress: store.getters.investor.emailAddress,
     };
   },
   data () {
     return {
-      unitsApplied: 0,
+      applicationAmount: 0,
     };
   },
+  validations: {
+    applicationAmount: {
+      required
+    },
+    emailAdress: {
+      required
+    },
+  },
   computed: {
-    ...mapGetters(['investor']),
-    applicationAmount () {
-      return this.investor.unitPrice * this.unitsApplied;
+    ...mapGetters(['sessionId', 'investor', 'application']),
+    applicationValue () {
+      return this.investor.unitPrice * this.applicationAmount;
     }
   },
   methods: {
-    ...mapActions(['assignPayment']),
-    submitPayment () {
-      const payment = {
-        unitsApplied: this.unitsApplied,
-        billerCode: 98723,
-        refNumber: 809276394,
+    ...mapActions(['save']),
+    submitForm () {
+
+    },
+    submitApplication () {
+      const app = {
+        applicationAmount: this.applicationAmount,
+        billerCode: applcation.billerCode,
+        referenceNo: application.referenceNo,
+        phoneNumber: this.phoneNumber,
+        emailAddress: this.emailAdress,
       };
-      this.assignPayment(payment);
+      this.save(this.sessionId, app);
     },
     cancel () {
       this.$dialog.confirm({

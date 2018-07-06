@@ -9,7 +9,7 @@
       </h4>
       <form class="box" novalidate @submit.prevent="submitForm">
         <b-field label="Entitlement Number" :type="inputType" :message="inputMessage">
-          <b-input id="priority-code" v-model.trim="priorityCode">
+          <b-input id="entitlement-number" v-model.trim="entitlementNo">
           </b-input>
         </b-field>
         <p>
@@ -53,25 +53,23 @@ import { required } from 'vuelidate/lib/validators';
 import { mapActions } from 'vuex';
 
 export default {
-  components: {
-  },
   data () {
     return {
-      priorityCode: '',
+      entitlementNo: '',
       error: ''
     };
   },
   validations: {
-    priorityCode: {
+    entitlementNo: {
       required
     }
   },
   computed: {
     inputType() {
-      return this.$v.priorityCode.$error || this.error ? 'is-danger' : 'is-primary';
+      return this.$v.entitlementNo.$error || this.error ? 'is-danger' : 'is-primary';
     },
     inputMessage() {
-      return this.$v.priorityCode.$error
+      return this.$v.entitlementNo.$error
         ? 'Entitlement Number is required'
         : this.error;
     }
@@ -81,32 +79,24 @@ export default {
     submitForm () {
       this.$v.$touch();
       if (!this.$v.$error) {
-        this.login({ priorityCode: this.priorityCode })
+        this.login({ entitlementNo: this.entitlementNo })
           .then(() => {
             this.$router.push('/registration-details');
-          })
-          .catch((err) => {
-            this.$snackbar.open({
-              message: 'The entitlement number was invalid. Please try again',
-              type: 'is-danger',
-              position: 'is-bottom',
-              actionText: 'OK',
-              indefinite: true,
-              onAction: () => {
-                const el = document.getElementById('priority-code');
-                el.focus();
-                el.select();
-              }
-            });
+            })
+          .catch(err => {
+            this.error = 'The entitlement number was invalid. Please try again';
+            const el = document.getElementById('entitlement-number');
+            el.focus();
+            el.select();
           });
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style scoped>
-#priority-code {
+#entitlement-number {
   text-transform: uppercase;
 }
 .offer .button {

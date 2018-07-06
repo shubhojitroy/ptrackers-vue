@@ -1,5 +1,5 @@
 <template>
-  <section id="payment" class="section">
+  <section id="confirmation" class="section">
     <div class="container content">
       <h1 class="title is-size-2 is-size-3-mobile">
         Confirmation and Payment Instruction
@@ -42,10 +42,10 @@
         </li>
       </ul>
       <div class="box">
-        <b-field label="Priority Code:">
-          {{ investor.priorityCode }}
+        <b-field label="Entitlement Number">
+          {{ investor.entitlementNo }}
         </b-field>
-        <b-field label="Holder Details:" :addons="false">
+        <b-field label="Holder Details" :addons="false">
           {{ investor.nameAddress1 }}
           <br v-if="investor.nameAddress2">
           {{ investor.nameAddress2 }}
@@ -55,20 +55,22 @@
           {{ investor.nameAddress4 }}
           <br v-if="investor.nameAddress5">
           {{ investor.nameAddress5 }}
+          <br v-if="investor.nameAddress6">
+          {{ investor.nameAddress6 }}
         </b-field>
         <b-field label="Number of PTrackERS applied for:">
-          {{ payment.unitsApplied | currency('', 0) }}
+          {{ application.applicationAmount | currency('', 0) }}
         </b-field>
         <b-field label="Application Monies Payable:">
-          {{ applicationAmount | currency('$', 2) }}
+          {{ applicationValue | currency('$', 2) }}
         </b-field>
       </div>
       <div class="box">
         <div class="bpay-box">
           <img src="~/assets/img/bpay.svg" />
           <div class="bpay-details">
-            <span>Biller Code: {{ payment.billerCode }}</span>
-            <span>Ref: {{ payment.refNumber }}</span>
+            <span>Biller Code: {{ application.billerCode }}</span>
+            <span>Ref: {{ application.refNumber }}</span>
           </div>
         </div>
         <p>
@@ -112,11 +114,11 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(['investor', 'payment', 'applicationAmount']),
+    ...mapGetters(['investor', 'application', 'applicationValue']),
   },
   methods: {
     print() {
-      this.$htmlToPaper('payment');
+      this.$htmlToPaper('confirmation');
     },
   },
 };
