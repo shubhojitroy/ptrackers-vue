@@ -49,5 +49,18 @@
       Level 27, 420 George Street,<br>
       Sydney, NSW, 2000<br>
     </p>
+
   </div>
 </template>
+
+<script>
+
+</script>
+
+<style lang="scss" scoped>
+.right-side {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+</style>

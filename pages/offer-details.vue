@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="container">
-      <b-tabs type="is-boxed" position="is-centered" :value="activeTab">
+      <b-tabs type="is-boxed" position="is-centered" :value="activeTab" @change="setTab">
         <div class="content">
           <b-tab-item label="Welcome - Issuer">
             <welcome-letter></welcome-letter>
@@ -44,15 +44,20 @@
             </nuxt-link>
           </div>
           <div class="control" v-if="activeTab != 6">
-            <nuxt-link to="" class="button is-link" @click.native="nextTab">
+            <button class="button is-link" @click="nextTab()">
               Next
-            </nuxt-link>
+            </button>
+          </div>
+          <div class="control" v-if="activeTab == 6">
+            <button class="button is-link" @click="prevTab()">
+              Previous
+            </button>
           </div>
           <div class="control right-side" v-if="activeTab != 5">
-            <nuxt-link to="" class="button is-primary" @click.native="setActiveTab(5)">
+            <button class="button is-primary" @click="setActiveTab(5)">
               <!-- Apply Now -->
               Prospectus
-            </nuxt-link>
+            </button>
           </div>
           <!-- <div class="control right-side" v-if="activeTab == 5">
             <nuxt-link to="/important-notification" class="button is-primary">
@@ -94,6 +99,14 @@ export default {
     ...mapActions(['setActiveTab']),
     nextTab() {
       this.setActiveTab(this.activeTab + 1);
+      window.scrollTo(0, 0);
+    },
+    prevTab() {
+      this.setActiveTab(this.activeTab - 1);
+      window.scrollTo(0, 0);
+    },
+    setTab (index) {
+      this.setActiveTab(index);
       window.scrollTo(0, 0);
     }
   }

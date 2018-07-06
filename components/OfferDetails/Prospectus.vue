@@ -8,7 +8,7 @@
       not to participate in the Offer.
     </p>
     <p>
-      <strong><a href="/ca/ptrackers/go2025-prospectus.pdf" target="_blank" class="button is-primary">Download</a></strong>.
+      <strong><a href="/ca/ptrackers/go2025-prospectus.pdf" target="_blank" class="button is-large is-primary">Download Prospectus</a></strong>.
     </p>
     <p>
       If you would like more information or have any questions relating to the Share Registry and Application Enquiries, you can
@@ -32,11 +32,12 @@
 </template>
 
 <script>
-export default {
-
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
-
+.button.is-large {
+  font-size: 1rem;
+  min-width: 20%;
+}
 </style>
