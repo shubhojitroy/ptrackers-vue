@@ -70,26 +70,9 @@ export const actions = {
       investor => commit('setInvestor', investor),
       application => commit('setApplication', application)
     );
-    // .then(() => {
-    //   console.log('all fine!');
-    //   return Promise.resolve();
-    // })
-    // .catch(err => {
-    //   console.log('caught!');
-    //   // throw new Error('My Error:' + err);
-    //   return Promise.reject(('MY BIG ERROR: ' + err));
-    // });
-    //   commit('setProducts', products)
-    // })
-    // if (credentials.entitlementNo === '12345') {
-    //   commit('setInvestor', api.investor);
-    //   return Promise.resolve();
-    // } else {
-    //   return Promise.reject('Invalid Priority Code');
-    // }
   },
   save ({ commit }, sessionId, application) {
-    api.save(
+    return api.save(
       sessionId,
       application,
       session => commit('setSession', session)
