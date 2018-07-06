@@ -38,6 +38,6 @@ export default {};
 <style lang="scss" scoped>
 .button.is-large {
   font-size: 1rem;
-  min-width: 20%;
+  width: 220px;
 }
 </style>
