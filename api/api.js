@@ -63,7 +63,7 @@ export default {
       if (response.Ok) {
         const investor = mapInvestor(response);
         const application = mapApplication(response);
-        setSession(response.sessionId);
+        setSession(response.SessionId);
         setInvestor(investor);
         setApplication(application);
         return Promise.resolve();

@@ -145,6 +145,7 @@ import { required } from 'vuelidate/lib/validators';
 import { mapGetters, mapActions } from 'vuex';
 
 export default {
+  middleware: 'auth',
   asyncData ({ store }) {
     console.log(store);
     return {
@@ -174,17 +175,22 @@ export default {
   methods: {
     ...mapActions(['save']),
     submitForm () {
-
+      this.$v.$touch();
+      if (!this.$v.$error) {
+        this.submitApplication();
+      }
     },
     submitApplication () {
       const app = {
         applicationAmount: this.applicationAmount,
-        billerCode: applcation.billerCode,
-        referenceNo: application.referenceNo,
+        billerCode: this.application.billerCode,
+        referenceNo: this.application.referenceNo,
         phoneNumber: this.phoneNumber,
         emailAddress: this.emailAdress,
       };
-      this.save(this.sessionId, app);
+      this.save(this.sessionId, app)
+        .then(() => this.$router.push('/confirmation-payment'))
+        .catch(err => console.log(err));
     },
     cancel () {
       this.$dialog.confirm({
