@@ -18,7 +18,7 @@ export const state = () => ({
     entitlement: 0,
   },
   application: {
-    applicationAmount: 0,
+    applicationUnits: 0,
     billerCode: 123465,
     referenceNo: 60001234,
     emailAddress: '',
@@ -32,7 +32,7 @@ export const getters = {
   sessionId: state => state.sessionId,
   investor: state => state.investor,
   application: state => state.application,
-  applicationValue: state => state.investor.unitPrice * state.application.applicationAmount,
+  applicationValue: state => state.investor.unitPrice * state.application.applicationUnits,
 };
 
 export const mutations = {
@@ -71,11 +71,12 @@ export const actions = {
       application => commit('setApplication', application)
     );
   },
-  save ({ commit }, sessionId, application) {
+  save ({ commit }, appDetails) {
+    console.log('save stuff', appDetails);
     return api.save(
-      sessionId,
-      application,
-      session => commit('setSession', session)
+      appDetails,
+      session => commit('setSession', session),
+      application => commit('setApplication', application)
     );
   },
 };

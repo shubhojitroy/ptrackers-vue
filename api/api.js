@@ -13,14 +13,16 @@ const _apiResponse = {
   Address3: 'HOGSWART',
   Address4: 'NSW',
   Address5: '',
-  Address6: '2000',
+  Address6: '2099',
   // emailAddress: 'harry.potter@gmail.com',
   // phoneNumber: '9290-1200',
   UnitPrice: 1.4,
-  EntitlementAmount: 12000,
+  EntitlementAmount: 1200,
+  BPayBillerCode: 83733,
+  BPayReferenceNumber: 689001234,
 };
 
-const mapInvestor = data => {
+const mapApiToInvestor = data => {
   return {
     entitlementNo: data.EntitlementNo,
     nameAddress1: data.Address1,
@@ -36,17 +38,19 @@ const mapInvestor = data => {
   };
 };
 
-const mapApplication = data => {
+const mapApiToApplication = data => {
   return {
-    unitsApplied: 0,
+    applicationUnits: 0,
     billerCode: data.BPayBillerCode,
     referenceNo: data.BPayReferenceNumber,
+    emailAddress: '',
+    phoneNumber: '',
   };
 };
 
-const mapApiApplication = (sessionId, application) => {
+const mapApplyRequest = (application) => {
   return {
-    SessionId: sessionId,
+    SessionId: application.sessionId,
     EntitlementNo: application.entitlementNo,
     IssuerId: _issuerId,
     ApplicationAmount: application.unitsApplied,
@@ -56,13 +60,13 @@ const mapApiApplication = (sessionId, application) => {
 };
 
 export default {
-  investor: mapInvestor(_apiResponse),
+  investor: mapApiToInvestor(_apiResponse),
   login (credentials, setSession, setInvestor, setApplication) {
     if (credentials.entitlementNo == _apiResponse.EntitlementNo) {
       const response = _apiResponse;
       if (response.Ok) {
-        const investor = mapInvestor(response);
-        const application = mapApplication(response);
+        const investor = mapApiToInvestor(response);
+        const application = mapApiToApplication(response);
         setSession(response.SessionId);
         setInvestor(investor);
         setApplication(application);
@@ -75,8 +79,8 @@ export default {
      return Promise.reject('Inva!!lid Entitlement Number');
     }
   },
-  save (sessionId, application, setSession) {
-    // const app = mapApiApplication(sessionId, application);
+  save (appDetails, setSession, setApplication) {
+    // const app = mapApplyRequest(appDetails);
     // post('http://dev-21-api/api/EntitlementIpo/Apply', app)
     //   .then(response => {
     //     if (response.Ok) {
@@ -84,6 +88,15 @@ export default {
     //     }
     //   });
     //   .catch(err => Promise.reject('An error occurred: ' + err));
+    const application = {
+      entitlement: appDetails.entitlement,
+      applicationUnits: appDetails.applicationUnits,
+      billerCode: appDetails.billerCode,
+      referenceNo: appDetails.referenceNo,
+      emailAddress: appDetails.emailAddress,
+      phoneNumber: appDetails.phoneNumber,
+    };
+    setApplication(application);
     setSession('');
   },
 };
@@ -94,7 +107,7 @@ export default {
     // axios.post('http://dev-21-api/api/EntitlementIpo/Login', loginCredentials)
     //  .then(response => {
     //    if (response.Ok) {
-    //      const investor = mapInvestor(response);
+    //      const investor = mapApiToInvestor(response);
     //      const payment = mapPayment(response);
     //      setInvestor(investor);
     //      setPayment(payment);

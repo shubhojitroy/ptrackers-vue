@@ -13,6 +13,7 @@ $brand-color-c: #6cbcdc; // blue
 $brand-color-d: #404042; // black
 $brand-color-e: #2b3e50; // dark
 $brand-color-f: #ee464c; // red
+$brand-color-g: #dcedf4;
 
 $primary: $brand-color-2;
 //$button-background-color: #2d495c;
@@ -67,3 +68,18 @@ h1, h2, h3 {
   }
 }
 
+.app-form {
+  .message-body {
+    border-width: 1px 1px 1px 4px;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    h5 {
+      color: #12537e;
+      font-size: 14px;
+      margin-top: 0.5rem;
+    }
+    ul {
+      margin-top: 0.25rem
+    }
+  }
+}

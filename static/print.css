@@ -9,7 +9,14 @@ html, body {
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
-
+.cheque-payment {
+  font-size: 12px;
+}
+.box {
+  box-shadow: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
 .bpay-box {
   display: flex;
   justify-content: flex-start;
@@ -21,7 +28,6 @@ h1, h2, h3 {
   border: 4px solid #142c61;
   margin-right: 4px;
 }
-
 .bpay-details {
   border: 4px solid #142c61;
   padding-left: 1rem;

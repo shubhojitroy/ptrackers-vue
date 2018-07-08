@@ -17,60 +17,77 @@
         time) on XXXX, XX XXXX 2018. If your BPAY® payment is not received by this time, it will be treated as a late Application
         and may not be processed.
       </p>
-      <h4>
-        Payment by Cheque
-      </h4>
-      <p>
-        To submit your Application Monies by cheque, bank draft or money order, follow the instructions below:
-      </p>
-      <ul>
-        <li>
-          Print out this page and attach your cheque, bank draft or money order to it.
-        </li>
-        <li>
-          Your cheque, bank draft or money order must be drawn on an Australian financial institution and in Australian dollars for
-          the amount of A, crossed "Not Negotiable" and made payable to PM Capital GO 2025 Limited – Offer A/C" Cheques returned
-          unpaid may not be re-presented and are likely to result in your Application being rejected.
-        </li>
-        <li>
-          If you are not able to print out this page, then write the reference number and the name of the Offer as set out above on
-          the back of your cheque, bank draft or money order.
-        </li>
-        <li>
-          Post your payment to: Boardroom Pty Limited, GPO Box 3993, Sydney NSW 2001. If you are returning your payment by post, you
-          should allow sufficient time for collection and delivery by postal services.
-        </li>
-      </ul>
+      <div class="cheque-payment">
+        <h4>
+          Payment by Cheque
+        </h4>
+        <p>
+          To submit your Application Monies by cheque, bank draft or money order, follow the instructions below:
+        </p>
+        <ul>
+          <li>
+            Print out this page and attach your cheque, bank draft or money order to it.
+          </li>
+          <li>
+            Your cheque, bank draft or money order must be drawn on an Australian financial institution and in Australian dollars for
+            the amount of A, crossed "Not Negotiable" and made payable to PM Capital GO 2025 Limited – Offer A/C" Cheques returned
+            unpaid may not be re-presented and are likely to result in your Application being rejected.
+          </li>
+          <li>
+            If you are not able to print out this page, then write the reference number and the name of the Offer as set out above on
+            the back of your cheque, bank draft or money order.
+          </li>
+          <li>
+            Post your payment to: Boardroom Pty Limited, GPO Box 3993, Sydney NSW 2001. If you are returning your payment by post, you
+            should allow sufficient time for collection and delivery by postal services.
+          </li>
+        </ul>
+      </div>
+      <br>
       <div class="box">
-        <b-field label="Entitlement Number">
-          {{ investor.entitlementNo }}
-        </b-field>
-        <b-field label="Holder Details" :addons="false">
-          {{ investor.nameAddress1 }}
-          <br v-if="investor.nameAddress2">
-          {{ investor.nameAddress2 }}
-          <br v-if="investor.nameAddress3">
-          {{ investor.nameAddress3 }}
-          <br v-if="investor.nameAddress4">
-          {{ investor.nameAddress4 }}
-          <br v-if="investor.nameAddress5">
-          {{ investor.nameAddress5 }}
-          <br v-if="investor.nameAddress6">
-          {{ investor.nameAddress6 }}
-        </b-field>
-        <b-field label="Number of PTrackERS applied for:">
-          {{ application.applicationAmount | currency('', 0) }}
-        </b-field>
-        <b-field label="Application Monies Payable:">
-          {{ applicationValue | currency('$', 2) }}
-        </b-field>
+        <div class="columns">
+          <div class="column">
+            <b-field label="Entitlement Number">
+              {{ investor.entitlementNo }}
+            </b-field>
+            <b-field label="Holder Details" :addons="false">
+              {{ investor.nameAddress1 }}
+              <br v-if="investor.nameAddress2">
+              {{ investor.nameAddress2 }}
+              <br v-if="investor.nameAddress3">
+              {{ investor.nameAddress3 }}
+              <br v-if="investor.nameAddress4">
+              {{ investor.nameAddress4 }}
+              <br v-if="investor.nameAddress5">
+              {{ investor.nameAddress5 }}
+              <br v-if="investor.nameAddress6">
+              {{ investor.nameAddress6 }}
+            </b-field>
+          </div>
+          <div class="column">
+            <b-field label="Number of PTrackERS applied for:">
+              {{ application.applicationUnits | currency('', 0) }}
+            </b-field>
+            <p v-if="application.applicationUnits > application.entitlement">
+              <label class="label">Your application is comprised of:</label>
+              <ul style="margin-top: -0.25rem;">
+                <li>{{ application.entitlement || 0 | currency('', 0) }} from your entitlement, and</li>
+                <li>{{ (application.applicationUnits - application.entitlement) | currency('', 0) }} from the General Offer</li>
+              </ul>
+            </p>
+            <b-field label="Application Monies Payable:">
+              {{ applicationValue | currency('$', 2) }}
+            </b-field>
+          </div>
+        </div>
       </div>
       <div class="box">
         <div class="bpay-box">
           <img src="~/assets/img/bpay.svg" />
           <div class="bpay-details">
             <span>Biller Code: {{ application.billerCode }}</span>
-            <span>Ref: {{ application.refNumber }}</span>
+            <!-- <span>Ref: {{ application.referenceNo }}</span> -->
+            <span>Ref: {{ displayRefNo }}</span>
           </div>
         </div>
         <p>
@@ -115,6 +132,10 @@ export default {
   },
   computed: {
     ...mapGetters(['investor', 'application', 'applicationValue']),
+    displayRefNo () {
+      const s = this.application.referenceNo + '';
+      return s.replace(/(?!^)(?=(?:\d{4})+(?:\.|$))/gm, ' ');
+    }
   },
   methods: {
     print() {

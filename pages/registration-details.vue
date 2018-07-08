@@ -6,7 +6,7 @@
       </h1>
       <div class="box">
         <b-field label="Unique Entitlement Number">
-          {{ investor.priorityCode }}
+          {{ investor.entitlementNo }}
         </b-field>
         <b-field label="Holder Details" :addons="false" custom-class="rego">
           {{ investor.nameAddress1 }}
