@@ -1,4 +1,4 @@
-//import axios from 'axios';
+import axios from 'axios';
 
 const _issuerId = 'IEYM'; // PM Go2025 Limited
 
@@ -62,41 +62,67 @@ const mapApplyRequest = (application) => {
 export default {
   investor: mapApiToInvestor(_apiResponse),
   login (credentials, setSession, setInvestor, setApplication) {
-    if (credentials.entitlementNo == _apiResponse.EntitlementNo) {
-      const response = _apiResponse;
-      if (response.Ok) {
-        const investor = mapApiToInvestor(response);
-        const application = mapApiToApplication(response);
-        setSession(response.SessionId);
-        setInvestor(investor);
-        setApplication(application);
-        return Promise.resolve();
-      } else {
-        return Promise.reject(('Invalid Entitlement Number'));
-      }
-    } else {
-     return Promise.reject('Inva!!lid Entitlement Number');
-    }
+    const loginCredentials = {
+      EntitlementNo: credentials.entitlementNo,
+      IssuerId: _issuerId,
+    };
+    axios.post('http://dev-21-api/api/EntitlementIpo/Login', loginCredentials)
+      .then(response => {
+        if (response.Ok) {
+          const investor = mapApiToInvestor(response);
+          const application = mapApiToApplication(response);
+          setInvestor(investor);
+          setApplication(application);
+          return Promise.resolve();
+        } else {
+          return Promise.reject('Invalid Entitlement Number');
+        }
+      })
+      .catch(err => Promise.reject('An error occurred: ' + err));
+    // if (credentials.entitlementNo == _apiResponse.EntitlementNo) {
+    //   const response = _apiResponse;
+    //   if (response.Ok) {
+    //     const investor = mapApiToInvestor(response);
+    //     const application = mapApiToApplication(response);
+    //     setSession(response.SessionId);
+    //     setInvestor(investor);
+    //     setApplication(application);
+    //     return Promise.resolve();
+    //   } else {
+    //     return Promise.reject(('Invalid Entitlement Number'));
+    //   }
+    // } else {
+    //  return Promise.reject('Inva!!lid Entitlement Number');
+    // }
   },
   save (appDetails, setSession, setApplication) {
-    // const app = mapApplyRequest(appDetails);
-    // post('http://dev-21-api/api/EntitlementIpo/Apply', app)
-    //   .then(response => {
-    //     if (response.Ok) {
-    //       setSession('');
-    //     }
-    //   });
-    //   .catch(err => Promise.reject('An error occurred: ' + err));
-    const application = {
-      entitlement: appDetails.entitlement,
-      applicationUnits: appDetails.applicationUnits,
-      billerCode: appDetails.billerCode,
-      referenceNo: appDetails.referenceNo,
-      emailAddress: appDetails.emailAddress,
-      phoneNumber: appDetails.phoneNumber,
-    };
-    setApplication(application);
-    setSession('');
+    const app = mapApplyRequest(appDetails);
+    post('http://dev-21-api/api/EntitlementIpo/Apply', app)
+      .then(response => {
+        if (response.Ok) {
+          const application = {
+            entitlement: appDetails.entitlement,
+            applicationUnits: appDetails.applicationUnits,
+            billerCode: appDetails.billerCode,
+            referenceNo: appDetails.referenceNo,
+            emailAddress: appDetails.emailAddress,
+            phoneNumber: appDetails.phoneNumber,
+          };
+          setApplication(application);
+          setSession('');
+        }
+      })
+      .catch(err => Promise.reject('An error occurred: ' + err));
+    // const application = {
+    //   entitlement: appDetails.entitlement,
+    //   applicationUnits: appDetails.applicationUnits,
+    //   billerCode: appDetails.billerCode,
+    //   referenceNo: appDetails.referenceNo,
+    //   emailAddress: appDetails.emailAddress,
+    //   phoneNumber: appDetails.phoneNumber,
+    // };
+    // setApplication(application);
+    // setSession('');
   },
 };
     // const loginCredentials = {
