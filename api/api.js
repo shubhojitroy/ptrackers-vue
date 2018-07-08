@@ -75,7 +75,6 @@ export default {
         return Promise.reject(('Invalid Entitlement Number'));
       }
     } else {
-      console.log('failed login.');
      return Promise.reject('Inva!!lid Entitlement Number');
     }
   },

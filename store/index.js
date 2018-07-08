@@ -72,7 +72,6 @@ export const actions = {
     );
   },
   save ({ commit }, appDetails) {
-    console.log('save stuff', appDetails);
     return api.save(
       appDetails,
       session => commit('setSession', session),

@@ -42,7 +42,7 @@
                 {{ investor.entitlement | currency('', 0) }}
               </b-field>
               <b-field label="Total number of PTrackERS subscribed">
-                {{ applicationUnits || 0 | currency('', 0) }}
+                <span :class="{ highlight: 'switch' }">{{ applicationUnits || 0 | currency('', 0) }}</span>
               </b-field>
               <b-message v-if="rule == 1" type="is-info">
                 <p>
@@ -111,9 +111,6 @@
                 </button>
               </div>
             </div>
-            {{ appUnitsEntered }}
-            <br>
-            {{ emailAddress }}<br>{{ $v }}
           </div>
           <div class="column">
             <div class="box terms">
@@ -215,7 +212,6 @@ const _businessRule = (entitlement, applicationUnits) => {
 export default {
   middleware: 'auth',
   asyncData ({ store }) {
-    console.log(store);
     return {
       phoneNumber: store.getters.investor.phoneNumber,
       emailAddress: store.getters.investor.emailAddress,
@@ -226,6 +222,7 @@ export default {
       appUnitsEntered: null,
       applicationUnits: null,
       unitsError: '',
+      switch: false,
     };
   },
   validations: {
@@ -270,7 +267,13 @@ export default {
       return isError ? `${ label } is required.` : '';
     },
     onBlur () {
-      this.applicationUnits = this.appUnitsEntered;
+      const vm = this;
+      // window.requestAnimationFrame(() => vm.switch = false);
+      vm.switch = false;
+      window.requestAnimationFrame(() => this.applicationUnits = this.appUnitsEntered);
+      window.setTimeout(() => vm.switch = true, 200);
+      // vm.switch = true;
+      // window.requestAnimationFrame(() => vm.switch = true);
     },
     submitForm () {
       this.$v.$touch();
@@ -288,11 +291,9 @@ export default {
         phoneNumber: this.phoneNumber,
         emailAddress: this.emailAddress,
       };
-      console.log('submit', app);
       const vm = this;
       this.save(app)
         .then(() => {
-          console.log('ya!');
           vm.$router.push('/confirmation-payment');
         })
         .catch(err => console.log(err));
@@ -338,7 +339,17 @@ export default {
   font-style: italic;
   padding-bottom: 0.5rem;
 }
-
+@keyframes highlight {
+  from {
+    background-color: orange;
+  }
+  to {
+    background-color: ivory;
+  }
+}
+.highlight {
+  animation: highlight .8s ease-in-out;
+}
 @media screen and (max-width: 640px) {
   .app-form {
     margin: 0 -1.5rem -3rem;
