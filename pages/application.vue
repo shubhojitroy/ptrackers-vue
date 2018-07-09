@@ -180,6 +180,12 @@
                   represent, warrant and agree that I/we have not received this Prospectus outside Australia/NZ and am/are not acting on behalf
                   of a person resident outside Australia/NZ; and
                 </li>
+                <li>
+                  where I/we are in New Zealand, I/we acknowledge that I/we have received and read the New Zealand warning statements; and
+                </li>
+                <li>
+                  I/we are not a US Person(s) as defined in Regulation S under the US Securities Act of 1933 as amended.
+                </li>
               </ol>
             </div>
           </div>

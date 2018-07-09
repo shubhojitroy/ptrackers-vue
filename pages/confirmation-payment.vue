@@ -99,7 +99,7 @@
           <a href="http://www.bpay.com.au/" target="_blank">www.bpay.com.au</a>
         </p>
         <p>
-          <strong>Application Monies must be received by the Share Registry by BPAY® by 5.00pm (Sydney time) on Wednesday, 8 August 2018 2018</strong>.
+          <strong>Application Monies must be received by the Share Registry by BPAY® by 5.00pm (Sydney time) on Wednesday, 8 August 2018</strong>.
         </p>
         <p>
           You should check the processing cut-off time for BPAY® transactions with your bank, credit union or building society to ensure
