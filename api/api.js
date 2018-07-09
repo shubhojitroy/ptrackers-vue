@@ -17,8 +17,8 @@ const _apiResponse = {
   // emailAddress: 'harry.potter@gmail.com',
   // phoneNumber: '9290-1200',
   UnitPrice: 1.4,
-  EntitlementAmount: 1200,
-  BPayBillerCode: 83733,
+  EntitlementAmount: 12000,
+  BPayBillerCode: 248625,
   BPayReferenceNumber: 689001234,
 };
 
@@ -62,73 +62,92 @@ const mapApplyRequest = (application) => {
 export default {
   investor: mapApiToInvestor(_apiResponse),
   login (credentials, setSession, setInvestor, setApplication, setError) {
-    const loginCredentials = {
-      EntitlementNo: credentials.entitlementNo,
-      IssuerId: _issuerId,
-    };
-    axios.post('http://dev-21-api/api/EntitlementIpo/Login', loginCredentials)
-      .then(response => {
-        if (response.Ok) {
-          const investor = mapApiToInvestor(response);
-          const application = mapApiToApplication(response);
-          setSession(response.SessionId);
-          setInvestor(investor);
-          setApplication(application);
-          setError('');
-        } else {
-          setError('Invalid Entitlement Number');
-        }
-      })
-      .catch(err => {
-        console.log('error!!');
-        setError('An error occurred: ' + err);
-      });
-    // if (credentials.entitlementNo == _apiResponse.EntitlementNo) {
-    //   const response = _apiResponse;
-    //   if (response.Ok) {
-    //     const investor = mapApiToInvestor(response);
-    //     const application = mapApiToApplication(response);
-    //     setSession(response.SessionId);
-    //     setInvestor(investor);
-    //     setApplication(application);
-    //     return Promise.resolve();
-    //   } else {
-    //     return Promise.reject(('Invalid Entitlement Number'));
-    //   }
-    // } else {
-    //  return Promise.reject('Inva!!lid Entitlement Number');
-    // }
+    // const loginCredentials = {
+    //   EntitlementNo: credentials.entitlementNo,
+    //   IssuerId: _issuerId,
+    // };
+    // // axios.post('http://dev-21-api/api/EntitlementIpo/Login', loginCredentials)
+    // // axios.post('http://dev-21-api/api/EntitlementIpo/Login', {
+    // //   EntitlementNo: credentials.entitlementNo,
+    // //   IssuerId: _issuerId,
+    // // })
+    // axios({
+    //   method: 'post',
+    //   url: 'http://dev-21-api/api/EntitlementIpo/Login',
+    //   // responseType: 'application/json',
+    //   // withCredentiaxls: true,
+    //   data: {
+    //     EntitlementNo: credentials.entitlementNo,
+    //     IssuerId: _issuerId,
+    //   },
+    //   headers: {
+    //     'Accept': 'application/json',
+    //     'Content-Type': 'text/plain;charset=utf-8',
+    //   },
+    // })
+    //   .then(response => {
+    //     if (response.Ok) {
+    //       const investor = mapApiToInvestor(response);
+    //       const application = mapApiToApplication(response);
+    //       setSession(response.SessionId);
+    //       setInvestor(investor);
+    //       setApplication(application);
+    //       setError('');
+    //     } else {
+    //       setError('Invalid Entitlement Number');
+    //     }
+    //   })
+    //   .catch(err => {
+    //     console.log('error!!');
+    //     setError('An error occurred: ' + err);
+    //   });
+    if (credentials.entitlementNo == _apiResponse.EntitlementNo) {
+      const response = _apiResponse;
+      if (response.Ok) {
+        const investor = mapApiToInvestor(response);
+        const application = mapApiToApplication(response);
+        setSession(response.SessionId);
+        setInvestor(investor);
+        setApplication(application);
+        setError('');
+      } else {
+        setError('Invalid Entitlement Number');
+      }
+    } else {
+     return setError('Invalid Entitlement Number');
+    }
   },
   save (appDetails, setSession, setApplication, setError) {
-    const app = mapApplyRequest(appDetails);
-    post('http://dev-21-api/api/EntitlementIpo/Apply', app)
-      .then(response => {
-        if (response.Ok) {
-          const application = {
-            entitlement: appDetails.entitlement,
-            applicationUnits: appDetails.applicationUnits,
-            billerCode: appDetails.billerCode,
-            referenceNo: appDetails.referenceNo,
-            emailAddress: appDetails.emailAddress,
-            phoneNumber: appDetails.phoneNumber,
-          };
-          setApplication(application);
-          setSession('');
-          setError('');
-          resolve('');
-        }
-      })
-      .catch(err => setError('An error occurred: ' + err));
-    // const application = {
-    //   entitlement: appDetails.entitlement,
-    //   applicationUnits: appDetails.applicationUnits,
-    //   billerCode: appDetails.billerCode,
-    //   referenceNo: appDetails.referenceNo,
-    //   emailAddress: appDetails.emailAddress,
-    //   phoneNumber: appDetails.phoneNumber,
-    // };
-    // setApplication(application);
-    // setSession('');
+    // const app = mapApplyRequest(appDetails);
+    // post('http://dev-21-api/api/EntitlementIpo/Apply', app)
+    //   .then(response => {
+    //     if (response.Ok) {
+    //       const application = {
+    //         entitlement: appDetails.entitlement,
+    //         applicationUnits: appDetails.applicationUnits,
+    //         billerCode: appDetails.billerCode,
+    //         referenceNo: appDetails.referenceNo,
+    //         emailAddress: appDetails.emailAddress,
+    //         phoneNumber: appDetails.phoneNumber,
+    //       };
+    //       setApplication(application);
+    //       setSession('');
+    //       setError('');
+    //       resolve('');
+    //     }
+    //   })
+    //   .catch(err => setError('An error occurred: ' + err));
+    const application = {
+      entitlement: appDetails.entitlement,
+      applicationUnits: appDetails.applicationUnits,
+      billerCode: appDetails.billerCode,
+      referenceNo: appDetails.referenceNo,
+      emailAddress: appDetails.emailAddress,
+      phoneNumber: appDetails.phoneNumber,
+    };
+    setApplication(application);
+    setSession('');
+    setError('');
   },
 };
     // const loginCredentials = {
