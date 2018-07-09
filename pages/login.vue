@@ -50,13 +50,13 @@
 
 <script>
 import { required } from 'vuelidate/lib/validators';
-import { mapActions } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
   data () {
     return {
       entitlementNo: '',
-      error: ''
+      // error: ''
     };
   },
   validations: {
@@ -65,6 +65,9 @@ export default {
     }
   },
   computed: {
+    ...mapGetters(
+        { error: 'errorLogin'}
+      ),
     inputType() {
       return this.$v.entitlementNo.$error || this.error ? 'is-danger' : 'is-primary';
     },
@@ -80,15 +83,42 @@ export default {
       this.$v.$touch();
       if (!this.$v.$error) {
         this.login({ entitlementNo: this.entitlementNo })
-          .then(() => {
+        .then(resp => {
+            console.log('pass=', resp);
             this.$router.push('/registration-details');
-            })
-          .catch(err => {
-            this.error = 'The entitlement number was invalid. Please try again';
-            const el = document.getElementById('entitlement-number');
-            el.focus();
-            el.select();
-          });
+        })
+        .catch(err => {
+          const el = document.getElementById('entitlement-number');
+          el.focus();
+          el.select();
+        });
+        // try {
+        //   this.login({ entitlementNo: this.entitlementNo })
+        //     .then(resp => {
+        //         console.log('pass=', resp);
+        //         this.$router.push('/registration-details');
+        //     });
+        //     //   (err) => {
+        //     //     console.log('fail', err);
+        //     //     // this.error = 'The entitlement number was invalid. Please try again';
+        //     //     const el = document.getElementById('entitlement-number');
+        //     //     el.focus();
+        //     //   }
+        //     // );
+        // }
+        // catch (err) {
+        //     console.log('fail', err);
+        //     this.error = 'The entitlement number was invalid. Please try again';
+        //     const el = document.getElementById('entitlement-number');
+        //     el.focus();
+        // }
+          // .catch(err => {
+          //   console.log('fail');
+          //   this.error = 'The entitlement number was invalid. Please try again';
+          //   const el = document.getElementById('entitlement-number');
+          //   el.focus();
+          //   el.select();
+          // });
       }
     },
   },

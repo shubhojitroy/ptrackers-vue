@@ -61,7 +61,7 @@ const mapApplyRequest = (application) => {
 
 export default {
   investor: mapApiToInvestor(_apiResponse),
-  login (credentials, setSession, setInvestor, setApplication) {
+  login (credentials, setSession, setInvestor, setApplication, setError) {
     const loginCredentials = {
       EntitlementNo: credentials.entitlementNo,
       IssuerId: _issuerId,
@@ -71,14 +71,18 @@ export default {
         if (response.Ok) {
           const investor = mapApiToInvestor(response);
           const application = mapApiToApplication(response);
+          setSession(response.SessionId);
           setInvestor(investor);
           setApplication(application);
-          return Promise.resolve();
+          setError('');
         } else {
-          return Promise.reject('Invalid Entitlement Number');
+          setError('Invalid Entitlement Number');
         }
       })
-      .catch(err => Promise.reject('An error occurred: ' + err));
+      .catch(err => {
+        console.log('error!!');
+        setError('An error occurred: ' + err);
+      });
     // if (credentials.entitlementNo == _apiResponse.EntitlementNo) {
     //   const response = _apiResponse;
     //   if (response.Ok) {
@@ -95,7 +99,7 @@ export default {
     //  return Promise.reject('Inva!!lid Entitlement Number');
     // }
   },
-  save (appDetails, setSession, setApplication) {
+  save (appDetails, setSession, setApplication, setError) {
     const app = mapApplyRequest(appDetails);
     post('http://dev-21-api/api/EntitlementIpo/Apply', app)
       .then(response => {
@@ -110,9 +114,11 @@ export default {
           };
           setApplication(application);
           setSession('');
+          setError('');
+          resolve('');
         }
       })
-      .catch(err => Promise.reject('An error occurred: ' + err));
+      .catch(err => setError('An error occurred: ' + err));
     // const application = {
     //   entitlement: appDetails.entitlement,
     //   applicationUnits: appDetails.applicationUnits,

@@ -221,7 +221,7 @@ export default {
     return {
       appUnitsEntered: null,
       applicationUnits: null,
-      unitsError: '',
+      // unitsError: '',
       switch: false,
     };
   },
@@ -235,7 +235,12 @@ export default {
     phoneNumber: {},
   },
   computed: {
-    ...mapGetters(['sessionId', 'investor', 'application']),
+    ...mapGetters(
+      ['sessionId', 'investor', 'application']
+    ),
+    ...mapGetters({
+      unitsError: 'errorApply'
+    }),
     applicationValue () {
       return this.investor.unitPrice * this.applicationUnits;
     },
@@ -267,13 +272,14 @@ export default {
       return isError ? `${ label } is required.` : '';
     },
     onBlur () {
-      const vm = this;
-      // window.requestAnimationFrame(() => vm.switch = false);
-      vm.switch = false;
-      window.requestAnimationFrame(() => this.applicationUnits = this.appUnitsEntered);
-      window.setTimeout(() => vm.switch = true, 200);
-      // vm.switch = true;
-      // window.requestAnimationFrame(() => vm.switch = true);
+      this.applicationUnits = this.appUnitsEntered;
+      // const vm = this;
+      // // window.requestAnimationFrame(() => vm.switch = false);
+      // vm.switch = false;
+      // window.requestAnimationFrame(() => this.applicationUnits = this.appUnitsEntered);
+      // window.setTimeout(() => vm.switch = true, 200);
+      // // vm.switch = true;
+      // // window.requestAnimationFrame(() => vm.switch = true);
     },
     submitForm () {
       this.$v.$touch();

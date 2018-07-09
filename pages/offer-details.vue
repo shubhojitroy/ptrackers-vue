@@ -23,13 +23,13 @@
             <faq></faq>
           </b-tab-item>
 
-          <!-- <b-tab-item label="Apply Now">
+          <b-tab-item label="Apply Now">
             <apply-now></apply-now>
-          </b-tab-item> -->
-
-          <b-tab-item label="Prospectus">
-            <prospectus></prospectus>
           </b-tab-item>
+
+          <!-- <b-tab-item label="Prospectus">
+            <prospectus></prospectus>
+          </b-tab-item> -->
 
           <b-tab-item label="Contact">
             <contact-registry></contact-registry>
@@ -55,15 +55,15 @@
           </div>
           <div class="control right-side" v-if="activeTab != 5">
             <button class="button is-primary" @click="setActiveTab(5)">
-              <!-- Apply Now -->
-              Prospectus
+              Apply Now
+              <!-- Prospectus -->
             </button>
           </div>
-          <!-- <div class="control right-side" v-if="activeTab == 5">
+          <div class="control right-side" v-if="activeTab == 5">
             <nuxt-link to="/important-notification" class="button is-primary">
               Continue
             </nuxt-link>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -76,8 +76,8 @@ import CioLetter from '~/components/OfferDetails/CioLetter';
 import OfferOverview from '~/components/OfferDetails/OfferOverview';
 import KeyDates from '~/components/OfferDetails/KeyDates';
 import Faq from '~/components/OfferDetails/Faq';
-import Prospectus from '~/components/OfferDetails/Prospectus';
-// import ApplyNow from '~/components/OfferDetails/ApplyNow';
+// import Prospectus from '~/components/OfferDetails/Prospectus';
+import ApplyNow from '~/components/OfferDetails/ApplyNow';
 import ContactRegistry from '~/components/OfferDetails/ContactRegistry';
 import { mapGetters, mapActions } from 'vuex';
 
@@ -88,8 +88,8 @@ export default {
     OfferOverview,
     KeyDates,
     Faq,
-    // ApplyNow,
-    Prospectus,
+    ApplyNow,
+    // Prospectus,
     ContactRegistry,
   },
   computed: {

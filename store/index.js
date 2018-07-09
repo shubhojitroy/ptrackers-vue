@@ -24,6 +24,8 @@ export const state = () => ({
     emailAddress: '',
     phoneNumber: '',
   },
+  errorLogin: '',
+  errorApply: '',
 });
 
 export const getters = {
@@ -33,6 +35,8 @@ export const getters = {
   investor: state => state.investor,
   application: state => state.application,
   applicationValue: state => state.investor.unitPrice * state.application.applicationUnits,
+  errorLogin: state => state.errorLogin,
+  errorApply: state => state.errorApply,
 };
 
 export const mutations = {
@@ -51,6 +55,12 @@ export const mutations = {
   setApplication (state, value) {
     state.application = value;
   },
+  setErrorLogin (state, value) {
+    state.errorLogin = value;
+  },
+  setErrorApply (state, value) {
+    state.errorApply = value;
+  },
 };
 
 export const actions = {
@@ -60,22 +70,21 @@ export const actions = {
   setActiveTab ({ commit }, value) {
     commit('setActiveTab', value);
   },
-  // assignPayment ({ commit }, value) {
-  //   commit('setPayment', value);
-  // },
   login ({ commit }, credentials) {
     return api.login(
       credentials,
       session => commit('setSession', session),
       investor => commit('setInvestor', investor),
-      application => commit('setApplication', application)
+      application => commit('setApplication', application),
+      error => commit('setErrorLogin', error),
     );
   },
   save ({ commit }, appDetails) {
     return api.save(
       appDetails,
       session => commit('setSession', session),
-      application => commit('setApplication', application)
+      application => commit('setApplication', application),
+      error => commit('setErrorApply', error),
     );
   },
 };
