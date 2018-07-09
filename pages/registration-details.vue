@@ -54,7 +54,7 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  middleware: 'auth',
+  // middleware: 'auth',
   data() {
     return {
     };

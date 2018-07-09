@@ -67,10 +67,13 @@ export default {
       IssuerId: _issuerId,
     };
     axios.post('https://api.boardroomlimited.com.au/api/EntitlementIpo/Login', loginCredentials)
-      .then(response => {
+      .then(resp => {
+        const response = resp.data;
+        // console.log('api', response);
         if (response.Ok) {
           const investor = mapApiToInvestor(response);
           const application = mapApiToApplication(response);
+          // console.log('api!!!', response.SessionId);
           setSession(response.SessionId);
           setInvestor(investor);
           setApplication(application);
@@ -80,7 +83,7 @@ export default {
         }
       })
       .catch(err => {
-        console.log('error!!');
+        // console.log('error!!');
         setError('An error occurred: ' + err);
       });
     // if (credentials.entitlementNo == _apiResponse.EntitlementNo) {
