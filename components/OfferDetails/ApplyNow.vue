@@ -12,7 +12,7 @@
       <strong><a href="/ca/ptrackers/go2025-prospectus.pdf" target="_blank" class="button is-large is-primary">Download Prospectus</a></strong>.
     </p>
     <div class="field box">
-      <b-checkbox class="confirm" v-model="checkbox">
+      <b-checkbox class="confirm" v-model="checkbox" @input="onChange">
         I have been provided the Prospectus and have read it. I also accept the terms and conditions of the Offer outlined in the
         Prospectus.
       </b-checkbox>
@@ -38,11 +38,19 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
   data() {
     return {
       checkbox: false,
     };
+  },
+  methods: {
+    ...mapActions(['setAcceptTerms']),
+    onChange (value) {
+      this.setAcceptTerms(value);
+    }
   }
 };
 </script>

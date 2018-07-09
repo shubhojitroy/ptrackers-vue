@@ -31,6 +31,7 @@
             <button type="submit" class="button is-primary">
               Login
             </button>
+            <b-loading :is-full-page="true" :active.sync="isLoading"></b-loading>
           </div>
         </div>
       </form>
@@ -56,7 +57,7 @@ export default {
   data () {
     return {
       entitlementNo: '',
-      // error: ''
+      isLoading: false,
     };
   },
   validations: {
@@ -82,15 +83,24 @@ export default {
     submitForm () {
       this.$v.$touch();
       if (!this.$v.$error) {
+        window.requestAnimationFrame(() => this.isLoading = true );
         this.login({ entitlementNo: this.entitlementNo })
         .then(resp => {
-            console.log('pass=', resp);
+          console.log('this is next');
+          if (this.error) {
+            const el = document.getElementById('entitlement-number');
+            el.focus();
+            el.select();
+          } else {
             this.$router.push('/registration-details');
+          }
+          window.requestAnimationFrame(() => this.isLoading = false );
         })
         .catch(err => {
           const el = document.getElementById('entitlement-number');
           el.focus();
           el.select();
+          window.requestAnimationFrame(() => this.isLoading = false );
         });
         // try {
         //   this.login({ entitlementNo: this.entitlementNo })

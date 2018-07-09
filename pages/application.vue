@@ -106,9 +106,14 @@
                 </button>
               </div>
               <div class="control">
-                <button type="submit" class="button is-primary">
-                  Submit
-                </button>
+                <b-tooltip label="There is a data entry error. Please correct this before you submit."
+                           :active="$v.$error || rule > 1"
+                           type="is-warning"
+                           multilined>
+                  <button type="submit" class="button is-primary">
+                    Submit
+                  </button>
+                </b-tooltip>
               </div>
             </div>
           </div>
@@ -227,7 +232,6 @@ export default {
     return {
       appUnitsEntered: null,
       applicationUnits: null,
-      // unitsError: '',
       switch: false,
     };
   },

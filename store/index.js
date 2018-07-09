@@ -3,6 +3,7 @@ import api from '~/api/api';
 export const state = () => ({
   animateFirstTime: true,
   activeTab: 0,
+  acceptTerms: false,
   sessionId: '',
   investor: {
     entitlementNo: '',
@@ -31,6 +32,7 @@ export const state = () => ({
 export const getters = {
   animate: state => state.animateFirstTime,
   activeTab: state => state.activeTab,
+  acceptTerms: state => state.acceptTerms,
   sessionId: state => state.sessionId,
   investor: state => state.investor,
   application: state => state.application,
@@ -45,6 +47,9 @@ export const mutations = {
   },
   setActiveTab (state, value) {
     state.activeTab = value;
+  },
+  setAcceptTerms (state, value) {
+    state.acceptTerms = value;
   },
   setSession (state, value) {
     state.sessionId = value;
@@ -69,6 +74,9 @@ export const actions = {
   },
   setActiveTab ({ commit }, value) {
     commit('setActiveTab', value);
+  },
+  setAcceptTerms ({ commit }, value) {
+    commit('setAcceptTerms', value);
   },
   login ({ commit }, credentials) {
     return api.login(

@@ -60,9 +60,14 @@
             </button>
           </div>
           <div class="control right-side" v-if="activeTab == 5">
-            <nuxt-link to="/important-notification" class="button is-primary">
-              Continue
-            </nuxt-link>
+            <b-tooltip label="You must click on the checkbox to accept the Terms and Conditions before you can continue to the Offer"
+                       :active="!acceptTerms"
+                       type="is-warning"
+                       multilined>
+              <nuxt-link :to="continueLink" class="button is-primary" :disabled="!acceptTerms">
+                Continue
+              </nuxt-link>
+            </b-tooltip>
           </div>
         </div>
       </div>
@@ -93,7 +98,10 @@ export default {
     ContactRegistry,
   },
   computed: {
-    ...mapGetters(['activeTab']),
+    ...mapGetters(['activeTab', 'acceptTerms']),
+    continueLink () {
+      return this.acceptTerms ? '/important-notification' : '';
+    },
   },
   methods: {
     ...mapActions(['setActiveTab']),

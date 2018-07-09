@@ -101,7 +101,7 @@ export default {
   },
   save (appDetails, setSession, setApplication, setError) {
     const app = mapApplyRequest(appDetails);
-    post('http://dev-21-api/api/EntitlementIpo/Apply', app)
+    axios.post('http://api.boardroomlimited.com.au/api/EntitlementIpo/Apply', app)
       .then(response => {
         if (response.Ok) {
           const application = {
@@ -115,7 +115,6 @@ export default {
           setApplication(application);
           setSession('');
           setError('');
-          resolve('');
         }
       })
       .catch(err => setError('An error occurred: ' + err));
