@@ -6,7 +6,7 @@
       </h1>
       <p>
         As an eligible Priority Applicant, you are invited to subscribe for an amount of PTrackERS equal to the number of PM Capital
-        Global Opportunity Funds Limited Ordinary Shares held at the Record Date, subject to a minimum of 1,500 securities.
+        Global Opportunity Funds Limited Ordinary Shares held at the Record Date, please refer to section 2.7 of the Prospectus for full details of the Entitlement Offer.
       </p>
       <p>
         If you are in doubt as to how to deal with this online Application, please contact your accountant, solicitor, stockbroker
@@ -75,7 +75,7 @@
                   Please enter a number equal to or greater than 1,500.
                 </p>
               </b-message>
-              <b-field label="Issue price per Unit">
+              <b-field label="Issue price per PTrackERS">
                 {{ investor.unitPrice | currency('$', 2) }}
               </b-field>
               <b-field label="Application Monies based on PTrackERS applied for">

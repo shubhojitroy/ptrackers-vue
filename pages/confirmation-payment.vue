@@ -5,16 +5,16 @@
         Confirmation and Payment Instruction
       </h1>
       <p class="no-print">
-        Your Application Monies must be received by the Share Registry by BPAY® or Cheque by 5.00pm (Sydney time) on XXXX, XX XXXX
+        Your Application Monies must be received by the Share Registry by BPAY® or Cheque by 5.00pm (Sydney time) on Wednesday, 8 August
         2018. If you do not make a BPAY® payment, your online Application will be incomplete and will not be accepted. By
         paying by BPAY®, you will be deemed to have accepted the terms of the Offer.
       </p>
       <p class="no-print">
         You should submit your BPAY® payment immediately using the Biller Code and Reference provided below. The time of your Application
         will be the time at which the Unit Registry has received both your valid online Application and your BPAY® payment.
-        If you submit an online Application in the 24 hours before 5.00pm (Sydney time) on XXXX, XX XXXX 2018 you must ensure
+        If you submit an online Application in the 24 hours before 5.00pm (Sydney time) on Wednesday, 8 August 2018 you must ensure
         that your BPAY® payment is processed by your bank so that your Application Monies are received before 5.00pm (Sydney
-        time) on XXXX, XX XXXX 2018. If your BPAY® payment is not received by this time, it will be treated as a late Application
+        time) on Wednesday, 8 August 2018. If your BPAY® payment is not received by this time, it will be treated as a late Application
         and may not be processed.
       </p>
       <div class="cheque-payment">

@@ -6,7 +6,10 @@
     <p>
       The Prospectus contains important information about the Offer and you should read it carefully before deciding whether or
       not to participate in the Offer.
-      <strong>Download the Prospectus</strong>.
+      <!-- <strong>Download the Prospectus</strong>. -->
+    </p>
+    <p>
+      <strong><a href="/ca/ptrackers/go2025-prospectus.pdf" target="_blank" class="button is-large is-primary">Download Prospectus</a></strong>.
     </p>
     <div class="field box">
       <b-checkbox class="confirm" v-model="checkbox">
@@ -51,5 +54,9 @@ export default {
 }
 .confirm {
   align-items: flex-start;
+}
+.button.is-large {
+  font-size: 1rem;
+  width: 220px;
 }
 </style>
