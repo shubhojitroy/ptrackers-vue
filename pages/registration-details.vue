@@ -54,7 +54,7 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  // middleware: 'auth',
+  middleware: 'auth',
   data() {
     return {
     };
@@ -62,15 +62,6 @@ export default {
   computed: {
     ...mapGetters(['sessionId', 'investor']),
   },
-
-  // beforeRouteEnter (to, from, next) {
-  //   // console.log(to, from, next);
-  //   console.log('nuxt',$app);
-  //   next(vm => {
-  //     console.log('before enter:', '"' + vm.sessionId + '"');
-  //     return vm.sessionId ? true : '/login';
-  //   });
-  // },
 };
 </script>
 

@@ -66,29 +66,28 @@ export default {
       EntitlementNo: credentials.entitlementNo,
       IssuerId: _issuerId,
     };
-    axios.post('https://api.boardroomlimited.com.au/api/EntitlementIpo/Login', loginCredentials)
+    return axios.post('https://api.boardroomlimited.com.au/api/EntitlementIpo/Login', loginCredentials)
       .then(resp => {
         const response = resp.data;
-        // console.log('api', response);
         if (response.Ok) {
           const investor = mapApiToInvestor(response);
           const application = mapApiToApplication(response);
           console.log('api!!!', response.SessionId);
-          // window.requestAnimationFrame(() => {
           setSession(response.SessionId);
           setInvestor(investor);
           setApplication(application);
           setError('');
-          // });
+          return response;
         } else {
           console.log('invalid loging!!!', response.SessionId);
           setError('Invalid Entitlement Number');
-          return new Error('Invalid Entitlment Number.');
+          return Promise.reject('Invalid Entitlment Number.');
         }
       })
       .catch(err => {
         // console.log('error!!');
         setError('An error occurred: ' + err);
+        return Promise.reject('An error occurred: ' + err);
       });
     // if (credentials.entitlementNo == _apiResponse.EntitlementNo) {
     //   const response = _apiResponse;
@@ -109,7 +108,7 @@ export default {
   save (appDetails, setSession, setApplication, setError) {
     const app = mapApplyRequest(appDetails);
     console.log('apply', app);
-    axios.post('https://api.boardroomlimited.com.au/api/EntitlementIpo/Apply', app)
+    return axios.post('https://api.boardroomlimited.com.au/api/EntitlementIpo/Apply', app)
       .then(resp => {
         const response = resp.data;
         if (response.Ok) {
@@ -124,9 +123,13 @@ export default {
           setApplication(application);
           setSession('');
           setError('');
+          return response;
         }
       })
-      .catch(err => setError('An error occurred: ' + err));
+      .catch(err => {
+        setError('An error occurred: ' + err);
+        return Promise.reject('An error occurred: ' + err);
+      });
     // const application = {
     //   entitlement: appDetails.entitlement,
     //   applicationUnits: appDetails.applicationUnits,

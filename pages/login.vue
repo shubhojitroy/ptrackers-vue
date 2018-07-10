@@ -86,16 +86,14 @@ export default {
         window.requestAnimationFrame(() => this.isLoading = true );
         this.login({ entitlementNo: this.entitlementNo })
         .then(resp => {
-          window.setTimeout(() => {
-            if (this.error) {
-              const el = document.getElementById('entitlement-number');
-              el.focus();
-              el.select();
-            } else {
-              this.$router.push('/registration-details');
-            }
-            this.isLoading = false;
-          }, 2000);
+          if (this.error) {
+            const el = document.getElementById('entitlement-number');
+            el.focus();
+            el.select();
+          } else {
+            this.$router.push('/registration-details');
+          }
+          this.isLoading = false;
         })
         .catch(err => {
           const el = document.getElementById('entitlement-number');
