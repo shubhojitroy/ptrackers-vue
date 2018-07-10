@@ -16,7 +16,10 @@ module.exports = {
     link: [
       { rel: 'shortcut icon', type: 'image/vnd.microsoft.icon', href: 'favicon.ico' },
     ],
-  },
+    script: [
+      { src: '/web/scripts/ie.js' }
+    ]
+},
 
   /*
   ** Customize the progress-bar color
@@ -78,6 +81,9 @@ module.exports = {
         }
       }
     },
+    vendors: [
+      'babel-polyfill', // for IE11 support
+    ],
     /*
     ** You can extend webpack config here
     */
