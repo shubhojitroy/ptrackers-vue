@@ -119,6 +119,9 @@ export const actions = {
     commit('setInvestor', investor);
     commit('setApplication', app);
     commit('setActiveTab', 0);
+    commit('setAcceptTerms', false);
     commit('setSession', '');
+    commit('setErrorLogin', '');
+    commit('setErrorApply', '');
   }
 };
