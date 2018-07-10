@@ -3,7 +3,7 @@
     <h1 class="title">
       General Welcome – Chief Investment Officer of PM Capital (Investment Manager)
     </h1>
-    <img src="~/assets/img/paul.moore.png" alt="Paul Moore">
+    <img class="banner-image" src="~/assets/img/paul.moore.png" alt="Paul Moore">
     <p>
       Australians love to travel. We live a long way from the most populous parts of the world, but it’s not unusual that when
       landing in a foreign city we bump into an Australian or two. Given our outward focus and desire to experience the best
@@ -110,3 +110,12 @@
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.banner-image {
+  object-fit: cover;
+  object-position: right center;
+  width: 100%;
+  min-height: 120px;
+}
+</style>

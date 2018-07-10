@@ -4,7 +4,7 @@
       Welcome letter – From the Issuer
     </h1>
     <p>
-      <img src="~/assets/img/andrew.mcgill.png" alt="Andrew McGill">
+      <img class="banner-image" src="~/assets/img/andrew.mcgill.png" alt="Andrew McGill">
     </p>
     <p>
       Dear Investors
@@ -132,3 +132,12 @@
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.banner-image {
+  object-fit: cover;
+  object-position: right center;
+  width: 100%;
+  min-height: 120px;
+}
+</style>
