@@ -40,7 +40,7 @@
           If you are not an eligible PM Capital Global Opportunities Fund Limited holder, you can apply through the General Offer
         </p>
         <div class="control offer">
-          <a href="https://www.investorserve.com.au/?offerid=8A3F5478453A4E6A8745F482A30DB98C" target="_blank" class="button is-light">
+          <a href="https://www.investorserve.com.au/?offerid=8A3F5478453A4E6A8745F482A30DB98C" target="_blank" class="button is-link">
             General Offer
           </a>
         </div>
