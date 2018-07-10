@@ -73,13 +73,17 @@ export default {
         if (response.Ok) {
           const investor = mapApiToInvestor(response);
           const application = mapApiToApplication(response);
-          // console.log('api!!!', response.SessionId);
+          console.log('api!!!', response.SessionId);
+          // window.requestAnimationFrame(() => {
           setSession(response.SessionId);
           setInvestor(investor);
           setApplication(application);
           setError('');
+          // });
         } else {
+          console.log('invalid loging!!!', response.SessionId);
           setError('Invalid Entitlement Number');
+          return new Error('Invalid Entitlment Number.');
         }
       })
       .catch(err => {
