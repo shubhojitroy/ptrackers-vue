@@ -68,11 +68,11 @@
             <b-field label="Number of PTrackERS applied for:">
               {{ application.applicationUnits | currency('', 0) }}
             </b-field>
-            <p v-if="application.applicationUnits > application.entitlement">
+            <p v-if="application.applicationUnits > investor.entitlement">
               <label class="label">Your application is comprised of:</label>
               <ul style="margin-top: -0.25rem;">
-                <li>{{ application.entitlement || 0 | currency('', 0) }} from your entitlement, and</li>
-                <li>{{ (application.applicationUnits - application.entitlement) | currency('', 0) }} from the General Offer</li>
+                <li>{{ investor.entitlement || 0 | currency('', 0) }} from your entitlement, and</li>
+                <li>{{ (application.applicationUnits - investor.entitlement) | currency('', 0) }} from the General Offer</li>
               </ul>
             </p>
             <b-field label="Application Monies Payable:">

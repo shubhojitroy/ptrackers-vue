@@ -300,7 +300,7 @@ export default {
     submitApplication () {
       const app = {
         sessionId: this.sessionId,
-        entitlement: this.investor.entitlement,
+        entitlementNo: this.investor.entitlementNo,
         applicationUnits: this.applicationUnits,
         billerCode: this.application.billerCode,
         referenceNo: this.application.referenceNo,

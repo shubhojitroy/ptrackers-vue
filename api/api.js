@@ -53,7 +53,7 @@ const mapApplyRequest = (application) => {
     SessionId: application.sessionId,
     EntitlementNo: application.entitlementNo,
     IssuerId: _issuerId,
-    ApplicationAmount: application.unitsApplied,
+    ApplicationAmount: application.applicationUnits,
     ContactNumber: application.phoneNumber,
     Email: application.emailAddress,
   };
@@ -104,8 +104,10 @@ export default {
   },
   save (appDetails, setSession, setApplication, setError) {
     const app = mapApplyRequest(appDetails);
-    axios.post('http://api.boardroomlimited.com.au/api/EntitlementIpo/Apply', app)
-      .then(response => {
+    console.log('apply', app);
+    axios.post('https://api.boardroomlimited.com.au/api/EntitlementIpo/Apply', app)
+      .then(resp => {
+        const response = resp.data;
         if (response.Ok) {
           const application = {
             entitlement: appDetails.entitlement,
