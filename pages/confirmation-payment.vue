@@ -113,9 +113,9 @@
           </button>
         </div>
         <div class="control">
-          <nuxt-link to="/application-completed" class="button is-primary">
+          <button class="button is-primary" @click="finish">
             Finish
-          </nuxt-link>
+          </button>
         </div>
       </div>
     </div>
@@ -123,7 +123,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
   data() {
@@ -138,9 +138,14 @@ export default {
     }
   },
   methods: {
-    print() {
+    ...mapActions(['clearData']),
+    print () {
       this.$htmlToPaper('confirmation');
     },
+    finish () {
+      this.clearData();
+      this.$router.push('/application-completed');
+    }
   },
 };
 </script>

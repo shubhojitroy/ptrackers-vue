@@ -20,8 +20,8 @@ export const state = () => ({
   },
   application: {
     applicationUnits: 0,
-    billerCode: 123465,
-    referenceNo: 60001234,
+    billerCode: '',
+    referenceNo: '',
     emailAddress: '',
     phoneNumber: '',
   },
@@ -95,4 +95,30 @@ export const actions = {
       error => commit('setErrorApply', error),
     );
   },
+  clearData ({ commit }) {
+    const investor = {
+      entitlementNo: '',
+      nameAddress1: '',
+      nameAddress2: '',
+      nameAddress3: '',
+      nameAddress4: '',
+      nameAddress5: '',
+      nameAddress6: '',
+      emailAddress: '',
+      phoneNumber: '',
+      unitPrice: 0,
+      entitlement: 0,
+    };
+    const app = {
+      applicationUnits: 0,
+      billerCode: '',
+      referenceNo: '',
+      emailAddress: '',
+      phoneNumber: '',
+    };
+    commit('setInvestor', investor);
+    commit('setApplication', app);
+    commit('setActiveTab', 0);
+    commit('setSession', '');
+  }
 };
