@@ -43,7 +43,7 @@
               Exit
             </nuxt-link>
           </div>
-          <div class="control" v-if="activeTab != 6">
+          <div class="control" v-if="activeTab <= 4">
             <button class="button is-link" @click="nextTab()">
               Next
             </button>
