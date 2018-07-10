@@ -4,6 +4,9 @@
       Welcome letter – From the Issuer
     </h1>
     <p>
+      <img src="~/assets/img/andrew.mcgill.png" alt="Andrew McGill">
+    </p>
+    <p>
       Dear Investors
     </p>
     <p>
