@@ -17,7 +17,7 @@ module.exports = {
       { rel: 'shortcut icon', type: 'image/vnd.microsoft.icon', href: 'favicon.ico' },
     ],
     script: [
-      { src: '/web/scripts/ie.js' }
+      { src: '/ca/ptrackers/ie.js' }
     ]
 },
 
