@@ -44,6 +44,7 @@
 <script>
 import { countries } from '~/assets/js/countries.js';
 import { required } from 'vuelidate/lib/validators';
+import { mapActions } from 'vuex';
 
 const _placeholder = 'Select a Country';
 
@@ -81,7 +82,11 @@ export default {
      return this.$v.country.$error ? 'Country is required' : '';
     },
   },
+  mounted () {
+    this.clearData();
+  },
   methods: {
+    ...mapActions(['clearData']),
     submitForm () {
       this.$v.$touch();
       if (!this.$v.$error) {
@@ -109,6 +114,6 @@ export default {
         if (vm.country === '') { vm.country = vm.country2; }
       }, 200);
     },
-  }
+  },
 };
 </script>
