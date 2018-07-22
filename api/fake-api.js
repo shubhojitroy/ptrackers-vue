@@ -2,25 +2,42 @@ import axios from 'axios';
 
 const _issuerId = 'IEYM'; // PM Go2025 Limited
 
-const _apiResponse = {
-  SessionId: 'EI93KLFID3',
-  Ok: true,
-  Message: null,
-  InvestorType: 'E',
-  EntitlementNo: '12345',
-  Address1: 'HARRY JAMES POTTER',
-  Address2: '225 GEORGE STREET',
-  Address3: 'HOGSWART',
-  Address4: 'NSW',
-  Address5: '',
-  Address6: '2099',
-  // emailAddress: 'harry.potter@gmail.com',
-  // phoneNumber: '9290-1200',
-  UnitPrice: 1.4,
-  EntitlementAmount: 12000,
-  BPayBillerCode: 248625,
-  BPayReferenceNumber: 689001234,
-};
+const _apiResponse = [
+  {
+    SessionId: 'EI93KLFID3',
+    Ok: true,
+    Message: null,
+    InvestorType: 'E',
+    EntitlementNo: '12345',
+    Address1: 'HARRY JAMES POTTER',
+    Address2: '225 GEORGE STREET',
+    Address3: 'HOGSWART',
+    Address4: 'NSW',
+    Address5: '',
+    Address6: '2099',
+    UnitPrice: 1.4,
+    EntitlementAmount: 12000,
+    BPayBillerCode: 248625,
+    BPayReferenceNumber: 689001234,
+  },
+  {
+    SessionId: '387VJ82J0',
+    Ok: true,
+    Message: null,
+    InvestorType: 'E',
+    EntitlementNo: '54321',
+    Address1: 'HERMIONE GRANGER',
+    Address2: '123 PITT STREET',
+    Address3: 'SYDNEY',
+    Address4: 'NSW',
+    Address5: '',
+    Address6: '2000',
+    UnitPrice: 1.4,
+    EntitlementAmount: 700,
+    BPayBillerCode: 248625,
+    BPayReferenceNumber: 486736253,
+  },
+];
 
 const mapApiToInvestor = data => {
   return {
@@ -89,6 +106,21 @@ export default {
         setError('An error occurred: ' + err);
         return Promise.reject('An error occurred: ' + err);
       });
+    // if (credentials.entitlementNo == _apiResponse.EntitlementNo) {
+    //   const response = _apiResponse;
+    //   if (response.Ok) {
+    //     const investor = mapApiToInvestor(response);
+    //     const application = mapApiToApplication(response);
+    //     setSession(response.SessionId);
+    //     setInvestor(investor);
+    //     setApplication(application);
+    //     setError('');
+    //   } else {
+    //     setError('Invalid Entitlement Number');
+    //   }
+    // } else {
+    //  return setError('Invalid Entitlement Number');
+    // }
   },
   save (appDetails, setSession, setApplication, setError) {
     const app = mapApplyRequest(appDetails);
@@ -115,5 +147,16 @@ export default {
         setError('An error occurred: ' + err);
         return Promise.reject('An error occurred: ' + err);
       });
+    // const application = {
+    //   entitlement: appDetails.entitlement,
+    //   applicationUnits: appDetails.applicationUnits,
+    //   billerCode: appDetails.billerCode,
+    //   referenceNo: appDetails.referenceNo,
+    //   emailAddress: appDetails.emailAddress,
+    //   phoneNumber: appDetails.phoneNumber,
+    // };
+    // setApplication(application);
+    // setSession('');
+    // setError('');
   },
 };
