@@ -13,27 +13,27 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.0.0",
-    "@nuxtjs/bulma": "^1.0.3",
-    "ajv": "^6.4.0",
+    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/bulma": "^1.2.0",
+    "ajv": "^6.5.2",
     "babel-polyfill": "^6.26.0",
-    "moment": "^2.22.1",
-    "nuxt": "^1.4.1",
-    "nuxt-buefy": "0.0.4",
+    "moment": "^2.22.2",
+    "nuxt": "^1.4.2",
+    "nuxt-buefy": "^0.1.0",
     "vue-html-to-paper": "^1.0.3",
-    "vue-vimeo-player": "0.0.6",
-    "vue-youtube-embed": "^2.1.3",
+    "vue-vimeo-player": "0.0.9",
+    "vue-youtube-embed": "^2.2.1",
     "vue2-filters": "^0.3.0",
-    "vuelidate": "^0.6.2"
+    "vuelidate": "^0.7.4"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "cross-env": "^5.0.1",
-    "eslint": "^4.15.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0",
-    "node-sass": "^4.9.2",
-    "sass-loader": "^6.0.7",
-    "style-loader": "^0.20.3"
+    "babel-eslint": "^8.2.6",
+    "cross-env": "^5.2.0",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1"
   }
 }
