@@ -2,26 +2,6 @@ import axios from 'axios';
 
 const _issuerId = 'IEYM'; // PM Go2025 Limited
 
-const _apiResponse = {
-  SessionId: 'EI93KLFID3',
-  Ok: true,
-  Message: null,
-  InvestorType: 'E',
-  EntitlementNo: '12345',
-  Address1: 'HARRY JAMES POTTER',
-  Address2: '225 GEORGE STREET',
-  Address3: 'HOGSWART',
-  Address4: 'NSW',
-  Address5: '',
-  Address6: '2099',
-  // emailAddress: 'harry.potter@gmail.com',
-  // phoneNumber: '9290-1200',
-  UnitPrice: 1.4,
-  EntitlementAmount: 12000,
-  BPayBillerCode: 248625,
-  BPayReferenceNumber: 689001234,
-};
-
 const mapApiToInvestor = data => {
   return {
     entitlementNo: data.EntitlementNo,
@@ -60,7 +40,7 @@ const mapApplyRequest = (application) => {
 };
 
 export default {
-  investor: mapApiToInvestor(_apiResponse),
+ // investor: mapApiToInvestor(_apiResponse),
   login (credentials, setSession, setInvestor, setApplication, setError) {
     const loginCredentials = {
       EntitlementNo: credentials.entitlementNo,
@@ -72,27 +52,23 @@ export default {
         if (response.Ok) {
           const investor = mapApiToInvestor(response);
           const application = mapApiToApplication(response);
-          console.log('api!!!', response.SessionId);
           setSession(response.SessionId);
           setInvestor(investor);
           setApplication(application);
           setError('');
           return response;
         } else {
-          console.log('invalid loging!!!', response.SessionId);
           setError('Invalid Entitlement Number');
           return Promise.reject('Invalid Entitlment Number.');
         }
       })
       .catch(err => {
-        // console.log('error!!');
         setError('An error occurred: ' + err);
         return Promise.reject('An error occurred: ' + err);
       });
   },
   save (appDetails, setSession, setApplication, setError) {
     const app = mapApplyRequest(appDetails);
-    console.log('apply', app);
     return axios.post('https://api.boardroomlimited.com.au/api/EntitlementIpo/Apply', app)
       .then(resp => {
         const response = resp.data;

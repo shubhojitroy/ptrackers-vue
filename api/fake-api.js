@@ -1,8 +1,6 @@
-import axios from 'axios';
-
 const _issuerId = 'IEYM'; // PM Go2025 Limited
 
-const _apiResponse = [
+const _apiResponses = [
   {
     SessionId: 'EI93KLFID3',
     Ok: true,
@@ -77,86 +75,27 @@ const mapApplyRequest = (application) => {
 };
 
 export default {
-  investor: mapApiToInvestor(_apiResponse),
+//  investor: mapApiToInvestor(_apiResponse),
   login (credentials, setSession, setInvestor, setApplication, setError) {
-    const loginCredentials = {
-      EntitlementNo: credentials.entitlementNo,
-      IssuerId: _issuerId,
-    };
-    return axios.post('https://api.boardroomlimited.com.au/api/EntitlementIpo/Login', loginCredentials)
-      .then(resp => {
-        const response = resp.data;
-        if (response.Ok) {
-          const investor = mapApiToInvestor(response);
-          const application = mapApiToApplication(response);
-          console.log('api!!!', response.SessionId);
-          setSession(response.SessionId);
-          setInvestor(investor);
-          setApplication(application);
-          setError('');
-          return response;
-        } else {
-          console.log('invalid loging!!!', response.SessionId);
-          setError('Invalid Entitlement Number');
-          return Promise.reject('Invalid Entitlment Number.');
-        }
-      })
-      .catch(err => {
-        // console.log('error!!');
-        setError('An error occurred: ' + err);
-        return Promise.reject('An error occurred: ' + err);
-      });
-    // if (credentials.entitlementNo == _apiResponse.EntitlementNo) {
-    //   const response = _apiResponse;
-    //   if (response.Ok) {
-    //     const investor = mapApiToInvestor(response);
-    //     const application = mapApiToApplication(response);
-    //     setSession(response.SessionId);
-    //     setInvestor(investor);
-    //     setApplication(application);
-    //     setError('');
-    //   } else {
-    //     setError('Invalid Entitlement Number');
-    //   }
-    // } else {
-    //  return setError('Invalid Entitlement Number');
-    // }
+    let response = _apiResponses.find(r => r.EntitlementNo === credentials.entitlementNo);
+    if (response && response.Ok) {
+      const investor = mapApiToInvestor(response);
+      const application = mapApiToApplication(response);
+      setSession(response.SessionId);
+      setInvestor(investor);
+      setApplication(application);
+      setError('');
+      return Promise.resolve(response);
+    } else {
+      setError('Invalid Entitlement Number');
+      return Promise.reject('Invalid Entitlement Number');
+    }
   },
   save (appDetails, setSession, setApplication, setError) {
     const app = mapApplyRequest(appDetails);
-    console.log('apply', app);
-    return axios.post('https://api.boardroomlimited.com.au/api/EntitlementIpo/Apply', app)
-      .then(resp => {
-        const response = resp.data;
-        if (response.Ok) {
-          const application = {
-            entitlement: appDetails.entitlement,
-            applicationUnits: appDetails.applicationUnits,
-            billerCode: appDetails.billerCode,
-            referenceNo: appDetails.referenceNo,
-            emailAddress: appDetails.emailAddress,
-            phoneNumber: appDetails.phoneNumber,
-          };
-          setApplication(application);
-          setSession('');
-          setError('');
-          return response;
-        }
-      })
-      .catch(err => {
-        setError('An error occurred: ' + err);
-        return Promise.reject('An error occurred: ' + err);
-      });
-    // const application = {
-    //   entitlement: appDetails.entitlement,
-    //   applicationUnits: appDetails.applicationUnits,
-    //   billerCode: appDetails.billerCode,
-    //   referenceNo: appDetails.referenceNo,
-    //   emailAddress: appDetails.emailAddress,
-    //   phoneNumber: appDetails.phoneNumber,
-    // };
-    // setApplication(application);
-    // setSession('');
-    // setError('');
+    setApplication(app);
+    setSession('');
+    setError('');
+    return Promise.resolve(true);
   },
 };
