@@ -58,7 +58,7 @@ module.exports = {
   ** Router middleware
   */
   router: {
-    base: '/ca/ptrackers/',
+    base: '/ca/demo/',
     scrollBehavior (to, from, savedPosition) {
       if (savedPosition) {
         return savedPosition;
